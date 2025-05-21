@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="k_neighbors_classifier">
+			<alt mandatory="true" name="n_neighbors">
+				<feature name="1"/>
+				<feature name="2"/>
+				<feature name="3"/>
+				<feature name="4"/>
+				<feature name="5"/>
+				<feature name="6"/>
+				<feature name="7"/>
+				<feature name="8"/>
+				<feature name="9"/>
+				<feature name="10"/>
+			</alt>
+			<alt mandatory="true" name="weights">
+				<feature name="uniform"/>
+				<feature name="distance"/>
+				<feature name="None"/>
+			</alt>
+			<alt mandatory="true" name="algorithm">
+				<feature name="auto"/>
+				<feature name="ball_tree"/>
+				<feature name="kd_tree"/>
+				<feature name="brute"/>
+			</alt>
+			<alt mandatory="true" name="leaf_size">
+				<feature name="leaf_size-1"/>
+				<feature name="leaf_size-2"/>
+				<feature name="leaf_size-4"/>
+				<feature name="leaf_size-8"/>
+				<feature name="leaf_size-16"/>
+				<feature name="leaf_size-30"/>
+				<feature name="leaf_size-32"/>
+				<feature name="leaf_size-64"/>
+			</alt>
+			<and mandatory="true" name="n_jobs">
+				<feature mandatory="true" name="-1"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>

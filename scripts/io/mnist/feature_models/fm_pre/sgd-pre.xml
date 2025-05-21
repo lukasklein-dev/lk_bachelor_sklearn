@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="sgd">
+			<alt mandatory="true" name="loss">
+				<feature name="hinge"/>
+				<feature name="log_loss"/>
+				<feature name="modified_huber"/>
+				<feature name="squared_error"/>
+				<feature name="huber"/>
+				<feature name="epsilon_insensitive"/>
+				<feature name="perceptron"/>
+			</alt>
+			<alt mandatory="true" name="penalty">
+				<feature name="l2"/>
+				<feature name="l1"/>
+				<feature name="elasticnet"/>
+				<feature name="None"/>
+			</alt>
+			<feature name="fit_intercept"/>
+			<feature name="shuffle"/>
+			<feature name="early_stopping"/>
+			<feature name="warm_start"/>
+			<feature name="average"/>
+			<and mandatory="true" name="n_jobs">
+				<feature mandatory="true" name="-1"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="gradient_boosting_classifier">
+			<graphics key="collapsed" value="false"/>
+			<alt mandatory="true" name="loss">
+				<graphics key="collapsed" value="false"/>
+				<feature name="log_loss"/>
+				<feature name="exponential"/>
+			</alt>
+			<alt mandatory="true" name="learning_rate">
+				<graphics key="collapsed" value="false"/>
+				<feature name="0.05"/>
+				<feature name="0.1"/>
+				<feature name="0.3"/>
+			</alt>
+			<alt mandatory="true" name="n_estimators">
+				<graphics key="collapsed" value="false"/>
+				<feature name="50"/>
+				<feature name="100"/>
+				<feature name="500"/>
+			</alt>
+			<alt mandatory="true" name="subsample">
+				<graphics key="collapsed" value="false"/>
+				<feature name="0.7"/>
+				<feature name="1.0"/>
+			</alt>
+			<alt mandatory="true" name="criterion">
+				<graphics key="collapsed" value="false"/>
+				<feature name="friedman_mse"/>
+				<feature name="squared_error"/>
+			</alt>
+			<alt mandatory="true" name="min_samples_split">
+				<graphics key="collapsed" value="false"/>
+				<feature name="2"/>
+				<feature name="5"/>
+				<feature name="10"/>
+				<feature name="min_samples_split-50"/>
+			</alt>
+			<feature name="warm_start"/>
+		</and>
+	</struct>
+</featureModel>

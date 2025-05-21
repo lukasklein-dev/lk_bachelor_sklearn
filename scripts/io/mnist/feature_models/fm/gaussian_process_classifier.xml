@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="gaussian_process_classifier">
+			<graphics key="collapsed" value="false"/>
+			<alt mandatory="true" name="optimizer">
+				<graphics key="collapsed" value="false"/>
+				<feature name="fmin_l_bfgs_b"/>
+				<feature name="None"/>
+			</alt>
+			<alt mandatory="true" name="n_restarts_optimizer">
+				<graphics key="collapsed" value="false"/>
+				<feature name="0"/>
+				<feature name="1"/>
+				<feature name="5"/>
+				<feature name="10"/>
+			</alt>
+			<alt mandatory="true" name="max_iter_predict">
+				<graphics key="collapsed" value="false"/>
+				<feature name="100"/>
+				<feature name="500"/>
+				<feature name="1000"/>
+			</alt>
+			<feature name="warm_start"/>
+			<feature name="copy_X_train"/>
+			<and mandatory="true" name="n_jobs">
+				<graphics key="collapsed" value="false"/>
+				<feature mandatory="true" name="-1"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>

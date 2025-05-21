@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="decision_tree_classifier">
+			<graphics key="collapsed" value="false"/>
+			<alt mandatory="true" name="criterion">
+				<graphics key="collapsed" value="false"/>
+				<feature name="gini"/>
+				<feature name="entropy"/>
+				<feature name="log_loss"/>
+			</alt>
+			<alt mandatory="true" name="splitter">
+				<graphics key="collapsed" value="false"/>
+				<feature name="best"/>
+				<feature name="random"/>
+			</alt>
+			<alt mandatory="true" name="min_samples_split">
+				<graphics key="collapsed" value="false"/>
+				<feature name="2"/>
+				<feature name="5"/>
+				<feature name="10"/>
+				<feature name="50"/>
+			</alt>
+		</and>
+	</struct>
+</featureModel>

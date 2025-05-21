@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="extra_trees_classifier">
+			<alt mandatory="true" name="n_estimators">
+				<feature name="100"/>
+				<feature name="120"/>
+				<feature name="150"/>
+			</alt>
+			<alt mandatory="true" name="criterion">
+				<feature name="gini"/>
+				<feature name="entropy"/>
+				<feature name="log_loss"/>
+			</alt>
+			<alt mandatory="true" name="min_samples_split">
+				<feature name="2"/>
+				<feature name="3"/>
+			</alt>
+			<alt mandatory="true" name="min_samples_leaf">
+				<feature name="1"/>
+				<feature name="min_samples_leaf-2"/>
+			</alt>
+			<alt mandatory="true" name="max_features">
+				<feature name="sqrt"/>
+				<feature name="log2"/>
+				<feature name="None"/>
+			</alt>
+			<feature name="bootstrap"/>
+			<feature name="oob_score"/>
+			<feature name="warm_start"/>
+			<alt mandatory="true" name="class_weight">
+				<feature name="class_weight-None"/>
+				<feature name="balanced"/>
+				<feature name="balanced_subsample"/>
+			</alt>
+			<alt mandatory="true" name="max_samples">
+				<feature name="max_samples-None"/>
+				<feature name="0.5"/>
+				<feature name="0.8"/>
+			</alt>
+			<and mandatory="true" name="n_jobs">
+				<feature mandatory="true" name="-1"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>

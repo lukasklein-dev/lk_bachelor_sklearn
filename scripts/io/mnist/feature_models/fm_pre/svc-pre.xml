@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="svc">
+			<alt mandatory="true" name="C">
+				<feature name="0.01"/>
+				<feature name="0.1"/>
+				<feature name="1.0"/>
+				<feature name="10.0"/>
+				<feature name="100.0"/>
+			</alt>
+			<alt mandatory="true" name="kernel">
+				<feature name="rbf"/>
+				<feature name="linear"/>
+				<feature name="poly"/>
+				<feature name="sigmoid"/>
+				<feature name="precomputed"/>
+			</alt>
+			<feature name="shrinking"/>
+			<feature name="probability"/>
+			<feature name="verbose"/>
+			<feature name="break_ties"/>
+		</and>
+	</struct>
+</featureModel>

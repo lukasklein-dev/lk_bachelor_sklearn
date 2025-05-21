@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="gaussian_nb">
+			<alt mandatory="true" name="var_smoothing">
+				<feature name="0.000000001"/>
+				<feature name="0.0000001"/>
+				<feature name="0.00001"/>
+			</alt>
+		</and>
+	</struct>
+</featureModel>

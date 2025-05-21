@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="multinomial_nb">
+			<alt mandatory="true" name="alpha">
+				<feature name="0.01"/>
+				<feature name="0.1"/>
+				<feature name="0.5"/>
+				<feature name="1.0"/>
+				<feature name="10.0"/>
+			</alt>
+			<feature name="force_alpha"/>
+			<feature name="fit_prior"/>
+			<alt mandatory="true" name="class_prior">
+				<feature name="None"/>
+				<feature name="0.2"/>
+				<feature name="0.4"/>
+				<feature name="0.6"/>
+				<feature name="0.8"/>
+			</alt>
+		</and>
+	</struct>
+</featureModel>

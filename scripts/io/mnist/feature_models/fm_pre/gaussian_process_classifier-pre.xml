@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="gaussian_process_classifier">
+			<alt mandatory="true" name="optimizer">
+				<feature name="fmin_l_bfgs_b"/>
+				<feature name="None"/>
+			</alt>
+			<alt mandatory="true" name="n_restarts_optimizer">
+				<feature name="0"/>
+				<feature name="1"/>
+				<feature name="5"/>
+				<feature name="10"/>
+			</alt>
+			<alt mandatory="true" name="max_iter_predict">
+				<feature name="100"/>
+				<feature name="500"/>
+				<feature name="1000"/>
+			</alt>
+			<feature name="warm_start"/>
+			<feature name="copy_X_train"/>
+			<and mandatory="true" name="n_jobs">
+				<feature mandatory="true" name="-1"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>

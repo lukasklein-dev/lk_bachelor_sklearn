@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="multinomial_nb">
+			<graphics key="collapsed" value="false"/>
+			<alt mandatory="true" name="alpha">
+				<graphics key="collapsed" value="false"/>
+				<feature name="0.01"/>
+				<feature name="0.1"/>
+				<feature name="0.5"/>
+				<feature name="1.0"/>
+				<feature name="10.0"/>
+			</alt>
+			<feature name="force_alpha"/>
+			<feature name="fit_prior"/>
+			<alt mandatory="true" name="class_prior">
+				<graphics key="collapsed" value="false"/>
+				<feature name="None"/>
+				<feature name="0.2"/>
+				<feature name="0.4"/>
+				<feature name="0.6"/>
+				<feature name="0.8"/>
+			</alt>
+		</and>
+	</struct>
+</featureModel>

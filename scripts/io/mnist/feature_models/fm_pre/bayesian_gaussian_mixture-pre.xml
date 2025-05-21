@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="bayesian_gaussian_mixture">
+			<alt mandatory="true" name="n_components">
+				<feature name="1"/>
+				<feature name="2"/>
+				<feature name="5"/>
+				<feature name="10"/>
+			</alt>
+			<alt mandatory="true" name="covariance_type">
+				<feature name="full"/>
+				<feature name="tied"/>
+				<feature name="diag"/>
+				<feature name="spherical"/>
+			</alt>
+			<alt mandatory="true" name="reg_covar">
+				<feature name="0.000001"/>
+				<feature name="0.001"/>
+			</alt>
+			<alt mandatory="true" name="max_iter">
+				<feature name="100"/>
+				<feature name="500"/>
+				<feature name="1000"/>
+			</alt>
+			<alt mandatory="true" name="n_init">
+				<feature name="n_init-1"/>
+				<feature name="n_init-5"/>
+			</alt>
+			<alt mandatory="true" name="init_params">
+				<feature name="kmeans"/>
+				<feature name="k-means++"/>
+				<feature name="random"/>
+				<feature name="random_from_data"/>
+			</alt>
+			<feature name="warm_start"/>
+		</and>
+	</struct>
+</featureModel>
