@@ -40,8 +40,8 @@
 			</alt>
 			<alt mandatory="true" name="n_init">
 				<graphics key="collapsed" value="false"/>
-				<feature name="n_init-1"/>
-				<feature name="n_init-5"/>
+				<feature name="1"/>
+				<feature name="5"/>
 			</alt>
 			<alt mandatory="true" name="init_params">
 				<graphics key="collapsed" value="false"/>

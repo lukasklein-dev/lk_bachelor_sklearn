@@ -30,7 +30,7 @@
 				<feature name="2"/>
 				<feature name="5"/>
 				<feature name="10"/>
-				<feature name="min_samples_split-50"/>
+				<feature name="50"/>
 			</alt>
 			<feature name="warm_start"/>
 		</and>

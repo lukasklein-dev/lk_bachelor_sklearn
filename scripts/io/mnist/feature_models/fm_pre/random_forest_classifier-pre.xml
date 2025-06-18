@@ -20,7 +20,7 @@
 			</alt>
 			<alt mandatory="true" name="min_samples_leaf">
 				<feature name="1"/>
-				<feature name="min_samples_leaf-2"/>
+				<feature name="2"/>
 			</alt>
 			<alt mandatory="true" name="max_features">
 				<feature name="sqrt"/>
@@ -31,7 +31,7 @@
 			<feature name="oob_score"/>
 			<feature name="warm_start"/>
 			<alt mandatory="true" name="class_weight">
-				<feature name="class_weight-None"/>
+				<feature name="None"/>
 				<feature name="balanced"/>
 				<feature name="balanced_subsample"/>
 			</alt>

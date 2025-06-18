@@ -250,7 +250,7 @@
       <excludedOptions>
         <options>5</options>
         <options>10</options>
-        <options>min_samples_split-50</options>
+        <options>50</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
@@ -265,7 +265,7 @@
       <excludedOptions>
         <options>2</options>
         <options>10</options>
-        <options>min_samples_split-50</options>
+        <options>50</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
@@ -280,22 +280,7 @@
       <excludedOptions>
         <options>2</options>
         <options>5</options>
-        <options>min_samples_split-50</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>min_samples_split-50</name>
-      <outputString>min_samples_split-50</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>min_samples_split</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>2</options>
-        <options>5</options>
-        <options>10</options>
+        <options>50</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>

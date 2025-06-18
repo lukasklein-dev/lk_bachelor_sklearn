@@ -368,154 +368,78 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>leaf_size-1</name>
-      <outputString>leaf_size-1</outputString>
+      <name>16</name>
+      <outputString>16</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>leaf_size-2</options>
-        <options>leaf_size-4</options>
-        <options>leaf_size-8</options>
-        <options>leaf_size-16</options>
-        <options>leaf_size-30</options>
-        <options>leaf_size-32</options>
-        <options>leaf_size-64</options>
+        <options>1</options>
+        <options>2</options>
+        <options>4</options>
+        <options>8</options>
+        <options>30</options>
+        <options>32</options>
+        <options>64</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>leaf_size-2</name>
-      <outputString>leaf_size-2</outputString>
+      <name>30</name>
+      <outputString>30</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>leaf_size-1</options>
-        <options>leaf_size-4</options>
-        <options>leaf_size-8</options>
-        <options>leaf_size-16</options>
-        <options>leaf_size-30</options>
-        <options>leaf_size-32</options>
-        <options>leaf_size-64</options>
+        <options>1</options>
+        <options>2</options>
+        <options>4</options>
+        <options>8</options>
+        <options>16</options>
+        <options>32</options>
+        <options>64</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>leaf_size-4</name>
-      <outputString>leaf_size-4</outputString>
+      <name>32</name>
+      <outputString>32</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>leaf_size-1</options>
-        <options>leaf_size-2</options>
-        <options>leaf_size-8</options>
-        <options>leaf_size-16</options>
-        <options>leaf_size-30</options>
-        <options>leaf_size-32</options>
-        <options>leaf_size-64</options>
+        <options>1</options>
+        <options>2</options>
+        <options>4</options>
+        <options>8</options>
+        <options>16</options>
+        <options>30</options>
+        <options>64</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>leaf_size-8</name>
-      <outputString>leaf_size-8</outputString>
+      <name>64</name>
+      <outputString>64</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>leaf_size-1</options>
-        <options>leaf_size-2</options>
-        <options>leaf_size-4</options>
-        <options>leaf_size-16</options>
-        <options>leaf_size-30</options>
-        <options>leaf_size-32</options>
-        <options>leaf_size-64</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>leaf_size-16</name>
-      <outputString>leaf_size-16</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>leaf_size</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>leaf_size-1</options>
-        <options>leaf_size-2</options>
-        <options>leaf_size-4</options>
-        <options>leaf_size-8</options>
-        <options>leaf_size-30</options>
-        <options>leaf_size-32</options>
-        <options>leaf_size-64</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>leaf_size-30</name>
-      <outputString>leaf_size-30</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>leaf_size</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>leaf_size-1</options>
-        <options>leaf_size-2</options>
-        <options>leaf_size-4</options>
-        <options>leaf_size-8</options>
-        <options>leaf_size-16</options>
-        <options>leaf_size-32</options>
-        <options>leaf_size-64</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>leaf_size-32</name>
-      <outputString>leaf_size-32</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>leaf_size</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>leaf_size-1</options>
-        <options>leaf_size-2</options>
-        <options>leaf_size-4</options>
-        <options>leaf_size-8</options>
-        <options>leaf_size-16</options>
-        <options>leaf_size-30</options>
-        <options>leaf_size-64</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>leaf_size-64</name>
-      <outputString>leaf_size-64</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>leaf_size</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>leaf_size-1</options>
-        <options>leaf_size-2</options>
-        <options>leaf_size-4</options>
-        <options>leaf_size-8</options>
-        <options>leaf_size-16</options>
-        <options>leaf_size-30</options>
-        <options>leaf_size-32</options>
+        <options>1</options>
+        <options>2</options>
+        <options>4</options>
+        <options>8</options>
+        <options>16</options>
+        <options>30</options>
+        <options>32</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>

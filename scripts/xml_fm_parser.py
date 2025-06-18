@@ -5,13 +5,14 @@ Comment: I first used the BFS approach for parsing the xml tree. But then I chan
 
 Usage (How to):
 Step 1: Create a Feature Model using FeatureIDE. NOTE: Until now, the script only supports binary features, mandatory/optional, and-groups, alternative-groups. So do not make use of or-groups or boolean constraints. Just construct all features as binary or using one hot encoding.
-Step 2: TODO: In the script (code); enter the name of the feature model in the script. (You might need to adjust input and output file paths.)
+Step 2: TODO: In the script (code); enter the name of the feature model. (You might need to adjust input and output file paths.)
 Step 3: Execute the script: (inside the root directory of the repo)
-python scripts/xml_fm_parser.py
+python scripts/xml_fm_parser.py --fm_name [xml_feature_model_name_without_extension]
 -> Now the xml file should be parsed correctly and is ready to be used as input for vara-feature.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """
 
+import click
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
@@ -170,13 +171,18 @@ def preprocessing_xml(input, output):
         print(f"And error occurred: {e}")
 
 
-# CONFIGURATION
-fm_name = "sgd" # TODO: Enter the name of the feature model XML file which should be parsed (without the .xml extension).
-input_xml = "scripts/io/mnist/feature_models/fm/" + fm_name + ".xml"
-input_pre_xml = "scripts/io/mnist/feature_models/fm_pre/" + fm_name + "-pre.xml"
-output_xml = "scripts/io/mnist/feature_models/fm_new/" + fm_name + ".xml"
-vm_name = fm_name # Don't change this name! (It is used as the root node name in the output XML)
+@click.command()
+@click.option('--fm_name', required=True, help='XML file name (without the .xml ending) of the feature model, e.g. bayesian_gaussian_mixture')
+def main(fm_name):
+    # CONFIGURATION
+    input_xml = "scripts/io/mnist/feature_models/fm/" + fm_name + ".xml"
+    input_pre_xml = "scripts/io/mnist/feature_models/fm_pre/" + fm_name + "-pre.xml"
+    output_xml = "scripts/io/mnist/feature_models/fm_new/" + fm_name + ".xml"
+    vm_name = fm_name # Don't change this name! (It is used as the root node name in the output XML)
 
-preprocessing_xml(input_xml, input_pre_xml) # Skip lines/tags other than and, alt, feature (i.e. skip graphics):
+    preprocessing_xml(input_xml, input_pre_xml) # Skip lines/tags other than and, alt, feature (i.e. skip graphics):
 
-convert(input_pre_xml, output_xml, vm_name) # Start Skript
+    convert(input_pre_xml, output_xml, vm_name) # Start Skript
+
+if __name__ == "__main__":
+    main()

@@ -1,3 +1,5 @@
+# Experiment Main Skript Part 1 (RQ1): Collect sklearn classifier performance measurements
+
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.linear_model import SGDClassifier
@@ -6,7 +8,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 import numpy as np
 import idx2numpy
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report, top_k_accuracy_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, fbeta_score, hamming_loss, zero_one_loss
 import click
 import json
 import os
@@ -21,9 +23,15 @@ Description:
 
 Example usage (How to):
     Type in the following command in the terminal to run the script: (inside the root directory of the repo) (Note: The estimator class and params must be adjusted according to your needs)
-python case_study_MNIST.py --estimator sklearn.linear_model.SGDClassifier --config_id 90 --params '["average", "early_stopping", "fit_intercept", "loss", "huber", "n_jobs", "-1", "penalty", "None", "warm_start"]' --output "scripts/io/mnist/cs_output/cs00_measurements.json"
-python case_study_MNIST.py --estimator sklearn.linear_model.SGDClassifier --config_id 563 --params '["early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "n_jobs", "-1", "penalty", "None"]' --output "scripts/io/mnist/cs_output/cs00_measurements.json"
+python case_study_MNIST.py -config_id=0 --average --early_stopping --fit_intercept --loss --huber --n_jobs ---1 --penalty --None --warm_start
+python case_study_MNIST.py -config_id=1 --loss --huber --n_jobs ---1 --penalty --None --warm_start
 """
+
+# MANUAL CONFIGURATION -> For each classifier, change the estimator class and its case_study output json file. TODO: Maybe create a revision for each, then use the different revisions in the evaluation pipeline.
+estimator = "sklearn.linear_model.SGDClassifier" # Example: sklearn.linear_model.SGDClassifier
+output = "scripts/io/mnist/cs_output/cs00_measurements.json" # Example: scripts/io/mnist/cs_output/cs00_measurements.json
+#config_id = 0 # TODO: Provide the current config ID as a cmd line argument, additionally to all parameters of the config?
+# TODO: After clarifying the two Todos above, push to the repo.
 
 def load_mnist_data():
     ### PREPARATION/PREPROCESSING ###
@@ -61,16 +69,20 @@ def model_training(model, X_train, y_train, X_test, y_test):
     precision = precision_score(y_test, y_pred, average='weighted') # weighted ?
     recall = recall_score(y_test, y_pred, average='weighted') # weighted ?
     f1 = f1_score(y_test, y_pred, average='weighted') # weighted ?
-    #class_report = classification_report(y_test, y_pred, output_dict=True) # precision, recall, f1-score, support
-    #top_k_accuracy = top_k_accuracy_score(y_test, y_pred, k=5) # k=5 ?
-    
+    #conf_matrix = confusion_matrix(y_test, y_pred)
+    fbeta = fbeta_score(y_test, y_pred, beta=0.5, average='weighted') # weighted ?
+    hamming = hamming_loss(y_test, y_pred)
+    zero_one = zero_one_loss(y_test, y_pred)
+
     metrics = {
         'accuracy': accuracy,
         'precision': precision,
         'recall': recall,
         'f1_score': f1,
-        # 'classification_report': class_report,
-        # 'top_k_accuracy': top_k_accuracy
+        #'confusion_matrix': conf_matrix.tolist(),  # Convert to list for JSON serialization
+        'fbeta_score': fbeta,
+        'hamming_loss': hamming,
+        'zero_one_loss': zero_one
     }
 
     ### LOGGING ###
@@ -78,67 +90,79 @@ def model_training(model, X_train, y_train, X_test, y_test):
     print(f"Accuracy: {accuracy}")
     print(f"Precision: {precision}")
     print(f"Recall: {recall}")
-    print(f"F1-Score: {f1}")
-    #print(f"Classification Report: {class_report}")
-    #print(f"Top-K Accuracy: {top_k_accuracy}")
+    print(f"F1 Score: {f1}")
+    #print(f"Confusion Matrix:\n{conf_matrix}")
+    print(f"F-beta Score: {fbeta}")
+    print(f"Hamming Loss: {hamming}")
+    print(f"Zero-One Loss: {zero_one_loss(y_test, y_pred)}")
     print("\n######################################################\n")
 
     return model, metrics
 
-@click.command()
-@click.option('--estimator', required=True, help='Full class path, e.g. sklearn.linear_model.SGDClassifier')
-@click.option('--config_id', required=True, type=int, help='Configuration ID for this run')
-@click.option('--params', required=True, help='Parameter list as a Python literal, e.g. \'["loss", "hinge", "n_jobs", "-1", "penalty", "l1"]\'')
-@click.option('--output', required=True, help='Path to output file for results')
-def main(estimator, config_id, params, output):
+@click.command(context_settings=dict(
+    ignore_unknown_options=True,
+    allow_extra_args=True,
+))
+#@click.option('--estimator', required=True, help='Full class path, e.g. sklearn.linear_model.SGDClassifier')
+@click.option('-config_id', required=True, type=int, help='Configuration ID for this run')
+#@click.option('--params', required=True, help='Parameter list as a Python literal, e.g. \'["loss", "hinge", "n_jobs", "-1", "penalty", "l1"]\'')
+#@click.option('--output', required=True, help='Path to output file for results')
+@click.pass_context
+def main(ctx, config_id):
     ### MODEL TRAINING (for each hyperparameter config) ###
 
     # Dynamically import estimator class
     module_name, class_name = estimator.rsplit('.', 1)
     module = __import__(module_name, fromlist=[class_name])
     EstClass = getattr(module, class_name)
-
-    # Parse params
-    param_list = ast.literal_eval(params)
-    # Get default params to infer types
     default = EstClass()
     default_params = default.get_params()
+
+    # Parse all hyperparameters (and for a non-binary hp its respective value)
+    param_args = ctx.args
     est_kwargs = {}
     seen_keys = set()
     i = 0
-    while i < len(param_list):
-        key = param_list[i]
-        if key not in default_params:
+    while i < len(param_args):
+        # Prepare the argument or skip if it is not a valid parameter
+        arg = param_args[i]
+        if arg.startswith('--'):
+            arg = arg[2:]
+        if arg not in default_params:
             i += 1
             continue
-        default_val = default_params[key]
-        seen_keys.add(key)
-        # Handle bools as flags (present = True)
+
+        default_val = default_params[arg]
+        seen_keys.add(arg)
+        # For binary hyperparameters, handle bools as flags (present = True):
         if isinstance(default_val, bool):
-            est_kwargs[key] = True
+            est_kwargs[arg] = True
             i += 1
         else:
-            if i + 1 < len(param_list):
-                val = param_list[i + 1]
+            # For non-binary hyperparameters, read its selected value next in the list:
+            if i + 1 < len(param_args):
+                val = param_args[i + 1]
+                if val.startswith('--'):
+                    val = val[2:]
                 # Convert string input to correct type
                 if val == 'None':
-                    est_kwargs[key] = None
+                    est_kwargs[arg] = None
                 elif val == 'True':
-                    est_kwargs[key] = True
+                    est_kwargs[arg] = True
                 elif val == 'False':
-                    est_kwargs[key] = False
+                    est_kwargs[arg] = False
                 elif isinstance(default_val, int) or isinstance(default_val, type(None)): # NOTE: default=None and value space: float, might be a problem.
                     try:
-                        est_kwargs[key] = int(val)
+                        est_kwargs[arg] = int(val)
                     except ValueError:
-                        est_kwargs[key] = val
+                        est_kwargs[arg] = val
                 elif isinstance(default_val, float):
                     try:
-                        est_kwargs[key] = float(val)
+                        est_kwargs[arg] = float(val)
                     except ValueError:
-                        est_kwargs[key] = val
+                        est_kwargs[arg] = val
                 else:
-                    est_kwargs[key] = val
+                    est_kwargs[arg] = val
                 i += 2
             else:
                 i += 1
@@ -147,6 +171,7 @@ def main(estimator, config_id, params, output):
         if isinstance(v, bool) and k not in seen_keys:
             est_kwargs[k] = False
 
+    # Create and train the estimator instance with the parsed parameters
     estimator_instance = EstClass(**est_kwargs)
 
     X_train, y_train, X_test, y_test = load_mnist_data()
@@ -171,6 +196,6 @@ def main(estimator, config_id, params, output):
 
     with open(output, "w") as f:
         json.dump(all_results, f, indent=2)
-
+    
 if __name__ == "__main__":
     main()

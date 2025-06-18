@@ -1,5 +1,5 @@
 {
-  "90": {
+  "0": {
     "estimator": "sklearn.linear_model.SGDClassifier",
     "params": {
       "alpha": 0.0001,
@@ -25,25 +25,28 @@
       "warm_start": true
     },
     "performance": {
-      "accuracy": 0.7923,
-      "precision": 0.7997711275055912,
-      "recall": 0.7923,
-      "f1_score": 0.788066536464327
+      "accuracy": 0.7875,
+      "precision": 0.7928362254824649,
+      "recall": 0.7875,
+      "f1_score": 0.7832779504225758,
+      "fbeta_score": 0.7873318366973551,
+      "hamming_loss": 0.2125,
+      "zero_one_loss": 0.21250000000000002
     }
   },
-  "563": {
+  "1": {
     "estimator": "sklearn.linear_model.SGDClassifier",
     "params": {
       "alpha": 0.0001,
       "average": false,
       "class_weight": null,
-      "early_stopping": true,
+      "early_stopping": false,
       "epsilon": 0.1,
       "eta0": 0.0,
-      "fit_intercept": true,
+      "fit_intercept": false,
       "l1_ratio": 0.15,
       "learning_rate": "optimal",
-      "loss": "epsilon_insensitive",
+      "loss": "huber",
       "max_iter": 1000,
       "n_iter_no_change": 5,
       "n_jobs": -1,
@@ -54,13 +57,16 @@
       "tol": 0.001,
       "validation_fraction": 0.1,
       "verbose": 0,
-      "warm_start": false
+      "warm_start": true
     },
     "performance": {
-      "accuracy": 0.377,
-      "precision": 0.6031995937202093,
-      "recall": 0.377,
-      "f1_score": 0.35667871812502405
+      "accuracy": 0.7331,
+      "precision": 0.7564221270202524,
+      "recall": 0.7331,
+      "f1_score": 0.7268105924682284,
+      "fbeta_score": 0.7398323774387652,
+      "hamming_loss": 0.2669,
+      "zero_one_loss": 0.2669
     }
   }
 }

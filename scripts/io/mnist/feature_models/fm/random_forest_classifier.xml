@@ -33,7 +33,7 @@
 			<alt mandatory="true" name="min_samples_leaf">
 				<graphics key="collapsed" value="false"/>
 				<feature name="1"/>
-				<feature name="min_samples_leaf-2"/>
+				<feature name="2"/>
 			</alt>
 			<alt mandatory="true" name="max_features">
 				<graphics key="collapsed" value="false"/>
@@ -46,7 +46,7 @@
 			<feature name="warm_start"/>
 			<alt mandatory="true" name="class_weight">
 				<graphics key="collapsed" value="false"/>
-				<feature name="class_weight-None"/>
+				<feature name="None"/>
 				<feature name="balanced"/>
 				<feature name="balanced_subsample"/>
 			</alt>

@@ -255,32 +255,6 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>n_init-1</name>
-      <outputString>n_init-1</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>n_init</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>n_init-5</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>n_init-5</name>
-      <outputString>n_init-5</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>n_init</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>n_init-1</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
       <name>init_params</name>
       <outputString>init_params</outputString>
       <prefix/>
