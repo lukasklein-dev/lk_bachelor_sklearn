@@ -1,11 +1,14 @@
-def insert_config_ids(case_study_path):
+import ast
+
+def insert_config_ids(case_study_path, output_path):
     with open(case_study_path, "r") as f:
         lines = f.readlines()
 
     # Find config_type section and collect all config ids
     config_ids = []
     in_config_section = False
-    for line in lines:
+    config_lines = {}
+    for idx, line in enumerate(lines):
         if line.strip() == "config_type: PlainCommandlineConfiguration":
             in_config_section = True
             continue
@@ -13,15 +16,36 @@ def insert_config_ids(case_study_path):
             if line.strip() == "" or line.startswith("---"):
                 break
             # Get id at the start of the line (before ':')
-            parts = line.strip().split(":")
+            parts = line.strip().split(":", 1)
             if parts and parts[0].isdigit():
-                config_ids.append(int(parts[0]))
+                cid = int(parts[0])
+                config_ids.append(cid)
+                config_lines[idx] = (cid, line)
 
     # Find the line with "config_ids:" and insert "- X" for each id after it
     new_lines = []
     i = 0
     while i < len(lines):
-        new_lines.append(lines[i])
+        # If this is a config line, modify it to add the id as first element in the feature list
+        if i in config_lines:
+            cid, orig_line = config_lines[i]
+            # Extract the list string
+            quote_idx = orig_line.find("'")
+            if quote_idx != -1:
+                list_str = orig_line[quote_idx+1:orig_line.rfind("'")]
+                features = ast.literal_eval(list_str)
+                # Insert the config_id as first element (as string) if not already present
+                if not features or str(cid) != str(features[0]):
+                    features = [str(cid)] + features
+                # Rebuild the line
+                new_list_str = str(features).replace("'", '"')
+                new_line = f"{cid}:".ljust(17) + f"'{new_list_str}'\n"
+                new_lines.append(new_line)
+            else:
+                new_lines.append(orig_line)
+        else:
+            new_lines.append(lines[i])
+        # Insert config_ids after the "config_ids:" line
         if lines[i].strip() == "config_ids:":
             for cid in config_ids:
                 new_lines.append(f"    - {cid}\n")
@@ -33,8 +57,11 @@ def insert_config_ids(case_study_path):
         i += 1
 
     # Write back to file (or print for testing)
-    with open(case_study_path, "w") as f:
+    with open(output_path, "w") as f:
         f.writelines(new_lines)
 
 if __name__ == "__main__":
-    insert_config_ids("scripts/io/mnist/configurations/sklearn_experiment_0.case_study")
+    # TODO: Change in and out paths to your case study file:
+    input="/home/lukas/Schreibtisch/repos/lk-bachelor-sklearn/scripts/io/mnist/configurations/cs_files/in/sklearn_experiment_mnb_10.case_study"
+    output="/home/lukas/Schreibtisch/repos/lk-bachelor-sklearn/scripts/io/mnist/configurations/cs_files/out/sklearn_experiment_mnb_10.case_study"
+    insert_config_ids(input, output)

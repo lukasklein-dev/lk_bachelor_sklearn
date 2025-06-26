@@ -1,0 +1,592 @@
+---
+DocType: CaseStudy
+Version: 1
+...
+---
+project_name: sklearn_experiment_knn
+stages:
+- revisions:
+  - commit_hash: 2ec0c4b97cd19d8da5ffc462a9ec37885ec23bd3
+    commit_id: 0
+    config_ids:
+    - 0
+    - 1
+    - 10
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 108
+    - 109
+    - 11
+    - 110
+    - 111
+    - 112
+    - 113
+    - 114
+    - 115
+    - 116
+    - 117
+    - 118
+    - 119
+    - 12
+    - 120
+    - 121
+    - 122
+    - 123
+    - 124
+    - 125
+    - 126
+    - 127
+    - 128
+    - 129
+    - 13
+    - 130
+    - 131
+    - 132
+    - 133
+    - 134
+    - 135
+    - 136
+    - 137
+    - 138
+    - 139
+    - 14
+    - 140
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 149
+    - 15
+    - 150
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 16
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 17
+    - 170
+    - 171
+    - 172
+    - 173
+    - 174
+    - 175
+    - 176
+    - 177
+    - 178
+    - 179
+    - 18
+    - 180
+    - 181
+    - 182
+    - 183
+    - 184
+    - 185
+    - 186
+    - 187
+    - 188
+    - 189
+    - 19
+    - 190
+    - 191
+    - 192
+    - 193
+    - 194
+    - 195
+    - 196
+    - 197
+    - 198
+    - 199
+    - 2
+    - 20
+    - 200
+    - 201
+    - 202
+    - 203
+    - 204
+    - 205
+    - 206
+    - 207
+    - 208
+    - 209
+    - 21
+    - 210
+    - 211
+    - 212
+    - 213
+    - 214
+    - 215
+    - 216
+    - 217
+    - 218
+    - 219
+    - 22
+    - 220
+    - 221
+    - 222
+    - 223
+    - 224
+    - 225
+    - 226
+    - 227
+    - 228
+    - 229
+    - 23
+    - 230
+    - 231
+    - 232
+    - 233
+    - 234
+    - 235
+    - 236
+    - 237
+    - 238
+    - 239
+    - 24
+    - 240
+    - 241
+    - 242
+    - 243
+    - 244
+    - 245
+    - 246
+    - 247
+    - 248
+    - 249
+    - 25
+    - 250
+    - 251
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    - 257
+    - 258
+    - 259
+    - 26
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    - 265
+    - 266
+    - 267
+    - 268
+    - 269
+    - 27
+    - 270
+    - 271
+    - 272
+    - 273
+    - 274
+    - 275
+    - 276
+    - 277
+    - 278
+    - 279
+    - 28
+    - 280
+    - 281
+    - 282
+    - 283
+    - 284
+    - 285
+    - 286
+    - 287
+    - 29
+    - 3
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 4
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 5
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 6
+    - 60
+    - 61
+    - 62
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 7
+    - 70
+    - 71
+    - 72
+    - 73
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 8
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 9
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+version: 2
+...
+---
+config_type: PlainCommandlineConfiguration
+0:               '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+1:               '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+10:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+100:             '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+101:             '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+102:             '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+103:             '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+104:             '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+105:             '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+106:             '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+107:             '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+108:             '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+109:             '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+11:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+110:             '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+111:             '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+112:             '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+113:             '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+114:             '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+115:             '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+116:             '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+117:             '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+118:             '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+119:             '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+12:              '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+120:             '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+121:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+122:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+123:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+124:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+125:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+126:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+127:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+128:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+129:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+13:              '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+130:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+131:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+132:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+133:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+134:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+135:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+136:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+137:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+138:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+139:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+14:              '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+140:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+141:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+142:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+143:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+144:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+145:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+146:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+147:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+148:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+149:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+15:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+150:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+151:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+152:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+153:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+154:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+155:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+156:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+157:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+158:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+159:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+16:              '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+160:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+161:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+162:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+163:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+164:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+165:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+166:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+167:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+168:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+169:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+17:              '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+170:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+171:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+172:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+173:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+174:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+175:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+176:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+177:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+178:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+179:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+18:              '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+180:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+181:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+182:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+183:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+184:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+185:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+186:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+187:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+188:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+189:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+19:              '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+190:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+191:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+192:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+193:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+194:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+195:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+196:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+197:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+198:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+199:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+2:               '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+20:              '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+200:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+201:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+202:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+203:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+204:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+205:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+206:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+207:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+208:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+209:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+21:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+210:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+211:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+212:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+213:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+214:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+215:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+216:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+217:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+218:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+219:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+22:              '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+220:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+221:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+222:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+223:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+224:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+225:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+226:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+227:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+228:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+229:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+23:              '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+230:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+231:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+232:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+233:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+234:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+235:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+236:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+237:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+238:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+239:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+24:              '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+240:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+241:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+242:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+243:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+244:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+245:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+246:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+247:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+248:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+249:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+25:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+250:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+251:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+252:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+253:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+254:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+255:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+256:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+257:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+258:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+259:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+26:              '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+260:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+261:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+262:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+263:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+264:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+265:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+266:             '["algorithm", "kd_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+267:             '["algorithm", "kd_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+268:             '["algorithm", "ball_tree", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+269:             '["algorithm", "ball_tree", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+27:              '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+270:             '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+271:             '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+272:             '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+273:             '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+274:             '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+275:             '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+276:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+277:             '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+278:             '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+279:             '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+28:              '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+280:             '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+281:             '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+282:             '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+283:             '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+284:             '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+285:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+286:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+287:             '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+29:              '["algorithm", "ball_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+3:               '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+30:              '["algorithm", "kd_tree", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+31:              '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+32:              '["algorithm", "auto", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+33:              '["algorithm", "auto", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+34:              '["algorithm", "auto", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+35:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+36:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+37:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+38:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+39:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+4:               '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+40:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+41:              '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+42:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "7", "weights", "uniform"]'
+43:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+44:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+45:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+46:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+47:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+48:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+49:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+5:               '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+50:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+51:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+52:              '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+53:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+54:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+55:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+56:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+57:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+58:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+59:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+6:               '["algorithm", "brute", "leaf_size", "30", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+60:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+61:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+62:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+63:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+64:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+65:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+66:              '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+67:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+68:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+69:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+7:               '["algorithm", "brute", "leaf_size", "32", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+70:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "uniform"]'
+71:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "uniform"]'
+72:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "None"]'
+73:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "None"]'
+74:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "None"]'
+75:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "None"]'
+76:              '["algorithm", "brute", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+77:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+78:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "7", "weights", "distance"]'
+79:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+8:               '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "3", "weights", "None"]'
+80:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "distance"]'
+81:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+82:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "distance"]'
+83:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+84:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+85:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "10", "weights", "distance"]'
+86:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+87:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+88:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "distance"]'
+89:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+9:               '["algorithm", "brute", "leaf_size", "64", "n_jobs", "-1", "n_neighbors", "7", "weights", "None"]'
+90:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+91:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "9", "weights", "distance"]'
+92:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+93:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+94:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+95:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "3", "weights", "uniform"]'
+96:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "5", "weights", "uniform"]'
+97:              '["algorithm", "ball_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+98:              '["algorithm", "kd_tree", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+99:              '["algorithm", "auto", "leaf_size", "16", "n_jobs", "-1", "n_neighbors", "6", "weights", "uniform"]'
+...

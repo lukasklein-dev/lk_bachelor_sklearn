@@ -1,0 +1,592 @@
+---
+DocType: CaseStudy
+Version: 1
+...
+---
+project_name: sklearn_experiment_gbc
+stages:
+- revisions:
+  - commit_hash: 2ec0c4b97cd19d8da5ffc462a9ec37885ec23bd3
+    commit_id: 0
+    config_ids:
+    - 0
+    - 1
+    - 10
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 108
+    - 109
+    - 11
+    - 110
+    - 111
+    - 112
+    - 113
+    - 114
+    - 115
+    - 116
+    - 117
+    - 118
+    - 119
+    - 12
+    - 120
+    - 121
+    - 122
+    - 123
+    - 124
+    - 125
+    - 126
+    - 127
+    - 128
+    - 129
+    - 13
+    - 130
+    - 131
+    - 132
+    - 133
+    - 134
+    - 135
+    - 136
+    - 137
+    - 138
+    - 139
+    - 14
+    - 140
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 149
+    - 15
+    - 150
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 16
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 17
+    - 170
+    - 171
+    - 172
+    - 173
+    - 174
+    - 175
+    - 176
+    - 177
+    - 178
+    - 179
+    - 18
+    - 180
+    - 181
+    - 182
+    - 183
+    - 184
+    - 185
+    - 186
+    - 187
+    - 188
+    - 189
+    - 19
+    - 190
+    - 191
+    - 192
+    - 193
+    - 194
+    - 195
+    - 196
+    - 197
+    - 198
+    - 199
+    - 2
+    - 20
+    - 200
+    - 201
+    - 202
+    - 203
+    - 204
+    - 205
+    - 206
+    - 207
+    - 208
+    - 209
+    - 21
+    - 210
+    - 211
+    - 212
+    - 213
+    - 214
+    - 215
+    - 216
+    - 217
+    - 218
+    - 219
+    - 22
+    - 220
+    - 221
+    - 222
+    - 223
+    - 224
+    - 225
+    - 226
+    - 227
+    - 228
+    - 229
+    - 23
+    - 230
+    - 231
+    - 232
+    - 233
+    - 234
+    - 235
+    - 236
+    - 237
+    - 238
+    - 239
+    - 24
+    - 240
+    - 241
+    - 242
+    - 243
+    - 244
+    - 245
+    - 246
+    - 247
+    - 248
+    - 249
+    - 25
+    - 250
+    - 251
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    - 257
+    - 258
+    - 259
+    - 26
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    - 265
+    - 266
+    - 267
+    - 268
+    - 269
+    - 27
+    - 270
+    - 271
+    - 272
+    - 273
+    - 274
+    - 275
+    - 276
+    - 277
+    - 278
+    - 279
+    - 28
+    - 280
+    - 281
+    - 282
+    - 283
+    - 284
+    - 285
+    - 286
+    - 287
+    - 29
+    - 3
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 4
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 5
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 6
+    - 60
+    - 61
+    - 62
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 7
+    - 70
+    - 71
+    - 72
+    - 73
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 8
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 9
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+version: 9
+...
+---
+config_type: PlainCommandlineConfiguration
+0:               '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+1:               '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+10:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+100:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+101:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+102:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+103:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+104:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+105:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+106:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+107:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+108:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+109:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+11:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+110:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+111:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+112:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+113:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+114:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+115:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+116:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+117:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+118:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+119:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+12:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+120:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+121:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+122:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+123:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+124:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+125:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+126:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+127:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+128:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+129:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+13:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+130:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+131:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+132:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+133:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+134:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+135:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+136:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+137:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+138:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+139:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+14:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+140:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+141:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+142:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+143:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+144:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+145:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+146:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+147:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+148:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+149:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+15:              '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+150:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+151:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+152:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+153:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+154:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+155:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+156:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+157:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+158:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+159:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+16:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+160:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+161:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+162:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+163:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+164:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+165:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+166:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+167:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+168:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+169:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+17:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+170:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+171:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+172:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+173:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+174:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+175:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+176:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+177:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+178:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+179:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+18:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+180:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+181:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+182:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+183:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+184:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+185:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+186:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+187:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+188:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+189:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+19:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+190:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+191:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+192:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+193:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+194:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+195:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+196:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+197:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+198:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+199:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+2:               '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+20:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+200:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+201:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+202:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+203:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+204:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+205:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+206:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+207:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+208:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+209:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+21:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+210:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+211:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+212:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+213:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+214:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+215:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+216:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+217:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+218:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+219:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+22:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+220:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+221:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+222:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+223:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+224:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+225:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+226:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+227:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+228:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+229:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+23:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+230:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+231:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+232:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+233:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+234:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+235:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+236:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+237:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+238:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+239:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+24:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+240:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+241:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+242:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+243:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+244:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+245:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+246:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+247:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+248:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+249:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+25:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+250:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+251:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+252:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+253:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+254:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+255:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+256:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+257:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+258:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+259:             '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+26:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+260:             '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+261:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0"]'
+262:             '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+263:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+264:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+265:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+266:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+267:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+268:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+269:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+27:              '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+270:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+271:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+272:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+273:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+274:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+275:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+276:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+277:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+278:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+279:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+28:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+280:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+281:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+282:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+283:             '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+284:             '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+285:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+286:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+287:             '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+29:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7"]'
+3:               '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+30:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+31:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+32:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+33:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+34:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+35:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+36:              '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+37:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+38:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+39:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7"]'
+4:               '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "1.0"]'
+40:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+41:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+42:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+43:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+44:              '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "0.7"]'
+45:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+46:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0"]'
+47:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+48:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+49:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+5:               '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+50:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+51:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+52:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+53:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+54:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+55:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "100", "subsample", "0.7", "warm_start"]'
+56:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+57:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+58:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+59:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+6:               '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+60:              '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7"]'
+61:              '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+62:              '["criterion", "friedman_mse", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+63:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+64:              '["criterion", "squared_error", "learning_rate", "0.05", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+65:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+66:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+67:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+68:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+69:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+7:               '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+70:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+71:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+72:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+73:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+74:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+75:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "0.7"]'
+76:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+77:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+78:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+79:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7"]'
+8:               '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+80:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+81:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "2", "n_estimators", "500", "subsample", "0.7", "warm_start"]'
+82:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+83:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+84:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+85:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+86:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+87:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+88:              '["criterion", "friedman_mse", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+89:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+9:               '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "10", "n_estimators", "500", "subsample", "1.0"]'
+90:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+91:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0"]'
+92:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+93:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "500", "subsample", "1.0", "warm_start"]'
+94:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+95:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "log_loss", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+96:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0"]'
+97:              '["criterion", "squared_error", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+98:              '["criterion", "squared_error", "learning_rate", "0.3", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+99:              '["criterion", "friedman_mse", "learning_rate", "0.1", "loss", "exponential", "min_samples_split", "5", "n_estimators", "100", "subsample", "1.0", "warm_start"]'
+...

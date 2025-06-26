@@ -1,18 +1,11 @@
 # Experiment Main Skript Part 1 (RQ1): Collect sklearn classifier performance measurements
 
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
-from sklearn.linear_model import SGDClassifier
-
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import train_test_split
-import numpy as np
 import idx2numpy
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, fbeta_score, hamming_loss, zero_one_loss
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, fbeta_score, hamming_loss, zero_one_loss
 import click
 import json
 import os
-import ast
 
 """
 Bachelor Thesis: Case study using the MNIST data set
@@ -23,15 +16,26 @@ Description:
 
 Example usage (How to):
     Type in the following command in the terminal to run the script: (inside the root directory of the repo) (Note: The estimator class and params must be adjusted according to your needs)
-python case_study_MNIST.py -config_id=0 --average --early_stopping --fit_intercept --loss --huber --n_jobs ---1 --penalty --None --warm_start
-python case_study_MNIST.py -config_id=1 --loss --huber --n_jobs ---1 --penalty --None --warm_start
+python case_study_MNIST.py --estimator-[x] [--config_id, --params_1, --params_2, ...]
+python case_study_MNIST.py --estimator-sgd --0 --average --early_stopping --fit_intercept --loss --huber --n_jobs ---1 --penalty --None --warm_start
+python case_study_MNIST.py --estimator-sgd --1 --loss --huber --n_jobs ---1 --penalty --None --warm_start
 """
 
-# MANUAL CONFIGURATION -> For each classifier, change the estimator class and its case_study output json file. TODO: Maybe create a revision for each, then use the different revisions in the evaluation pipeline.
-estimator = "sklearn.linear_model.SGDClassifier" # Example: sklearn.linear_model.SGDClassifier
-output = "scripts/io/mnist/cs_output/cs00_measurements.json" # Example: scripts/io/mnist/cs_output/cs00_measurements.json
-#config_id = 0 # TODO: Provide the current config ID as a cmd line argument, additionally to all parameters of the config?
-# TODO: After clarifying the two Todos above, push to the repo.
+# CONFIGURATION
+output = "scripts/io/mnist/cs_output/perf_measurements.json" # Output file path for the performance measurements
+
+estimator_modules = {
+    '--estimator-sgd': "sklearn.linear_model.SGDClassifier",
+    '--estimator-knn': "sklearn.neighbors.KNeighborsClassifier",
+    '--estimator-svc': "sklearn.svm.SVC",
+    '--estimator-rfc': "sklearn.ensemble.RandomForestClassifier",
+    '--estimator-bgm': "sklearn.mixture.BayesianGaussianMixture",
+    '--estimator-dtc': "sklearn.tree.DecisionTreeClassifier",
+    '--estimator-etc': "sklearn.ensemble.ExtraTreesClassifier",
+    '--estimator-gpc': "sklearn.gaussian_process.GaussianProcessClassifier",
+    '--estimator-gbc': "sklearn.ensemble.GradientBoostingClassifier",
+    '--estimator-mnb': "sklearn.naive_bayes.MultinomialNB",
+}
 
 def load_mnist_data():
     ### PREPARATION/PREPROCESSING ###
@@ -65,21 +69,20 @@ def model_training(model, X_train, y_train, X_test, y_test):
 
     ### METRICS ###
     # NOTE: Discuss which metrics to use in the end.
+    # Only store four floating point numbers (e.g. 0.1234) in the output file.
     accuracy = accuracy_score(y_test, y_pred)
-    precision = precision_score(y_test, y_pred, average='weighted') # weighted ?
-    recall = recall_score(y_test, y_pred, average='weighted') # weighted ?
-    f1 = f1_score(y_test, y_pred, average='weighted') # weighted ?
-    #conf_matrix = confusion_matrix(y_test, y_pred)
-    fbeta = fbeta_score(y_test, y_pred, beta=0.5, average='weighted') # weighted ?
-    hamming = hamming_loss(y_test, y_pred)
-    zero_one = zero_one_loss(y_test, y_pred)
+    precision = precision_score(y_test, y_pred, average='weighted').round(4) # weighted ?
+    recall = recall_score(y_test, y_pred, average='weighted').round(4) # weighted ?
+    f1 = f1_score(y_test, y_pred, average='weighted').round(4) # weighted ?
+    fbeta = fbeta_score(y_test, y_pred, beta=0.5, average='weighted').round(4) # weighted ?
+    hamming = hamming_loss(y_test, y_pred).round(4)
+    zero_one = zero_one_loss(y_test, y_pred).round(4)
 
     metrics = {
         'accuracy': accuracy,
         'precision': precision,
         'recall': recall,
         'f1_score': f1,
-        #'confusion_matrix': conf_matrix.tolist(),  # Convert to list for JSON serialization
         'fbeta_score': fbeta,
         'hamming_loss': hamming,
         'zero_one_loss': zero_one
@@ -91,11 +94,10 @@ def model_training(model, X_train, y_train, X_test, y_test):
     print(f"Precision: {precision}")
     print(f"Recall: {recall}")
     print(f"F1 Score: {f1}")
-    #print(f"Confusion Matrix:\n{conf_matrix}")
     print(f"F-beta Score: {fbeta}")
     print(f"Hamming Loss: {hamming}")
     print(f"Zero-One Loss: {zero_one_loss(y_test, y_pred)}")
-    print("\n######################################################\n")
+    print("\n########################################\n")
 
     return model, metrics
 
@@ -103,16 +105,23 @@ def model_training(model, X_train, y_train, X_test, y_test):
     ignore_unknown_options=True,
     allow_extra_args=True,
 ))
-#@click.option('--estimator', required=True, help='Full class path, e.g. sklearn.linear_model.SGDClassifier')
-@click.option('-config_id', required=True, type=int, help='Configuration ID for this run')
-#@click.option('--params', required=True, help='Parameter list as a Python literal, e.g. \'["loss", "hinge", "n_jobs", "-1", "penalty", "l1"]\'')
-#@click.option('--output', required=True, help='Path to output file for results')
 @click.pass_context
-def main(ctx, config_id):
+def main(ctx):
     ### MODEL TRAINING (for each hyperparameter config) ###
 
+    # First argument is the estimator, e.g. --estimator-sgd
+    if len(ctx.args) < 1 or not ctx.args[0].startswith('--estimator-'):
+        raise click.UsageError("You must specify an estimator, e.g. --estimator-sgd")
+    estimator = ctx.args[0]
+    if estimator not in estimator_modules:
+        raise click.UsageError(f"Unknown estimator: {estimator}. Allowed estimators are: {', '.join(estimator_modules.keys())}")
+    # Second argument is the config_id, e.g. --0 for configuration ID 0
+    if len(ctx.args) < 2 or not ctx.args[1].startswith('--'):
+        raise click.UsageError("You must specify a configuration ID, e.g. --0")
+    config_id = ctx.args[1][2:]  # Remove the leading '--'
+
     # Dynamically import estimator class
-    module_name, class_name = estimator.rsplit('.', 1)
+    module_name, class_name = estimator_modules[estimator].rsplit('.', 1)
     module = __import__(module_name, fromlist=[class_name])
     EstClass = getattr(module, class_name)
     default = EstClass()
@@ -122,7 +131,7 @@ def main(ctx, config_id):
     param_args = ctx.args
     est_kwargs = {}
     seen_keys = set()
-    i = 0
+    i = 2  # Start after estimator and config_id
     while i < len(param_args):
         # Prepare the argument or skip if it is not a valid parameter
         arg = param_args[i]
@@ -180,8 +189,8 @@ def main(ctx, config_id):
     # Save the final model and its performance to the output file (-> NOTE: same filepath as stated in sklearn project from my oot TS repo)
     # NOTE: Might exclude estimator and params later. See what is really needed in the end.
     result = {
-        "estimator": estimator,
-        "params": performance[0].get_params(),
+        #"estimator": estimator,
+        #"params": performance[0].get_params(),
         "performance": performance[1]
     }
     

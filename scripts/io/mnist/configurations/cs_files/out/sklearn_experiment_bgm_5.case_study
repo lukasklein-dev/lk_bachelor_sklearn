@@ -1,0 +1,1552 @@
+---
+DocType: CaseStudy
+Version: 1
+...
+---
+project_name: sklearn_experiment_bgm
+stages:
+- revisions:
+  - commit_hash: 2ec0c4b97cd19d8da5ffc462a9ec37885ec23bd3
+    commit_id: 0
+    config_ids:
+    - 0
+    - 1
+    - 10
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 108
+    - 109
+    - 11
+    - 110
+    - 111
+    - 112
+    - 113
+    - 114
+    - 115
+    - 116
+    - 117
+    - 118
+    - 119
+    - 12
+    - 120
+    - 121
+    - 122
+    - 123
+    - 124
+    - 125
+    - 126
+    - 127
+    - 128
+    - 129
+    - 13
+    - 130
+    - 131
+    - 132
+    - 133
+    - 134
+    - 135
+    - 136
+    - 137
+    - 138
+    - 139
+    - 14
+    - 140
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 149
+    - 15
+    - 150
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 16
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 17
+    - 170
+    - 171
+    - 172
+    - 173
+    - 174
+    - 175
+    - 176
+    - 177
+    - 178
+    - 179
+    - 18
+    - 180
+    - 181
+    - 182
+    - 183
+    - 184
+    - 185
+    - 186
+    - 187
+    - 188
+    - 189
+    - 19
+    - 190
+    - 191
+    - 192
+    - 193
+    - 194
+    - 195
+    - 196
+    - 197
+    - 198
+    - 199
+    - 2
+    - 20
+    - 200
+    - 201
+    - 202
+    - 203
+    - 204
+    - 205
+    - 206
+    - 207
+    - 208
+    - 209
+    - 21
+    - 210
+    - 211
+    - 212
+    - 213
+    - 214
+    - 215
+    - 216
+    - 217
+    - 218
+    - 219
+    - 22
+    - 220
+    - 221
+    - 222
+    - 223
+    - 224
+    - 225
+    - 226
+    - 227
+    - 228
+    - 229
+    - 23
+    - 230
+    - 231
+    - 232
+    - 233
+    - 234
+    - 235
+    - 236
+    - 237
+    - 238
+    - 239
+    - 24
+    - 240
+    - 241
+    - 242
+    - 243
+    - 244
+    - 245
+    - 246
+    - 247
+    - 248
+    - 249
+    - 25
+    - 250
+    - 251
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    - 257
+    - 258
+    - 259
+    - 26
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    - 265
+    - 266
+    - 267
+    - 268
+    - 269
+    - 27
+    - 270
+    - 271
+    - 272
+    - 273
+    - 274
+    - 275
+    - 276
+    - 277
+    - 278
+    - 279
+    - 28
+    - 280
+    - 281
+    - 282
+    - 283
+    - 284
+    - 285
+    - 286
+    - 287
+    - 288
+    - 289
+    - 29
+    - 290
+    - 291
+    - 292
+    - 293
+    - 294
+    - 295
+    - 296
+    - 297
+    - 298
+    - 299
+    - 3
+    - 30
+    - 300
+    - 301
+    - 302
+    - 303
+    - 304
+    - 305
+    - 306
+    - 307
+    - 308
+    - 309
+    - 31
+    - 310
+    - 311
+    - 312
+    - 313
+    - 314
+    - 315
+    - 316
+    - 317
+    - 318
+    - 319
+    - 32
+    - 320
+    - 321
+    - 322
+    - 323
+    - 324
+    - 325
+    - 326
+    - 327
+    - 328
+    - 329
+    - 33
+    - 330
+    - 331
+    - 332
+    - 333
+    - 334
+    - 335
+    - 336
+    - 337
+    - 338
+    - 339
+    - 34
+    - 340
+    - 341
+    - 342
+    - 343
+    - 344
+    - 345
+    - 346
+    - 347
+    - 348
+    - 349
+    - 35
+    - 350
+    - 351
+    - 352
+    - 353
+    - 354
+    - 355
+    - 356
+    - 357
+    - 358
+    - 359
+    - 36
+    - 360
+    - 361
+    - 362
+    - 363
+    - 364
+    - 365
+    - 366
+    - 367
+    - 368
+    - 369
+    - 37
+    - 370
+    - 371
+    - 372
+    - 373
+    - 374
+    - 375
+    - 376
+    - 377
+    - 378
+    - 379
+    - 38
+    - 380
+    - 381
+    - 382
+    - 383
+    - 384
+    - 385
+    - 386
+    - 387
+    - 388
+    - 389
+    - 39
+    - 390
+    - 391
+    - 392
+    - 393
+    - 394
+    - 395
+    - 396
+    - 397
+    - 398
+    - 399
+    - 4
+    - 40
+    - 400
+    - 401
+    - 402
+    - 403
+    - 404
+    - 405
+    - 406
+    - 407
+    - 408
+    - 409
+    - 41
+    - 410
+    - 411
+    - 412
+    - 413
+    - 414
+    - 415
+    - 416
+    - 417
+    - 418
+    - 419
+    - 42
+    - 420
+    - 421
+    - 422
+    - 423
+    - 424
+    - 425
+    - 426
+    - 427
+    - 428
+    - 429
+    - 43
+    - 430
+    - 431
+    - 432
+    - 433
+    - 434
+    - 435
+    - 436
+    - 437
+    - 438
+    - 439
+    - 44
+    - 440
+    - 441
+    - 442
+    - 443
+    - 444
+    - 445
+    - 446
+    - 447
+    - 448
+    - 449
+    - 45
+    - 450
+    - 451
+    - 452
+    - 453
+    - 454
+    - 455
+    - 456
+    - 457
+    - 458
+    - 459
+    - 46
+    - 460
+    - 461
+    - 462
+    - 463
+    - 464
+    - 465
+    - 466
+    - 467
+    - 468
+    - 469
+    - 47
+    - 470
+    - 471
+    - 472
+    - 473
+    - 474
+    - 475
+    - 476
+    - 477
+    - 478
+    - 479
+    - 48
+    - 480
+    - 481
+    - 482
+    - 483
+    - 484
+    - 485
+    - 486
+    - 487
+    - 488
+    - 489
+    - 49
+    - 490
+    - 491
+    - 492
+    - 493
+    - 494
+    - 495
+    - 496
+    - 497
+    - 498
+    - 499
+    - 5
+    - 50
+    - 500
+    - 501
+    - 502
+    - 503
+    - 504
+    - 505
+    - 506
+    - 507
+    - 508
+    - 509
+    - 51
+    - 510
+    - 511
+    - 512
+    - 513
+    - 514
+    - 515
+    - 516
+    - 517
+    - 518
+    - 519
+    - 52
+    - 520
+    - 521
+    - 522
+    - 523
+    - 524
+    - 525
+    - 526
+    - 527
+    - 528
+    - 529
+    - 53
+    - 530
+    - 531
+    - 532
+    - 533
+    - 534
+    - 535
+    - 536
+    - 537
+    - 538
+    - 539
+    - 54
+    - 540
+    - 541
+    - 542
+    - 543
+    - 544
+    - 545
+    - 546
+    - 547
+    - 548
+    - 549
+    - 55
+    - 550
+    - 551
+    - 552
+    - 553
+    - 554
+    - 555
+    - 556
+    - 557
+    - 558
+    - 559
+    - 56
+    - 560
+    - 561
+    - 562
+    - 563
+    - 564
+    - 565
+    - 566
+    - 567
+    - 568
+    - 569
+    - 57
+    - 570
+    - 571
+    - 572
+    - 573
+    - 574
+    - 575
+    - 576
+    - 577
+    - 578
+    - 579
+    - 58
+    - 580
+    - 581
+    - 582
+    - 583
+    - 584
+    - 585
+    - 586
+    - 587
+    - 588
+    - 589
+    - 59
+    - 590
+    - 591
+    - 592
+    - 593
+    - 594
+    - 595
+    - 596
+    - 597
+    - 598
+    - 599
+    - 6
+    - 60
+    - 600
+    - 601
+    - 602
+    - 603
+    - 604
+    - 605
+    - 606
+    - 607
+    - 608
+    - 609
+    - 61
+    - 610
+    - 611
+    - 612
+    - 613
+    - 614
+    - 615
+    - 616
+    - 617
+    - 618
+    - 619
+    - 62
+    - 620
+    - 621
+    - 622
+    - 623
+    - 624
+    - 625
+    - 626
+    - 627
+    - 628
+    - 629
+    - 63
+    - 630
+    - 631
+    - 632
+    - 633
+    - 634
+    - 635
+    - 636
+    - 637
+    - 638
+    - 639
+    - 64
+    - 640
+    - 641
+    - 642
+    - 643
+    - 644
+    - 645
+    - 646
+    - 647
+    - 648
+    - 649
+    - 65
+    - 650
+    - 651
+    - 652
+    - 653
+    - 654
+    - 655
+    - 656
+    - 657
+    - 658
+    - 659
+    - 66
+    - 660
+    - 661
+    - 662
+    - 663
+    - 664
+    - 665
+    - 666
+    - 667
+    - 668
+    - 669
+    - 67
+    - 670
+    - 671
+    - 672
+    - 673
+    - 674
+    - 675
+    - 676
+    - 677
+    - 678
+    - 679
+    - 68
+    - 680
+    - 681
+    - 682
+    - 683
+    - 684
+    - 685
+    - 686
+    - 687
+    - 688
+    - 689
+    - 69
+    - 690
+    - 691
+    - 692
+    - 693
+    - 694
+    - 695
+    - 696
+    - 697
+    - 698
+    - 699
+    - 7
+    - 70
+    - 700
+    - 701
+    - 702
+    - 703
+    - 704
+    - 705
+    - 706
+    - 707
+    - 708
+    - 709
+    - 71
+    - 710
+    - 711
+    - 712
+    - 713
+    - 714
+    - 715
+    - 716
+    - 717
+    - 718
+    - 719
+    - 72
+    - 720
+    - 721
+    - 722
+    - 723
+    - 724
+    - 725
+    - 726
+    - 727
+    - 728
+    - 729
+    - 73
+    - 730
+    - 731
+    - 732
+    - 733
+    - 734
+    - 735
+    - 736
+    - 737
+    - 738
+    - 739
+    - 74
+    - 740
+    - 741
+    - 742
+    - 743
+    - 744
+    - 745
+    - 746
+    - 747
+    - 748
+    - 749
+    - 75
+    - 750
+    - 751
+    - 752
+    - 753
+    - 754
+    - 755
+    - 756
+    - 757
+    - 758
+    - 759
+    - 76
+    - 760
+    - 761
+    - 762
+    - 763
+    - 764
+    - 765
+    - 766
+    - 767
+    - 77
+    - 78
+    - 79
+    - 8
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 9
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+version: 5
+...
+---
+config_type: PlainCommandlineConfiguration
+0:               '["0", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+1:               '["1", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+10:              '["10", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+100:             '["100", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+101:             '["101", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+102:             '["102", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+103:             '["103", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+104:             '["104", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+105:             '["105", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+106:             '["106", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+107:             '["107", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+108:             '["108", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+109:             '["109", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+11:              '["11", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+110:             '["110", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+111:             '["111", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+112:             '["112", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+113:             '["113", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+114:             '["114", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+115:             '["115", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+116:             '["116", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+117:             '["117", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+118:             '["118", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+119:             '["119", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+12:              '["12", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+120:             '["120", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+121:             '["121", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+122:             '["122", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+123:             '["123", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+124:             '["124", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+125:             '["125", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+126:             '["126", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+127:             '["127", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+128:             '["128", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+129:             '["129", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+13:              '["13", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+130:             '["130", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+131:             '["131", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+132:             '["132", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+133:             '["133", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+134:             '["134", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+135:             '["135", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+136:             '["136", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+137:             '["137", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+138:             '["138", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+139:             '["139", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+14:              '["14", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+140:             '["140", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+141:             '["141", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+142:             '["142", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+143:             '["143", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+144:             '["144", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+145:             '["145", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+146:             '["146", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+147:             '["147", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+148:             '["148", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+149:             '["149", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+15:              '["15", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+150:             '["150", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+151:             '["151", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+152:             '["152", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+153:             '["153", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+154:             '["154", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+155:             '["155", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+156:             '["156", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+157:             '["157", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+158:             '["158", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+159:             '["159", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+16:              '["16", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+160:             '["160", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+161:             '["161", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+162:             '["162", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+163:             '["163", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+164:             '["164", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+165:             '["165", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+166:             '["166", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+167:             '["167", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+168:             '["168", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+169:             '["169", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+17:              '["17", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+170:             '["170", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+171:             '["171", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+172:             '["172", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+173:             '["173", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+174:             '["174", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+175:             '["175", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+176:             '["176", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+177:             '["177", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+178:             '["178", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+179:             '["179", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+18:              '["18", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+180:             '["180", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+181:             '["181", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+182:             '["182", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+183:             '["183", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+184:             '["184", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+185:             '["185", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+186:             '["186", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+187:             '["187", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+188:             '["188", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+189:             '["189", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+19:              '["19", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+190:             '["190", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+191:             '["191", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+192:             '["192", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+193:             '["193", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+194:             '["194", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+195:             '["195", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+196:             '["196", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+197:             '["197", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+198:             '["198", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+199:             '["199", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+2:               '["2", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+20:              '["20", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+200:             '["200", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+201:             '["201", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+202:             '["202", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+203:             '["203", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+204:             '["204", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+205:             '["205", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+206:             '["206", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+207:             '["207", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+208:             '["208", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+209:             '["209", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+21:              '["21", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+210:             '["210", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+211:             '["211", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+212:             '["212", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+213:             '["213", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+214:             '["214", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+215:             '["215", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+216:             '["216", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+217:             '["217", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+218:             '["218", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+219:             '["219", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+22:              '["22", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+220:             '["220", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+221:             '["221", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+222:             '["222", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+223:             '["223", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+224:             '["224", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+225:             '["225", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+226:             '["226", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+227:             '["227", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+228:             '["228", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+229:             '["229", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+23:              '["23", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+230:             '["230", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+231:             '["231", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+232:             '["232", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+233:             '["233", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+234:             '["234", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+235:             '["235", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+236:             '["236", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+237:             '["237", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+238:             '["238", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+239:             '["239", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+24:              '["24", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+240:             '["240", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+241:             '["241", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+242:             '["242", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+243:             '["243", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+244:             '["244", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+245:             '["245", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+246:             '["246", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+247:             '["247", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+248:             '["248", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+249:             '["249", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+25:              '["25", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+250:             '["250", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+251:             '["251", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+252:             '["252", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+253:             '["253", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+254:             '["254", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+255:             '["255", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+256:             '["256", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+257:             '["257", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+258:             '["258", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+259:             '["259", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+26:              '["26", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+260:             '["260", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+261:             '["261", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+262:             '["262", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+263:             '["263", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+264:             '["264", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+265:             '["265", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+266:             '["266", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+267:             '["267", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+268:             '["268", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+269:             '["269", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+27:              '["27", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+270:             '["270", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+271:             '["271", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+272:             '["272", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+273:             '["273", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+274:             '["274", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+275:             '["275", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+276:             '["276", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+277:             '["277", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+278:             '["278", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+279:             '["279", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+28:              '["28", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+280:             '["280", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+281:             '["281", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+282:             '["282", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+283:             '["283", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+284:             '["284", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+285:             '["285", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+286:             '["286", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+287:             '["287", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+288:             '["288", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+289:             '["289", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+29:              '["29", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+290:             '["290", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+291:             '["291", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+292:             '["292", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+293:             '["293", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+294:             '["294", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+295:             '["295", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+296:             '["296", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+297:             '["297", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+298:             '["298", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+299:             '["299", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+3:               '["3", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+30:              '["30", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+300:             '["300", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+301:             '["301", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+302:             '["302", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+303:             '["303", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+304:             '["304", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+305:             '["305", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+306:             '["306", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+307:             '["307", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+308:             '["308", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+309:             '["309", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+31:              '["31", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+310:             '["310", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+311:             '["311", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+312:             '["312", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+313:             '["313", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+314:             '["314", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+315:             '["315", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+316:             '["316", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+317:             '["317", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+318:             '["318", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+319:             '["319", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+32:              '["32", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+320:             '["320", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+321:             '["321", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+322:             '["322", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+323:             '["323", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+324:             '["324", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+325:             '["325", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+326:             '["326", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+327:             '["327", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+328:             '["328", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+329:             '["329", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+33:              '["33", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+330:             '["330", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+331:             '["331", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+332:             '["332", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+333:             '["333", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+334:             '["334", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+335:             '["335", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+336:             '["336", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+337:             '["337", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+338:             '["338", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+339:             '["339", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+34:              '["34", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+340:             '["340", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+341:             '["341", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+342:             '["342", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+343:             '["343", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+344:             '["344", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+345:             '["345", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+346:             '["346", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+347:             '["347", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+348:             '["348", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+349:             '["349", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+35:              '["35", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+350:             '["350", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+351:             '["351", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+352:             '["352", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+353:             '["353", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+354:             '["354", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+355:             '["355", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+356:             '["356", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+357:             '["357", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+358:             '["358", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+359:             '["359", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+36:              '["36", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+360:             '["360", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+361:             '["361", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+362:             '["362", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+363:             '["363", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+364:             '["364", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+365:             '["365", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+366:             '["366", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+367:             '["367", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+368:             '["368", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+369:             '["369", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+37:              '["37", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+370:             '["370", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+371:             '["371", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+372:             '["372", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+373:             '["373", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+374:             '["374", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+375:             '["375", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+376:             '["376", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+377:             '["377", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+378:             '["378", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+379:             '["379", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+38:              '["38", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+380:             '["380", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+381:             '["381", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+382:             '["382", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+383:             '["383", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+384:             '["384", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+385:             '["385", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+386:             '["386", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+387:             '["387", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+388:             '["388", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+389:             '["389", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+39:              '["39", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+390:             '["390", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+391:             '["391", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+392:             '["392", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+393:             '["393", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+394:             '["394", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+395:             '["395", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+396:             '["396", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+397:             '["397", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+398:             '["398", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+399:             '["399", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+4:               '["4", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+40:              '["40", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+400:             '["400", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+401:             '["401", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+402:             '["402", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+403:             '["403", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+404:             '["404", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+405:             '["405", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+406:             '["406", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+407:             '["407", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+408:             '["408", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+409:             '["409", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+41:              '["41", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+410:             '["410", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+411:             '["411", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+412:             '["412", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+413:             '["413", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+414:             '["414", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+415:             '["415", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+416:             '["416", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+417:             '["417", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+418:             '["418", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+419:             '["419", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+42:              '["42", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+420:             '["420", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+421:             '["421", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+422:             '["422", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+423:             '["423", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+424:             '["424", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+425:             '["425", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+426:             '["426", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+427:             '["427", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+428:             '["428", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+429:             '["429", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+43:              '["43", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+430:             '["430", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+431:             '["431", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+432:             '["432", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+433:             '["433", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+434:             '["434", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+435:             '["435", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+436:             '["436", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+437:             '["437", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+438:             '["438", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+439:             '["439", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+44:              '["44", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+440:             '["440", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+441:             '["441", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+442:             '["442", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+443:             '["443", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+444:             '["444", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+445:             '["445", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+446:             '["446", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+447:             '["447", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+448:             '["448", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+449:             '["449", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+45:              '["45", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+450:             '["450", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+451:             '["451", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+452:             '["452", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+453:             '["453", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+454:             '["454", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+455:             '["455", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+456:             '["456", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+457:             '["457", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+458:             '["458", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+459:             '["459", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+46:              '["46", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+460:             '["460", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+461:             '["461", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+462:             '["462", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+463:             '["463", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+464:             '["464", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+465:             '["465", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+466:             '["466", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+467:             '["467", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+468:             '["468", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+469:             '["469", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+47:              '["47", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+470:             '["470", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+471:             '["471", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+472:             '["472", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+473:             '["473", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+474:             '["474", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+475:             '["475", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+476:             '["476", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+477:             '["477", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+478:             '["478", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+479:             '["479", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+48:              '["48", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+480:             '["480", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+481:             '["481", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+482:             '["482", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+483:             '["483", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+484:             '["484", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+485:             '["485", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+486:             '["486", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+487:             '["487", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+488:             '["488", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+489:             '["489", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+49:              '["49", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+490:             '["490", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+491:             '["491", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+492:             '["492", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+493:             '["493", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+494:             '["494", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+495:             '["495", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+496:             '["496", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+497:             '["497", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+498:             '["498", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+499:             '["499", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+5:               '["5", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+50:              '["50", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+500:             '["500", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+501:             '["501", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+502:             '["502", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+503:             '["503", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+504:             '["504", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+505:             '["505", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+506:             '["506", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+507:             '["507", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+508:             '["508", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+509:             '["509", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+51:              '["51", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+510:             '["510", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+511:             '["511", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+512:             '["512", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+513:             '["513", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+514:             '["514", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+515:             '["515", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+516:             '["516", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+517:             '["517", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+518:             '["518", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+519:             '["519", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+52:              '["52", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+520:             '["520", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+521:             '["521", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+522:             '["522", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+523:             '["523", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+524:             '["524", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+525:             '["525", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+526:             '["526", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+527:             '["527", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+528:             '["528", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+529:             '["529", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+53:              '["53", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+530:             '["530", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+531:             '["531", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+532:             '["532", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+533:             '["533", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+534:             '["534", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+535:             '["535", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+536:             '["536", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+537:             '["537", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+538:             '["538", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+539:             '["539", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+54:              '["54", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+540:             '["540", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+541:             '["541", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+542:             '["542", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+543:             '["543", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+544:             '["544", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+545:             '["545", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+546:             '["546", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+547:             '["547", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+548:             '["548", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+549:             '["549", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+55:              '["55", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+550:             '["550", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+551:             '["551", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+552:             '["552", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+553:             '["553", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+554:             '["554", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+555:             '["555", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+556:             '["556", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+557:             '["557", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+558:             '["558", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+559:             '["559", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+56:              '["56", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+560:             '["560", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+561:             '["561", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+562:             '["562", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+563:             '["563", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+564:             '["564", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+565:             '["565", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+566:             '["566", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+567:             '["567", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+568:             '["568", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+569:             '["569", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+57:              '["57", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+570:             '["570", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+571:             '["571", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+572:             '["572", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+573:             '["573", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+574:             '["574", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+575:             '["575", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+576:             '["576", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+577:             '["577", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+578:             '["578", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+579:             '["579", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+58:              '["58", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+580:             '["580", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+581:             '["581", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+582:             '["582", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+583:             '["583", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+584:             '["584", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+585:             '["585", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+586:             '["586", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+587:             '["587", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+588:             '["588", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+589:             '["589", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+59:              '["59", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+590:             '["590", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+591:             '["591", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+592:             '["592", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+593:             '["593", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+594:             '["594", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+595:             '["595", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+596:             '["596", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+597:             '["597", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+598:             '["598", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+599:             '["599", "covariance_type", "tied", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+6:               '["6", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+60:              '["60", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+600:             '["600", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+601:             '["601", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+602:             '["602", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+603:             '["603", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+604:             '["604", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+605:             '["605", "covariance_type", "full", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+606:             '["606", "covariance_type", "diag", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+607:             '["607", "covariance_type", "tied", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+608:             '["608", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+609:             '["609", "covariance_type", "spherical", "init_params", "random", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+61:              '["61", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+610:             '["610", "covariance_type", "spherical", "init_params", "random", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+611:             '["611", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+612:             '["612", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+613:             '["613", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+614:             '["614", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+615:             '["615", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+616:             '["616", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+617:             '["617", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+618:             '["618", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+619:             '["619", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+62:              '["62", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+620:             '["620", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+621:             '["621", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+622:             '["622", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+623:             '["623", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+624:             '["624", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+625:             '["625", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+626:             '["626", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+627:             '["627", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+628:             '["628", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+629:             '["629", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+63:              '["63", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+630:             '["630", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+631:             '["631", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+632:             '["632", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+633:             '["633", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+634:             '["634", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+635:             '["635", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+636:             '["636", "covariance_type", "full", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+637:             '["637", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+638:             '["638", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+639:             '["639", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+64:              '["64", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+640:             '["640", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+641:             '["641", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+642:             '["642", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+643:             '["643", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+644:             '["644", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+645:             '["645", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+646:             '["646", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+647:             '["647", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+648:             '["648", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+649:             '["649", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+65:              '["65", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+650:             '["650", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+651:             '["651", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+652:             '["652", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+653:             '["653", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+654:             '["654", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+655:             '["655", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+656:             '["656", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+657:             '["657", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+658:             '["658", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+659:             '["659", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+66:              '["66", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+660:             '["660", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+661:             '["661", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+662:             '["662", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+663:             '["663", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+664:             '["664", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+665:             '["665", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+666:             '["666", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+667:             '["667", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+668:             '["668", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+669:             '["669", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+67:              '["67", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+670:             '["670", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+671:             '["671", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+672:             '["672", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+673:             '["673", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+674:             '["674", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+675:             '["675", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+676:             '["676", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+677:             '["677", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+678:             '["678", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+679:             '["679", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+68:              '["68", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+680:             '["680", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+681:             '["681", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+682:             '["682", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+683:             '["683", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+684:             '["684", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+685:             '["685", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+686:             '["686", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+687:             '["687", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+688:             '["688", "covariance_type", "full", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+689:             '["689", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+69:              '["69", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+690:             '["690", "covariance_type", "full", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+691:             '["691", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+692:             '["692", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "500", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+693:             '["693", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+694:             '["694", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+695:             '["695", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+696:             '["696", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+697:             '["697", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+698:             '["698", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+699:             '["699", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+7:               '["7", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+70:              '["70", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+700:             '["700", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+701:             '["701", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+702:             '["702", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+703:             '["703", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+704:             '["704", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+705:             '["705", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+706:             '["706", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+707:             '["707", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+708:             '["708", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+709:             '["709", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+71:              '["71", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+710:             '["710", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+711:             '["711", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+712:             '["712", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+713:             '["713", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+714:             '["714", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+715:             '["715", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+716:             '["716", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.001"]'
+717:             '["717", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+718:             '["718", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+719:             '["719", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+72:              '["72", "covariance_type", "full", "init_params", "kmeans", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+720:             '["720", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+721:             '["721", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+722:             '["722", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001"]'
+723:             '["723", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+724:             '["724", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+725:             '["725", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+726:             '["726", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+727:             '["727", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+728:             '["728", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+729:             '["729", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+73:              '["73", "covariance_type", "full", "init_params", "random", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+730:             '["730", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+731:             '["731", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+732:             '["732", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+733:             '["733", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+734:             '["734", "covariance_type", "full", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+735:             '["735", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+736:             '["736", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+737:             '["737", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+738:             '["738", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+739:             '["739", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+74:              '["74", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+740:             '["740", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+741:             '["741", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+742:             '["742", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+743:             '["743", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+744:             '["744", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+745:             '["745", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+746:             '["746", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+747:             '["747", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+748:             '["748", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+749:             '["749", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+75:              '["75", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+750:             '["750", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+751:             '["751", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+752:             '["752", "covariance_type", "diag", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001"]'
+753:             '["753", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+754:             '["754", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+755:             '["755", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+756:             '["756", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+757:             '["757", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+758:             '["758", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+759:             '["759", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+76:              '["76", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+760:             '["760", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+761:             '["761", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+762:             '["762", "covariance_type", "spherical", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+763:             '["763", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+764:             '["764", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001", "warm_start"]'
+765:             '["765", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+766:             '["766", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.000001", "warm_start"]'
+767:             '["767", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "2", "n_init", "reg_covar", "0.000001", "warm_start"]'
+77:              '["77", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+78:              '["78", "covariance_type", "full", "init_params", "random", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+79:              '["79", "covariance_type", "full", "init_params", "random_from_data", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+8:               '["8", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "2", "n_init", "reg_covar", "0.001", "warm_start"]'
+80:              '["80", "covariance_type", "full", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+81:              '["81", "covariance_type", "diag", "init_params", "k-means++", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+82:              '["82", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "100", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+83:              '["83", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001"]'
+84:              '["84", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.001", "warm_start"]'
+85:              '["85", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001", "warm_start"]'
+86:              '["86", "covariance_type", "diag", "init_params", "kmeans", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+87:              '["87", "covariance_type", "diag", "init_params", "random", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+88:              '["88", "covariance_type", "diag", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+89:              '["89", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "5", "n_init", "reg_covar", "0.000001"]'
+9:               '["9", "covariance_type", "spherical", "init_params", "kmeans", "max_iter", "1000", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+90:              '["90", "covariance_type", "tied", "init_params", "random_from_data", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+91:              '["91", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "1000", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+92:              '["92", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.000001"]'
+93:              '["93", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001"]'
+94:              '["94", "covariance_type", "tied", "init_params", "k-means++", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+95:              '["95", "covariance_type", "tied", "init_params", "kmeans", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+96:              '["96", "covariance_type", "tied", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+97:              '["97", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "1", "n_init", "reg_covar", "0.001", "warm_start"]'
+98:              '["98", "covariance_type", "spherical", "init_params", "random", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001", "warm_start"]'
+99:              '["99", "covariance_type", "spherical", "init_params", "random_from_data", "max_iter", "100", "n_components", "10", "n_init", "reg_covar", "0.001"]'
+...

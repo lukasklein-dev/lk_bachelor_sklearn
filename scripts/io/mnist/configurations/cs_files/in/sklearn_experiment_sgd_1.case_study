@@ -3,14 +3,13 @@ DocType: CaseStudy
 Version: 1
 ...
 ---
-project_name: sklearn_experiment
+project_name: sklearn_experiment_sgd
 stages:
 - revisions:
-  - commit_hash: b7230d97bc03fbd1f53b7d0cc53e1c7d1ef2b21d
+  - commit_hash: 2ec0c4b97cd19d8da5ffc462a9ec37885ec23bd3
     commit_id: 0
     config_ids:
-    - -1
-version: 0
+version: 1
 ...
 ---
 config_type: PlainCommandlineConfiguration
