@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Experiment Main Skript Part 1 (RQ1): Collect sklearn classifier performance measurements
 
 from sklearn.svm import SVC
