@@ -21,6 +21,8 @@ Example usage (How to):
 python case_study_MNIST.py --estimator-[x] [--config_id, --params_1, --params_2, ...]
 python case_study_MNIST.py --estimator-sgd --0 --average --early_stopping --fit_intercept --loss --huber --n_jobs ---1 --penalty --None --warm_start
 python case_study_MNIST.py --estimator-sgd --1 --loss --huber --n_jobs ---1 --penalty --None --warm_start
+case_study_MNIST.py --estimator-dtc 1 criterion entropy min_samples_split 2 splitter random
+./case_study_MNIST.py --estimator-dtc 1 criterion entropy min_samples_split 2 splitter random
 """
 
 # CONFIGURATION
@@ -117,10 +119,10 @@ def main(ctx):
     estimator = ctx.args[0]
     if estimator not in estimator_modules:
         raise click.UsageError(f"Unknown estimator: {estimator}. Allowed estimators are: {', '.join(estimator_modules.keys())}")
-    # Second argument is the config_id, e.g. --0 for configuration ID 0
-    if len(ctx.args) < 2 or not ctx.args[1].startswith('--'):
-        raise click.UsageError("You must specify a configuration ID, e.g. --0")
-    config_id = ctx.args[1][2:]  # Remove the leading '--'
+    # Second argument is the config_id, e.g. 0 for configuration ID 0
+    if len(ctx.args) < 2:
+        raise click.UsageError("You must specify a configuration ID, e.g. 0")
+    config_id = ctx.args[1]
 
     # Dynamically import estimator class
     module_name, class_name = estimator_modules[estimator].rsplit('.', 1)
@@ -135,7 +137,7 @@ def main(ctx):
     seen_keys = set()
     i = 2  # Start after estimator and config_id
     while i < len(param_args):
-        # Prepare the argument or skip if it is not a valid parameter
+        # Prepare the argument or skip if it is not a valid parameter (only the estimator starts with '--', but for safety we still check for it):
         arg = param_args[i]
         if arg.startswith('--'):
             arg = arg[2:]
@@ -188,8 +190,7 @@ def main(ctx):
     X_train, y_train, X_test, y_test = load_mnist_data()
     performance = model_training(estimator_instance, X_train, y_train, X_test, y_test)
 
-    # Save the final model and its performance to the output file (-> NOTE: same filepath as stated in sklearn project from my oot TS repo)
-    # NOTE: Might exclude estimator and params later. See what is really needed in the end.
+    # Save the performance measurements of the estimator to the output file
     result = {
         #"estimator": estimator,
         #"params": performance[0].get_params(),
