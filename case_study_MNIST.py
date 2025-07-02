@@ -111,6 +111,15 @@ def model_training(model, X_train, y_train, X_test, y_test):
 ))
 @click.pass_context
 def main(ctx):
+    ### DEBUGGING ###
+    # Output a simple txt file with the command line arguments
+    if not os.path.exists("scripts/io/mnist/cs_output"):
+        os.makedirs("scripts/io/mnist/cs_output")
+    with open("scripts/io/mnist/cs_output/command_line_args.txt", "w") as f:
+        f.write("Command line arguments:\n")
+        for arg in ctx.args:
+            f.write(f"{arg}\n")
+
     ### MODEL TRAINING (for each hyperparameter config) ###
 
     # First argument is the estimator, e.g. --estimator-sgd
