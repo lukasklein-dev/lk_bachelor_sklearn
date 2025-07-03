@@ -12,43 +12,6 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>loss</name>
-      <outputString>loss</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>gradient_boosting_classifier</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions/>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>log_loss</name>
-      <outputString>log_loss</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>loss</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>exponential</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>exponential</name>
-      <outputString>exponential</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>loss</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>log_loss</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
       <name>learning_rate</name>
       <outputString>learning_rate</outputString>
       <prefix/>
@@ -285,6 +248,21 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
+      <name>50</name>
+      <outputString>50</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>min_samples_split</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions>
+        <options>2</options>
+        <options>5</options>
+        <options>10</options>
+      </excludedOptions>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
       <name>warm_start</name>
       <outputString>warm_start</outputString>
       <prefix/>
@@ -294,6 +272,28 @@
       <impliedOptions/>
       <excludedOptions/>
       <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>random_state</name>
+      <outputString>random_state</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>gradient_boosting_classifier</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions/>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>0</name>
+      <outputString>0</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>random_state</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions/>
+      <optional>False</optional>
     </configurationOption>
   </binaryOptions>
   <numericOptions/>

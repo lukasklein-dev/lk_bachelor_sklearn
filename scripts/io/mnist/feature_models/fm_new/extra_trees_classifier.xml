@@ -179,6 +179,19 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
+      <name>2</name>
+      <outputString>2</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>min_samples_leaf</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions>
+        <options>1</options>
+      </excludedOptions>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
       <name>max_features</name>
       <outputString>max_features</outputString>
       <prefix/>
@@ -304,41 +317,16 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>max_samples</name>
-      <outputString>max_samples</outputString>
+      <name>None</name>
+      <outputString>None</outputString>
       <prefix/>
       <postfix/>
-      <parent>extra_trees_classifier</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions/>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>0.5</name>
-      <outputString>0.5</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>max_samples</parent>
+      <parent>class_weight</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>None</options>
-        <options>0.8</options>
-      </excludedOptions>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>0.8</name>
-      <outputString>0.8</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>max_samples</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions>
-        <options>None</options>
-        <options>0.5</options>
+        <options>balanced</options>
+        <options>balanced_subsample</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
@@ -359,6 +347,28 @@
       <prefix/>
       <postfix/>
       <parent>n_jobs</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions/>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>random_state</name>
+      <outputString>random_state</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>extra_trees_classifier</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions/>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>0</name>
+      <outputString>0</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>random_state</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions/>

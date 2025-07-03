@@ -9,6 +9,8 @@ Step 2: TODO: In the script (code); enter the name of the feature model. (You mi
 Step 3: Execute the script: (inside the root directory of the repo)
 python scripts/xml_fm_parser.py --fm_name [xml_feature_model_name_without_extension]
 -> Now the xml file should be parsed correctly and is ready to be used as input for vara-feature.
+
+TODO: bug in the parse_feature_model function: 'processed' is a set, thus it currently does not allow duplicate hp value-option names. -> keep that in mind when naming the options OR manually add the respective options when they are being ignored, afterwards.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """
 

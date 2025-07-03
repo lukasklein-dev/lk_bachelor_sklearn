@@ -179,6 +179,19 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
+      <name>2</name>
+      <outputString>2</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>min_samples_leaf</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions>
+        <options>1</options>
+      </excludedOptions>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
       <name>max_features</name>
       <outputString>max_features</outputString>
       <prefix/>
@@ -276,6 +289,20 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
+      <name>None</name>
+      <outputString>None</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>class_weight</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions>
+        <options>balanced</options>
+        <options>balanced_subsample</options>
+      </excludedOptions>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
       <name>balanced</name>
       <outputString>balanced</outputString>
       <prefix/>
@@ -320,6 +347,28 @@
       <prefix/>
       <postfix/>
       <parent>n_jobs</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions/>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>random_state</name>
+      <outputString>random_state</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>random_forest_classifier</parent>
+      <children/>
+      <impliedOptions/>
+      <excludedOptions/>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>0</name>
+      <outputString>0</outputString>
+      <prefix/>
+      <postfix/>
+      <parent>random_state</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions/>
