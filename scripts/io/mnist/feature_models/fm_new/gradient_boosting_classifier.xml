@@ -213,7 +213,7 @@
       <excludedOptions>
         <options>5</options>
         <options>10</options>
-        <options>50</options>
+        <options>50*</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
@@ -228,7 +228,7 @@
       <excludedOptions>
         <options>2</options>
         <options>10</options>
-        <options>50</options>
+        <options>50*</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
@@ -243,13 +243,13 @@
       <excludedOptions>
         <options>2</options>
         <options>5</options>
-        <options>50</options>
+        <options>50*</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>50</name>
-      <outputString>50</outputString>
+      <name>50*</name>
+      <outputString>50*</outputString>
       <prefix/>
       <postfix/>
       <parent>min_samples_split</parent>

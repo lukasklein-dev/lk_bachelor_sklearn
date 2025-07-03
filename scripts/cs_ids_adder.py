@@ -61,7 +61,12 @@ def insert_config_ids(case_study_path, output_path):
         f.writelines(new_lines)
 
 if __name__ == "__main__":
-    # TODO: Change in and out paths to your case study file:
-    input="/home/lukas/Schreibtisch/repos/lk-bachelor-sklearn/scripts/io/mnist/configurations/cs_files/in/sklearn_experiment_mnb_10.case_study"
-    output="/home/lukas/Schreibtisch/repos/lk-bachelor-sklearn/scripts/io/mnist/configurations/cs_files/out/sklearn_experiment_mnb_10.case_study"
+    # TODO:
+    # 1: Before running this script and creating the final cs file, you can run the following command to remove the '*' from the configs (which were necessary to make each config unique in the case study):
+        # sed -i 's/\*//g' scripts/io/mnist/configurations/configs/extra_trees_classifier-configs.yml
+    # 2: Copy-paste all configs into each case study file.
+    # 3: Change in and out paths to your case study file:
+
+    input="scripts/io/mnist/configurations/cs_files/in/sklearn_experiment_svc_3.case_study"
+    output="scripts/io/mnist/configurations/cs_files/out/sklearn_experiment_svc_3.case_study"
     insert_config_ids(input, output)

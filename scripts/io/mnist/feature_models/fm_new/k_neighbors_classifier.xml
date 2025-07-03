@@ -368,17 +368,17 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>1</name>
-      <outputString>1</outputString>
+      <name>1*</name>
+      <outputString>1*</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>2</options>
-        <options>4</options>
-        <options>8</options>
+        <options>2*</options>
+        <options>4*</options>
+        <options>8*</options>
         <options>16</options>
         <options>30</options>
         <options>32</options>
@@ -387,17 +387,17 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>2</name>
-      <outputString>2</outputString>
+      <name>2*</name>
+      <outputString>2*</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>1</options>
-        <options>4</options>
-        <options>8</options>
+        <options>1*</options>
+        <options>4*</options>
+        <options>8*</options>
         <options>16</options>
         <options>30</options>
         <options>32</options>
@@ -406,17 +406,17 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>4</name>
-      <outputString>4</outputString>
+      <name>4*</name>
+      <outputString>4*</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>1</options>
-        <options>2</options>
-        <options>8</options>
+        <options>1*</options>
+        <options>2*</options>
+        <options>8*</options>
         <options>16</options>
         <options>30</options>
         <options>32</options>
@@ -425,17 +425,17 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>8</name>
-      <outputString>8</outputString>
+      <name>8*</name>
+      <outputString>8*</outputString>
       <prefix/>
       <postfix/>
       <parent>leaf_size</parent>
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>1</options>
-        <options>2</options>
-        <options>4</options>
+        <options>1*</options>
+        <options>2*</options>
+        <options>4*</options>
         <options>16</options>
         <options>30</options>
         <options>32</options>
@@ -452,10 +452,10 @@
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>1</options>
-        <options>2</options>
-        <options>4</options>
-        <options>8</options>
+        <options>1*</options>
+        <options>2*</options>
+        <options>4*</options>
+        <options>8*</options>
         <options>30</options>
         <options>32</options>
         <options>64</options>
@@ -471,10 +471,10 @@
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>1</options>
-        <options>2</options>
-        <options>4</options>
-        <options>8</options>
+        <options>1*</options>
+        <options>2*</options>
+        <options>4*</options>
+        <options>8*</options>
         <options>16</options>
         <options>32</options>
         <options>64</options>
@@ -490,10 +490,10 @@
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>1</options>
-        <options>2</options>
-        <options>4</options>
-        <options>8</options>
+        <options>1*</options>
+        <options>2*</options>
+        <options>4*</options>
+        <options>8*</options>
         <options>16</options>
         <options>30</options>
         <options>64</options>
@@ -509,10 +509,10 @@
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>1</options>
-        <options>2</options>
-        <options>4</options>
-        <options>8</options>
+        <options>1*</options>
+        <options>2*</options>
+        <options>4*</options>
+        <options>8*</options>
         <options>16</options>
         <options>30</options>
         <options>32</options>

@@ -174,13 +174,13 @@
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>2</options>
+        <options>2*</options>
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>2</name>
-      <outputString>2</outputString>
+      <name>2*</name>
+      <outputString>2*</outputString>
       <prefix/>
       <postfix/>
       <parent>min_samples_leaf</parent>
@@ -289,8 +289,8 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>None</name>
-      <outputString>None</outputString>
+      <name>None*</name>
+      <outputString>None*</outputString>
       <prefix/>
       <postfix/>
       <parent>class_weight</parent>
@@ -311,7 +311,7 @@
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>None</options>
+        <options>None*</options>
         <options>balanced_subsample</options>
       </excludedOptions>
       <optional>False</optional>
@@ -325,7 +325,7 @@
       <children/>
       <impliedOptions/>
       <excludedOptions>
-        <options>None</options>
+        <options>None*</options>
         <options>balanced</options>
       </excludedOptions>
       <optional>False</optional>

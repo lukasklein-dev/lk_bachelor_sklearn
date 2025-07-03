@@ -9,56 +9,33 @@ stages:
   - commit_hash: 2ec0c4b97cd19d8da5ffc462a9ec37885ec23bd3
     commit_id: 0
     config_ids:
-    - 0
-    - 1
-    - 10
-    - 11
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 17
-    - 18
-    - 19
-    - 2
-    - 20
-    - 21
-    - 22
-    - 23
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
+    - 
 version: 6
 ...
 ---
 config_type: PlainCommandlineConfiguration
-0:               '["criterion", "entropy", "min_samples_split", "2", "splitter", "best"]'
-1:               '["criterion", "entropy", "min_samples_split", "2", "splitter", "random"]'
-10:              '["criterion", "gini", "min_samples_split", "10", "splitter", "best"]'
-11:              '["criterion", "gini", "min_samples_split", "10", "splitter", "random"]'
-12:              '["criterion", "gini", "min_samples_split", "50", "splitter", "random"]'
-13:              '["criterion", "gini", "min_samples_split", "2", "splitter", "random"]'
-14:              '["criterion", "gini", "min_samples_split", "5", "splitter", "random"]'
-15:              '["criterion", "log_loss", "min_samples_split", "5", "splitter", "random"]'
-16:              '["criterion", "log_loss", "min_samples_split", "10", "splitter", "random"]'
-17:              '["criterion", "log_loss", "min_samples_split", "2", "splitter", "random"]'
-18:              '["criterion", "gini", "min_samples_split", "2", "splitter", "best"]'
-19:              '["criterion", "gini", "min_samples_split", "5", "splitter", "best"]'
-2:               '["criterion", "entropy", "min_samples_split", "5", "splitter", "random"]'
-20:              '["criterion", "entropy", "min_samples_split", "5", "splitter", "best"]'
-21:              '["criterion", "entropy", "min_samples_split", "50", "splitter", "best"]'
-22:              '["criterion", "gini", "min_samples_split", "50", "splitter", "best"]'
-23:              '["criterion", "entropy", "min_samples_split", "10", "splitter", "best"]'
-3:               '["criterion", "entropy", "min_samples_split", "10", "splitter", "random"]'
-4:               '["criterion", "entropy", "min_samples_split", "50", "splitter", "random"]'
-5:               '["criterion", "log_loss", "min_samples_split", "50", "splitter", "random"]'
-6:               '["criterion", "log_loss", "min_samples_split", "50", "splitter", "best"]'
-7:               '["criterion", "log_loss", "min_samples_split", "2", "splitter", "best"]'
-8:               '["criterion", "log_loss", "min_samples_split", "5", "splitter", "best"]'
-9:               '["criterion", "log_loss", "min_samples_split", "10", "splitter", "best"]'
+0:               '["criterion", "entropy", "min_samples_split", "2", "random_state", "0", "splitter", "best"]'
+1:               '["criterion", "entropy", "min_samples_split", "2", "random_state", "0", "splitter", "random"]'
+10:              '["criterion", "gini", "min_samples_split", "10", "random_state", "0", "splitter", "best"]'
+11:              '["criterion", "gini", "min_samples_split", "10", "random_state", "0", "splitter", "random"]'
+12:              '["criterion", "gini", "min_samples_split", "50", "random_state", "0", "splitter", "random"]'
+13:              '["criterion", "gini", "min_samples_split", "2", "random_state", "0", "splitter", "random"]'
+14:              '["criterion", "gini", "min_samples_split", "5", "random_state", "0", "splitter", "random"]'
+15:              '["criterion", "log_loss", "min_samples_split", "5", "random_state", "0", "splitter", "random"]'
+16:              '["criterion", "log_loss", "min_samples_split", "10", "random_state", "0", "splitter", "random"]'
+17:              '["criterion", "log_loss", "min_samples_split", "2", "random_state", "0", "splitter", "random"]'
+18:              '["criterion", "gini", "min_samples_split", "2", "random_state", "0", "splitter", "best"]'
+19:              '["criterion", "gini", "min_samples_split", "5", "random_state", "0", "splitter", "best"]'
+2:               '["criterion", "entropy", "min_samples_split", "5", "random_state", "0", "splitter", "random"]'
+20:              '["criterion", "entropy", "min_samples_split", "5", "random_state", "0", "splitter", "best"]'
+21:              '["criterion", "entropy", "min_samples_split", "50", "random_state", "0", "splitter", "best"]'
+22:              '["criterion", "gini", "min_samples_split", "50", "random_state", "0", "splitter", "best"]'
+23:              '["criterion", "entropy", "min_samples_split", "10", "random_state", "0", "splitter", "best"]'
+3:               '["criterion", "entropy", "min_samples_split", "10", "random_state", "0", "splitter", "random"]'
+4:               '["criterion", "entropy", "min_samples_split", "50", "random_state", "0", "splitter", "random"]'
+5:               '["criterion", "log_loss", "min_samples_split", "50", "random_state", "0", "splitter", "random"]'
+6:               '["criterion", "log_loss", "min_samples_split", "50", "random_state", "0", "splitter", "best"]'
+7:               '["criterion", "log_loss", "min_samples_split", "2", "random_state", "0", "splitter", "best"]'
+8:               '["criterion", "log_loss", "min_samples_split", "5", "random_state", "0", "splitter", "best"]'
+9:               '["criterion", "log_loss", "min_samples_split", "10", "random_state", "0", "splitter", "best"]'
 ...

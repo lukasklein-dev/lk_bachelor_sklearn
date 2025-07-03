@@ -228,8 +228,8 @@
       <optional>False</optional>
     </configurationOption>
     <configurationOption>
-      <name>0</name>
-      <outputString>0</outputString>
+      <name>0*</name>
+      <outputString>0*</outputString>
       <prefix/>
       <postfix/>
       <parent>random_state</parent>
