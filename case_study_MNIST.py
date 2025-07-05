@@ -27,18 +27,21 @@ case_study_MNIST.py --estimator-dtc 1 criterion entropy min_samples_split 2 spli
 
 # CONFIGURATION
 output = "scripts/io/mnist/cs_output/perf_measurements.json" # Output file path for the performance measurements
+repetitions = 5 # Set to 1-5. Define how often each configuration should be evaluated.
+n_jobs_value = -1 # Default value for n_jobs, -1 means using all available cores. None means using a single core. If the estimator does not support n_jobs, it will be ignored.
 
+# Define the estimator modules + whether they provide the hyperparameter 'n_jobs' and 'random_state':
 estimator_modules = {
-    '--estimator-sgd': "sklearn.linear_model.SGDClassifier",
-    '--estimator-knn': "sklearn.neighbors.KNeighborsClassifier",
-    '--estimator-svc': "sklearn.svm.SVC",
-    '--estimator-rfc': "sklearn.ensemble.RandomForestClassifier",
-    '--estimator-bgm': "sklearn.mixture.BayesianGaussianMixture",
-    '--estimator-dtc': "sklearn.tree.DecisionTreeClassifier",
-    '--estimator-etc': "sklearn.ensemble.ExtraTreesClassifier",
-    '--estimator-gpc': "sklearn.gaussian_process.GaussianProcessClassifier",
-    '--estimator-gbc': "sklearn.ensemble.GradientBoostingClassifier",
-    '--estimator-mnb': "sklearn.naive_bayes.MultinomialNB",
+    '--estimator-sgd': ("sklearn.linear_model.SGDClassifier", True, True),
+    '--estimator-knn': ("sklearn.neighbors.KNeighborsClassifier", True, False),
+    '--estimator-svc': ("sklearn.svm.SVC", False, True),
+    '--estimator-rfc': ("sklearn.ensemble.RandomForestClassifier", True, True),
+    '--estimator-bgm': ("sklearn.mixture.BayesianGaussianMixture", False, True),
+    '--estimator-dtc': ("sklearn.tree.DecisionTreeClassifier", False, True),
+    '--estimator-etc': ("sklearn.ensemble.ExtraTreesClassifier", True, True),
+    '--estimator-gpc': ("sklearn.gaussian_process.GaussianProcessClassifier", True, True),
+    '--estimator-gbc': ("sklearn.ensemble.GradientBoostingClassifier", False, True),
+    '--estimator-mnb': ("sklearn.naive_bayes.MultinomialNB", False, False),
 }
 
 def load_mnist_data():
@@ -72,7 +75,6 @@ def model_training(model, X_train, y_train, X_test, y_test):
     y_pred = model.predict(X_test)
 
     ### METRICS ###
-    # NOTE: Discuss which metrics to use in the end.
     # Only store four floating point numbers (e.g. 0.1234) in the output file.
     accuracy = accuracy_score(y_test, y_pred)
     precision = precision_score(y_test, y_pred, average='weighted').round(4) # weighted ?
@@ -100,7 +102,7 @@ def model_training(model, X_train, y_train, X_test, y_test):
     print(f"F1 Score: {f1}")
     print(f"F-beta Score: {fbeta}")
     print(f"Hamming Loss: {hamming}")
-    print(f"Zero-One Loss: {zero_one_loss(y_test, y_pred)}")
+    print(f"Zero-One Loss: {zero_one}")
     print("\n########################################\n")
 
     return model, metrics
@@ -111,12 +113,6 @@ def model_training(model, X_train, y_train, X_test, y_test):
 ))
 @click.pass_context
 def main(ctx):
-    ### DEBUGGING ###
-    with open("command_line_args.txt", "w") as f:
-        f.write("Command line arguments:\n")
-        for arg in ctx.args:
-            f.write(f"{arg}\n")
-
     ### MODEL TRAINING (for each hyperparameter config) ###
 
     # First argument is the estimator, e.g. --estimator-sgd
@@ -131,7 +127,7 @@ def main(ctx):
     config_id = ctx.args[1]
 
     # Dynamically import estimator class
-    module_name, class_name = estimator_modules[estimator].rsplit('.', 1)
+    module_name, class_name = estimator_modules[estimator][0].rsplit('.', 1)
     module = __import__(module_name, fromlist=[class_name])
     EstClass = getattr(module, class_name)
     default = EstClass()
@@ -154,7 +150,7 @@ def main(ctx):
         default_val = default_params[arg]
         seen_keys.add(arg)
         # For binary hyperparameters, handle bools as flags (present = True):
-        if isinstance(default_val, bool):
+        if isinstance(default_val, bool) or default_val == 'warn':
             est_kwargs[arg] = True
             i += 1
         else:
@@ -190,30 +186,49 @@ def main(ctx):
         if isinstance(v, bool) and k not in seen_keys:
             est_kwargs[k] = False
 
-    # Create and train the estimator instance with the parsed parameters
-    estimator_instance = EstClass(**est_kwargs)
-
+    # Load the MNIST data set
     X_train, y_train, X_test, y_test = load_mnist_data()
-    performance = model_training(estimator_instance, X_train, y_train, X_test, y_test)
 
-    # Save the performance measurements of the estimator to the output file
-    result = {
-        #"estimator": estimator,
-        #"params": performance[0].get_params(),
-        "performance": performance[1]
-    }
+    # If the estimator supports n_jobs, set it to n_jobs_value, otherwise ignore it
+    if estimator_modules[estimator][1]:
+        est_kwargs['n_jobs'] = n_jobs_value
+    # If the estimator does not support random_state, set repetitions to 1, otherwise ignore it
+    if not estimator_modules[estimator][2]:
+        global repetitions
+        repetitions = 1
+    i = 0
+    while i < repetitions:
+        if estimator_modules[estimator][2]:
+            est_kwargs['random_state'] = i
+
+        # Create and train the estimator instance with the parsed parameters
+        estimator_instance = EstClass(**est_kwargs)
+
+        performance = model_training(estimator_instance, X_train, y_train, X_test, y_test)
+
+        # Save the performance measurements of the estimator to the output file
+        result = {
+            #"estimator": estimator,
+            #"params": performance[0].get_params(),
+            "performance": performance[1]
+        }
     
-    # Load existing results if file exists
-    if os.path.exists(output):
-        with open(output, "r") as f:
-            all_results = json.load(f)
-    else:
-        all_results = {}
+        # Load existing results if file exists
+        if os.path.exists(output):
+            with open(output, "r") as f:
+                all_results = json.load(f)
+        else:
+            all_results = {}
 
-    all_results[str(config_id)] = result
+        if str(config_id) not in all_results:
+            all_results[str(config_id)] = {}
 
-    with open(output, "w") as f:
-        json.dump(all_results, f, indent=2)
+        all_results[str(config_id)][str(i)] = result
+
+        with open(output, "w") as f:
+            json.dump(all_results, f, indent=2)
+        
+        i += 1
     
 if __name__ == "__main__":
     main()
