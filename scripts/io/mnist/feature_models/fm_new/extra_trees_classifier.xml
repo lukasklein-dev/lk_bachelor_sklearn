@@ -330,50 +330,6 @@
       </excludedOptions>
       <optional>False</optional>
     </configurationOption>
-    <configurationOption>
-      <name>n_jobs</name>
-      <outputString>n_jobs</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>extra_trees_classifier</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions/>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>-1</name>
-      <outputString>-1</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>n_jobs</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions/>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>random_state</name>
-      <outputString>random_state</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>extra_trees_classifier</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions/>
-      <optional>False</optional>
-    </configurationOption>
-    <configurationOption>
-      <name>0</name>
-      <outputString>0</outputString>
-      <prefix/>
-      <postfix/>
-      <parent>random_state</parent>
-      <children/>
-      <impliedOptions/>
-      <excludedOptions/>
-      <optional>False</optional>
-    </configurationOption>
   </binaryOptions>
   <numericOptions/>
   <booleanConstraints/>

@@ -1,0 +1,816 @@
+---
+DocType: CaseStudy
+Version: 1
+...
+---
+project_name: sklearn_experiment_svc
+stages:
+- revisions:
+  - commit_hash: 5ac9dd6f801060b7c43c7d6151cf4cc45a6c866b
+    commit_id: 0
+    config_ids:
+    - 0
+    - 1
+    - 10
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 108
+    - 109
+    - 11
+    - 110
+    - 111
+    - 112
+    - 113
+    - 114
+    - 115
+    - 116
+    - 117
+    - 118
+    - 119
+    - 12
+    - 120
+    - 121
+    - 122
+    - 123
+    - 124
+    - 125
+    - 126
+    - 127
+    - 128
+    - 129
+    - 13
+    - 130
+    - 131
+    - 132
+    - 133
+    - 134
+    - 135
+    - 136
+    - 137
+    - 138
+    - 139
+    - 14
+    - 140
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 149
+    - 15
+    - 150
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 16
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 17
+    - 170
+    - 171
+    - 172
+    - 173
+    - 174
+    - 175
+    - 176
+    - 177
+    - 178
+    - 179
+    - 18
+    - 180
+    - 181
+    - 182
+    - 183
+    - 184
+    - 185
+    - 186
+    - 187
+    - 188
+    - 189
+    - 19
+    - 190
+    - 191
+    - 192
+    - 193
+    - 194
+    - 195
+    - 196
+    - 197
+    - 198
+    - 199
+    - 2
+    - 20
+    - 200
+    - 201
+    - 202
+    - 203
+    - 204
+    - 205
+    - 206
+    - 207
+    - 208
+    - 209
+    - 21
+    - 210
+    - 211
+    - 212
+    - 213
+    - 214
+    - 215
+    - 216
+    - 217
+    - 218
+    - 219
+    - 22
+    - 220
+    - 221
+    - 222
+    - 223
+    - 224
+    - 225
+    - 226
+    - 227
+    - 228
+    - 229
+    - 23
+    - 230
+    - 231
+    - 232
+    - 233
+    - 234
+    - 235
+    - 236
+    - 237
+    - 238
+    - 239
+    - 24
+    - 240
+    - 241
+    - 242
+    - 243
+    - 244
+    - 245
+    - 246
+    - 247
+    - 248
+    - 249
+    - 25
+    - 250
+    - 251
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    - 257
+    - 258
+    - 259
+    - 26
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    - 265
+    - 266
+    - 267
+    - 268
+    - 269
+    - 27
+    - 270
+    - 271
+    - 272
+    - 273
+    - 274
+    - 275
+    - 276
+    - 277
+    - 278
+    - 279
+    - 28
+    - 280
+    - 281
+    - 282
+    - 283
+    - 284
+    - 285
+    - 286
+    - 287
+    - 288
+    - 289
+    - 29
+    - 290
+    - 291
+    - 292
+    - 293
+    - 294
+    - 295
+    - 296
+    - 297
+    - 298
+    - 299
+    - 3
+    - 30
+    - 300
+    - 301
+    - 302
+    - 303
+    - 304
+    - 305
+    - 306
+    - 307
+    - 308
+    - 309
+    - 31
+    - 310
+    - 311
+    - 312
+    - 313
+    - 314
+    - 315
+    - 316
+    - 317
+    - 318
+    - 319
+    - 32
+    - 320
+    - 321
+    - 322
+    - 323
+    - 324
+    - 325
+    - 326
+    - 327
+    - 328
+    - 329
+    - 33
+    - 330
+    - 331
+    - 332
+    - 333
+    - 334
+    - 335
+    - 336
+    - 337
+    - 338
+    - 339
+    - 34
+    - 340
+    - 341
+    - 342
+    - 343
+    - 344
+    - 345
+    - 346
+    - 347
+    - 348
+    - 349
+    - 35
+    - 350
+    - 351
+    - 352
+    - 353
+    - 354
+    - 355
+    - 356
+    - 357
+    - 358
+    - 359
+    - 36
+    - 360
+    - 361
+    - 362
+    - 363
+    - 364
+    - 365
+    - 366
+    - 367
+    - 368
+    - 369
+    - 37
+    - 370
+    - 371
+    - 372
+    - 373
+    - 374
+    - 375
+    - 376
+    - 377
+    - 378
+    - 379
+    - 38
+    - 380
+    - 381
+    - 382
+    - 383
+    - 384
+    - 385
+    - 386
+    - 387
+    - 388
+    - 389
+    - 39
+    - 390
+    - 391
+    - 392
+    - 393
+    - 394
+    - 395
+    - 396
+    - 397
+    - 398
+    - 399
+    - 4
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 5
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 6
+    - 60
+    - 61
+    - 62
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 7
+    - 70
+    - 71
+    - 72
+    - 73
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 8
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 9
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+version: 3
+...
+---
+config_type: PlainCommandlineConfiguration
+0:               '["0", "C", "0.01", "kernel", "linear"]'
+1:               '["1", "C", "0.01", "kernel", "rbf"]'
+10:              '["10", "break_ties", "C", "10.0", "kernel", "precomputed", "probability", "shrinking"]'
+100:             '["100", "break_ties", "C", "10.0", "kernel", "precomputed", "probability"]'
+101:             '["101", "break_ties", "C", "10.0", "kernel", "precomputed", "verbose"]'
+102:             '["102", "C", "10.0", "kernel", "precomputed", "probability", "verbose"]'
+103:             '["103", "break_ties", "C", "10.0", "kernel", "precomputed", "probability", "verbose"]'
+104:             '["104", "break_ties", "C", "10.0", "kernel", "rbf", "probability", "verbose"]'
+105:             '["105", "break_ties", "C", "10.0", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+106:             '["106", "break_ties", "C", "0.1", "kernel", "rbf", "probability", "shrinking"]'
+107:             '["107", "C", "0.1", "kernel", "rbf", "shrinking", "verbose"]'
+108:             '["108", "C", "0.1", "kernel", "rbf", "probability", "verbose"]'
+109:             '["109", "break_ties", "C", "0.1", "kernel", "rbf", "verbose"]'
+11:              '["11", "C", "10.0", "kernel", "linear"]'
+110:             '["110", "break_ties", "C", "0.1", "kernel", "rbf", "probability", "verbose"]'
+111:             '["111", "break_ties", "C", "0.1", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+112:             '["112", "break_ties", "C", "0.1", "kernel", "poly", "probability", "shrinking", "verbose"]'
+113:             '["113", "break_ties", "C", "0.1", "kernel", "poly", "probability", "verbose"]'
+114:             '["114", "C", "100.0", "kernel", "poly", "probability", "verbose"]'
+115:             '["115", "break_ties", "C", "100.0", "kernel", "poly", "probability"]'
+116:             '["116", "break_ties", "C", "100.0", "kernel", "poly", "verbose"]'
+117:             '["117", "break_ties", "C", "100.0", "kernel", "poly", "probability", "verbose"]'
+118:             '["118", "break_ties", "C", "100.0", "kernel", "sigmoid", "probability", "verbose"]'
+119:             '["119", "break_ties", "C", "100.0", "kernel", "precomputed", "probability", "verbose"]'
+12:              '["12", "C", "10.0", "kernel", "linear", "shrinking"]'
+120:             '["120", "break_ties", "C", "100.0", "kernel", "linear", "probability", "verbose"]'
+121:             '["121", "break_ties", "C", "100.0", "kernel", "poly", "probability", "shrinking", "verbose"]'
+122:             '["122", "break_ties", "C", "10.0", "kernel", "poly", "probability", "shrinking", "verbose"]'
+123:             '["123", "C", "10.0", "kernel", "poly", "probability", "shrinking", "verbose"]'
+124:             '["124", "C", "0.1", "kernel", "poly", "shrinking", "verbose"]'
+125:             '["125", "C", "0.1", "kernel", "poly", "probability", "shrinking", "verbose"]'
+126:             '["126", "C", "1.0", "kernel", "linear", "probability", "shrinking", "verbose"]'
+127:             '["127", "C", "1.0", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+128:             '["128", "C", "1.0", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+129:             '["129", "break_ties", "C", "1.0", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+13:              '["13", "C", "10.0", "kernel", "linear", "probability", "shrinking"]'
+130:             '["130", "break_ties", "C", "1.0", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+131:             '["131", "break_ties", "C", "1.0", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+132:             '["132", "break_ties", "C", "1.0", "kernel", "rbf", "probability", "shrinking"]'
+133:             '["133", "break_ties", "C", "1.0", "kernel", "precomputed", "probability", "shrinking"]'
+134:             '["134", "break_ties", "C", "1.0", "kernel", "sigmoid", "probability", "shrinking"]'
+135:             '["135", "break_ties", "C", "1.0", "kernel", "sigmoid", "probability"]'
+136:             '["136", "break_ties", "C", "1.0", "kernel", "precomputed", "probability"]'
+137:             '["137", "C", "1.0", "kernel", "linear", "probability"]'
+138:             '["138", "C", "1.0", "kernel", "sigmoid", "probability"]'
+139:             '["139", "C", "1.0", "kernel", "rbf", "probability"]'
+14:              '["14", "break_ties", "C", "10.0", "kernel", "linear"]'
+140:             '["140", "C", "1.0", "kernel", "precomputed", "probability"]'
+141:             '["141", "C", "1.0", "kernel", "linear"]'
+142:             '["142", "C", "1.0", "kernel", "precomputed"]'
+143:             '["143", "C", "1.0", "kernel", "rbf"]'
+144:             '["144", "C", "1.0", "kernel", "linear", "verbose"]'
+145:             '["145", "C", "1.0", "kernel", "sigmoid", "verbose"]'
+146:             '["146", "C", "100.0", "kernel", "linear", "verbose"]'
+147:             '["147", "C", "100.0", "kernel", "precomputed", "verbose"]'
+148:             '["148", "C", "100.0", "kernel", "rbf", "verbose"]'
+149:             '["149", "C", "100.0", "kernel", "sigmoid", "verbose"]'
+15:              '["15", "break_ties", "C", "10.0", "kernel", "linear", "probability"]'
+150:             '["150", "C", "100.0", "kernel", "linear", "probability", "verbose"]'
+151:             '["151", "C", "100.0", "kernel", "rbf", "probability"]'
+152:             '["152", "C", "100.0", "kernel", "rbf", "probability", "verbose"]'
+153:             '["153", "C", "100.0", "kernel", "precomputed", "probability", "verbose"]'
+154:             '["154", "C", "100.0", "kernel", "sigmoid", "probability", "verbose"]'
+155:             '["155", "C", "100.0", "kernel", "linear", "probability", "shrinking", "verbose"]'
+156:             '["156", "C", "100.0", "kernel", "rbf", "shrinking"]'
+157:             '["157", "C", "100.0", "kernel", "rbf", "probability", "shrinking"]'
+158:             '["158", "C", "100.0", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+159:             '["159", "C", "100.0", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+16:              '["16", "break_ties", "C", "10.0", "kernel", "linear", "probability", "shrinking"]'
+160:             '["160", "C", "100.0", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+161:             '["161", "break_ties", "C", "100.0", "kernel", "linear", "probability", "shrinking", "verbose"]'
+162:             '["162", "break_ties", "C", "100.0", "kernel", "sigmoid", "shrinking"]'
+163:             '["163", "break_ties", "C", "100.0", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+164:             '["164", "break_ties", "C", "100.0", "kernel", "precomputed", "shrinking", "verbose"]'
+165:             '["165", "break_ties", "C", "100.0", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+166:             '["166", "break_ties", "C", "100.0", "kernel", "poly", "shrinking", "verbose"]'
+167:             '["167", "break_ties", "C", "100.0", "kernel", "linear", "shrinking", "verbose"]'
+168:             '["168", "break_ties", "C", "100.0", "kernel", "rbf", "shrinking", "verbose"]'
+169:             '["169", "break_ties", "C", "100.0", "kernel", "sigmoid", "shrinking", "verbose"]'
+17:              '["17", "break_ties", "C", "0.01", "kernel", "linear", "probability", "shrinking"]'
+170:             '["170", "break_ties", "C", "100.0", "kernel", "poly", "shrinking"]'
+171:             '["171", "break_ties", "C", "100.0", "kernel", "linear", "shrinking"]'
+172:             '["172", "break_ties", "C", "100.0", "kernel", "precomputed", "shrinking"]'
+173:             '["173", "break_ties", "C", "100.0", "kernel", "rbf", "shrinking"]'
+174:             '["174", "break_ties", "C", "100.0", "kernel", "poly", "probability", "shrinking"]'
+175:             '["175", "break_ties", "C", "100.0", "kernel", "linear", "probability", "shrinking"]'
+176:             '["176", "break_ties", "C", "100.0", "kernel", "precomputed", "probability", "shrinking"]'
+177:             '["177", "break_ties", "C", "100.0", "kernel", "rbf", "probability", "shrinking"]'
+178:             '["178", "break_ties", "C", "100.0", "kernel", "sigmoid", "probability", "shrinking"]'
+179:             '["179", "break_ties", "C", "100.0", "kernel", "linear", "probability"]'
+18:              '["18", "break_ties", "C", "0.01", "kernel", "sigmoid", "probability", "shrinking"]'
+180:             '["180", "break_ties", "C", "100.0", "kernel", "linear"]'
+181:             '["181", "break_ties", "C", "100.0", "kernel", "precomputed"]'
+182:             '["182", "break_ties", "C", "100.0", "kernel", "rbf"]'
+183:             '["183", "C", "100.0", "kernel", "poly"]'
+184:             '["184", "C", "100.0", "kernel", "linear"]'
+185:             '["185", "C", "100.0", "kernel", "precomputed"]'
+186:             '["186", "C", "100.0", "kernel", "rbf"]'
+187:             '["187", "C", "100.0", "kernel", "poly", "shrinking"]'
+188:             '["188", "C", "100.0", "kernel", "linear", "shrinking"]'
+189:             '["189", "C", "100.0", "kernel", "precomputed", "shrinking"]'
+19:              '["19", "C", "0.01", "kernel", "poly", "shrinking"]'
+190:             '["190", "C", "100.0", "kernel", "sigmoid", "shrinking"]'
+191:             '["191", "C", "1.0", "kernel", "poly"]'
+192:             '["192", "C", "0.1", "kernel", "poly"]'
+193:             '["193", "C", "10.0", "kernel", "poly"]'
+194:             '["194", "C", "0.1", "kernel", "linear"]'
+195:             '["195", "C", "0.1", "kernel", "rbf"]'
+196:             '["196", "C", "10.0", "kernel", "rbf"]'
+197:             '["197", "C", "0.1", "kernel", "precomputed"]'
+198:             '["198", "C", "10.0", "kernel", "precomputed"]'
+199:             '["199", "C", "10.0", "kernel", "sigmoid"]'
+2:               '["2", "C", "0.01", "kernel", "poly"]'
+20:              '["20", "C", "0.01", "kernel", "poly", "probability", "shrinking"]'
+200:             '["200", "C", "0.1", "kernel", "sigmoid"]'
+201:             '["201", "C", "10.0", "kernel", "poly", "shrinking"]'
+202:             '["202", "C", "0.1", "kernel", "poly", "shrinking"]'
+203:             '["203", "C", "1.0", "kernel", "linear", "shrinking"]'
+204:             '["204", "C", "0.01", "kernel", "linear", "shrinking"]'
+205:             '["205", "C", "0.1", "kernel", "linear", "shrinking"]'
+206:             '["206", "C", "0.01", "kernel", "sigmoid", "shrinking"]'
+207:             '["207", "C", "0.1", "kernel", "sigmoid", "shrinking"]'
+208:             '["208", "C", "10.0", "kernel", "sigmoid", "shrinking"]'
+209:             '["209", "C", "10.0", "kernel", "precomputed", "shrinking"]'
+21:              '["21", "break_ties", "C", "0.01", "kernel", "poly", "shrinking"]'
+210:             '["210", "C", "0.01", "kernel", "precomputed", "shrinking"]'
+211:             '["211", "C", "0.1", "kernel", "precomputed", "shrinking"]'
+212:             '["212", "C", "1.0", "kernel", "rbf", "shrinking"]'
+213:             '["213", "C", "0.01", "kernel", "rbf", "shrinking"]'
+214:             '["214", "C", "10.0", "kernel", "rbf", "shrinking"]'
+215:             '["215", "C", "0.1", "kernel", "rbf", "shrinking"]'
+216:             '["216", "C", "1.0", "kernel", "poly", "probability", "shrinking"]'
+217:             '["217", "C", "10.0", "kernel", "poly", "probability", "shrinking"]'
+218:             '["218", "C", "0.1", "kernel", "poly", "probability", "shrinking"]'
+219:             '["219", "C", "0.01", "kernel", "linear", "probability", "shrinking"]'
+22:              '["22", "break_ties", "C", "0.01", "kernel", "poly", "probability"]'
+220:             '["220", "C", "0.1", "kernel", "linear", "probability", "shrinking"]'
+221:             '["221", "C", "1.0", "kernel", "precomputed", "probability", "shrinking"]'
+222:             '["222", "C", "10.0", "kernel", "precomputed", "probability", "shrinking"]'
+223:             '["223", "C", "0.1", "kernel", "precomputed", "probability", "shrinking"]'
+224:             '["224", "C", "1.0", "kernel", "sigmoid", "probability", "shrinking"]'
+225:             '["225", "C", "10.0", "kernel", "sigmoid", "probability", "shrinking"]'
+226:             '["226", "C", "0.01", "kernel", "sigmoid", "probability", "shrinking"]'
+227:             '["227", "C", "0.1", "kernel", "sigmoid", "probability", "shrinking"]'
+228:             '["228", "C", "1.0", "kernel", "rbf", "probability", "shrinking"]'
+229:             '["229", "C", "0.1", "kernel", "rbf", "probability", "shrinking"]'
+23:              '["23", "break_ties", "C", "0.01", "kernel", "poly", "probability", "shrinking"]'
+230:             '["230", "C", "0.01", "kernel", "rbf", "probability", "shrinking"]'
+231:             '["231", "C", "10.0", "kernel", "rbf", "probability", "shrinking"]'
+232:             '["232", "C", "0.01", "kernel", "poly", "probability"]'
+233:             '["233", "C", "0.1", "kernel", "poly", "probability"]'
+234:             '["234", "C", "10.0", "kernel", "poly", "probability"]'
+235:             '["235", "C", "0.01", "kernel", "linear", "probability"]'
+236:             '["236", "C", "0.1", "kernel", "linear", "probability"]'
+237:             '["237", "C", "10.0", "kernel", "linear", "probability"]'
+238:             '["238", "C", "10.0", "kernel", "sigmoid", "probability"]'
+239:             '["239", "C", "0.1", "kernel", "sigmoid", "probability"]'
+24:              '["24", "break_ties", "C", "0.01", "kernel", "poly", "probability", "shrinking", "verbose"]'
+240:             '["240", "C", "0.1", "kernel", "precomputed", "probability"]'
+241:             '["241", "C", "0.01", "kernel", "precomputed", "probability"]'
+242:             '["242", "C", "10.0", "kernel", "rbf", "probability"]'
+243:             '["243", "C", "0.01", "kernel", "rbf", "probability"]'
+244:             '["244", "C", "0.1", "kernel", "rbf", "probability"]'
+245:             '["245", "C", "100.0", "kernel", "poly", "probability"]'
+246:             '["246", "C", "100.0", "kernel", "linear", "probability"]'
+247:             '["247", "C", "100.0", "kernel", "sigmoid", "probability"]'
+248:             '["248", "C", "100.0", "kernel", "precomputed", "probability"]'
+249:             '["249", "break_ties", "C", "0.1", "kernel", "poly"]'
+25:              '["25", "C", "1.0", "kernel", "poly", "verbose"]'
+250:             '["250", "break_ties", "C", "1.0", "kernel", "linear"]'
+251:             '["251", "break_ties", "C", "0.01", "kernel", "linear"]'
+252:             '["252", "break_ties", "C", "0.1", "kernel", "linear"]'
+253:             '["253", "break_ties", "C", "0.01", "kernel", "sigmoid"]'
+254:             '["254", "break_ties", "C", "0.1", "kernel", "sigmoid"]'
+255:             '["255", "break_ties", "C", "10.0", "kernel", "sigmoid"]'
+256:             '["256", "break_ties", "C", "10.0", "kernel", "sigmoid", "probability"]'
+257:             '["257", "break_ties", "C", "10.0", "kernel", "rbf", "probability"]'
+258:             '["258", "break_ties", "C", "0.1", "kernel", "linear", "probability"]'
+259:             '["259", "break_ties", "C", "0.1", "kernel", "sigmoid", "probability"]'
+26:              '["26", "C", "1.0", "kernel", "poly", "shrinking"]'
+260:             '["260", "break_ties", "C", "0.1", "kernel", "precomputed", "probability"]'
+261:             '["261", "break_ties", "C", "0.1", "kernel", "rbf", "probability"]'
+262:             '["262", "break_ties", "C", "0.01", "kernel", "linear", "probability"]'
+263:             '["263", "break_ties", "C", "0.01", "kernel", "sigmoid", "probability"]'
+264:             '["264", "break_ties", "C", "0.01", "kernel", "rbf", "probability"]'
+265:             '["265", "break_ties", "C", "1.0", "kernel", "precomputed"]'
+266:             '["266", "break_ties", "C", "1.0", "kernel", "rbf"]'
+267:             '["267", "break_ties", "C", "10.0", "kernel", "precomputed"]'
+268:             '["268", "break_ties", "C", "0.1", "kernel", "precomputed"]'
+269:             '["269", "break_ties", "C", "0.1", "kernel", "rbf"]'
+27:              '["27", "C", "1.0", "kernel", "poly", "shrinking", "verbose"]'
+270:             '["270", "break_ties", "C", "0.01", "kernel", "rbf"]'
+271:             '["271", "C", "0.1", "kernel", "linear", "verbose"]'
+272:             '["272", "C", "0.1", "kernel", "sigmoid", "verbose"]'
+273:             '["273", "C", "0.1", "kernel", "precomputed", "verbose"]'
+274:             '["274", "C", "0.1", "kernel", "rbf", "verbose"]'
+275:             '["275", "C", "0.01", "kernel", "linear", "verbose"]'
+276:             '["276", "C", "0.01", "kernel", "sigmoid", "verbose"]'
+277:             '["277", "C", "10.0", "kernel", "linear", "verbose"]'
+278:             '["278", "C", "10.0", "kernel", "sigmoid", "verbose"]'
+279:             '["279", "C", "10.0", "kernel", "precomputed", "verbose"]'
+28:              '["28", "C", "1.0", "kernel", "poly", "probability", "shrinking", "verbose"]'
+280:             '["280", "C", "10.0", "kernel", "rbf", "verbose"]'
+281:             '["281", "C", "1.0", "kernel", "linear", "probability", "verbose"]'
+282:             '["282", "C", "1.0", "kernel", "sigmoid", "probability", "verbose"]'
+283:             '["283", "C", "1.0", "kernel", "precomputed", "probability", "verbose"]'
+284:             '["284", "C", "10.0", "kernel", "linear", "probability", "verbose"]'
+285:             '["285", "C", "10.0", "kernel", "sigmoid", "probability", "verbose"]'
+286:             '["286", "C", "10.0", "kernel", "rbf", "probability", "verbose"]'
+287:             '["287", "C", "0.1", "kernel", "linear", "probability", "verbose"]'
+288:             '["288", "C", "0.1", "kernel", "sigmoid", "probability", "verbose"]'
+289:             '["289", "C", "0.1", "kernel", "precomputed", "probability", "verbose"]'
+29:              '["29", "break_ties", "C", "1.0", "kernel", "poly", "probability", "shrinking", "verbose"]'
+290:             '["290", "C", "0.01", "kernel", "poly", "verbose"]'
+291:             '["291", "C", "0.1", "kernel", "poly", "verbose"]'
+292:             '["292", "C", "1.0", "kernel", "poly", "probability", "verbose"]'
+293:             '["293", "C", "10.0", "kernel", "poly", "probability", "verbose"]'
+294:             '["294", "C", "0.1", "kernel", "poly", "probability", "verbose"]'
+295:             '["295", "C", "0.01", "kernel", "poly", "probability", "verbose"]'
+296:             '["296", "C", "0.1", "kernel", "linear", "shrinking", "verbose"]'
+297:             '["297", "C", "0.1", "kernel", "sigmoid", "shrinking", "verbose"]'
+298:             '["298", "C", "0.1", "kernel", "precomputed", "shrinking", "verbose"]'
+299:             '["299", "C", "10.0", "kernel", "linear", "shrinking", "verbose"]'
+3:               '["3", "C", "0.01", "kernel", "sigmoid"]'
+30:              '["30", "break_ties", "C", "1.0", "kernel", "poly", "shrinking", "verbose"]'
+300:             '["300", "C", "10.0", "kernel", "sigmoid", "shrinking", "verbose"]'
+301:             '["301", "C", "10.0", "kernel", "precomputed", "shrinking", "verbose"]'
+302:             '["302", "C", "10.0", "kernel", "rbf", "shrinking", "verbose"]'
+303:             '["303", "C", "0.01", "kernel", "linear", "shrinking", "verbose"]'
+304:             '["304", "C", "0.01", "kernel", "rbf", "shrinking", "verbose"]'
+305:             '["305", "C", "0.01", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+306:             '["306", "C", "0.1", "kernel", "linear", "probability", "shrinking", "verbose"]'
+307:             '["307", "C", "0.1", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+308:             '["308", "C", "0.1", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+309:             '["309", "C", "0.1", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+31:              '["31", "break_ties", "C", "1.0", "kernel", "poly"]'
+310:             '["310", "C", "10.0", "kernel", "linear", "probability", "shrinking", "verbose"]'
+311:             '["311", "C", "10.0", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+312:             '["312", "C", "10.0", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+313:             '["313", "C", "10.0", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+314:             '["314", "C", "10.0", "kernel", "poly", "shrinking", "verbose"]'
+315:             '["315", "C", "0.01", "kernel", "poly", "shrinking", "verbose"]'
+316:             '["316", "C", "0.01", "kernel", "poly", "probability", "shrinking", "verbose"]'
+317:             '["317", "break_ties", "C", "0.1", "kernel", "linear", "shrinking", "verbose"]'
+318:             '["318", "break_ties", "C", "0.1", "kernel", "sigmoid", "shrinking", "verbose"]'
+319:             '["319", "break_ties", "C", "0.1", "kernel", "precomputed", "shrinking", "verbose"]'
+32:              '["32", "break_ties", "C", "1.0", "kernel", "poly", "verbose"]'
+320:             '["320", "break_ties", "C", "0.1", "kernel", "rbf", "shrinking", "verbose"]'
+321:             '["321", "break_ties", "C", "1.0", "kernel", "linear", "shrinking", "verbose"]'
+322:             '["322", "break_ties", "C", "1.0", "kernel", "sigmoid", "shrinking", "verbose"]'
+323:             '["323", "break_ties", "C", "1.0", "kernel", "precomputed", "shrinking", "verbose"]'
+324:             '["324", "break_ties", "C", "10.0", "kernel", "linear", "shrinking", "verbose"]'
+325:             '["325", "break_ties", "C", "10.0", "kernel", "sigmoid", "shrinking", "verbose"]'
+326:             '["326", "break_ties", "C", "10.0", "kernel", "precomputed", "shrinking", "verbose"]'
+327:             '["327", "break_ties", "C", "0.01", "kernel", "sigmoid", "shrinking", "verbose"]'
+328:             '["328", "break_ties", "C", "0.01", "kernel", "precomputed", "shrinking", "verbose"]'
+329:             '["329", "break_ties", "C", "0.1", "kernel", "linear", "probability", "shrinking", "verbose"]'
+33:              '["33", "break_ties", "C", "0.01", "kernel", "poly"]'
+330:             '["330", "break_ties", "C", "0.1", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+331:             '["331", "break_ties", "C", "0.1", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+332:             '["332", "break_ties", "C", "0.01", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+333:             '["333", "break_ties", "C", "10.0", "kernel", "linear", "probability", "shrinking", "verbose"]'
+334:             '["334", "break_ties", "C", "10.0", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+335:             '["335", "break_ties", "C", "10.0", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+336:             '["336", "break_ties", "C", "0.1", "kernel", "poly", "shrinking", "verbose"]'
+337:             '["337", "break_ties", "C", "10.0", "kernel", "poly", "shrinking", "verbose"]'
+338:             '["338", "break_ties", "C", "0.01", "kernel", "poly", "shrinking", "verbose"]'
+339:             '["339", "C", "100.0", "kernel", "linear", "shrinking", "verbose"]'
+34:              '["34", "break_ties", "C", "0.01", "kernel", "poly", "verbose"]'
+340:             '["340", "C", "100.0", "kernel", "sigmoid", "shrinking", "verbose"]'
+341:             '["341", "C", "100.0", "kernel", "precomputed", "shrinking", "verbose"]'
+342:             '["342", "C", "100.0", "kernel", "rbf", "shrinking", "verbose"]'
+343:             '["343", "C", "100.0", "kernel", "poly", "shrinking", "verbose"]'
+344:             '["344", "C", "100.0", "kernel", "poly", "probability", "shrinking", "verbose"]'
+345:             '["345", "break_ties", "C", "1.0", "kernel", "linear", "shrinking"]'
+346:             '["346", "break_ties", "C", "1.0", "kernel", "sigmoid", "shrinking"]'
+347:             '["347", "break_ties", "C", "1.0", "kernel", "precomputed", "shrinking"]'
+348:             '["348", "break_ties", "C", "0.1", "kernel", "linear", "shrinking"]'
+349:             '["349", "break_ties", "C", "0.1", "kernel", "sigmoid", "shrinking"]'
+35:              '["35", "C", "0.01", "kernel", "precomputed", "verbose"]'
+350:             '["350", "break_ties", "C", "0.1", "kernel", "precomputed", "shrinking"]'
+351:             '["351", "break_ties", "C", "0.1", "kernel", "rbf", "shrinking"]'
+352:             '["352", "break_ties", "C", "10.0", "kernel", "linear", "shrinking"]'
+353:             '["353", "break_ties", "C", "10.0", "kernel", "sigmoid", "shrinking"]'
+354:             '["354", "break_ties", "C", "10.0", "kernel", "precomputed", "shrinking"]'
+355:             '["355", "break_ties", "C", "10.0", "kernel", "rbf", "shrinking"]'
+356:             '["356", "break_ties", "C", "0.01", "kernel", "linear", "shrinking"]'
+357:             '["357", "break_ties", "C", "0.01", "kernel", "sigmoid", "shrinking"]'
+358:             '["358", "break_ties", "C", "0.01", "kernel", "rbf", "shrinking"]'
+359:             '["359", "break_ties", "C", "0.1", "kernel", "linear", "probability", "shrinking"]'
+36:              '["36", "break_ties", "C", "0.01", "kernel", "precomputed", "verbose"]'
+360:             '["360", "break_ties", "C", "0.1", "kernel", "sigmoid", "probability", "shrinking"]'
+361:             '["361", "break_ties", "C", "0.1", "kernel", "precomputed", "probability", "shrinking"]'
+362:             '["362", "break_ties", "C", "0.01", "kernel", "rbf", "probability", "shrinking"]'
+363:             '["363", "break_ties", "C", "10.0", "kernel", "sigmoid", "probability", "shrinking"]'
+364:             '["364", "break_ties", "C", "10.0", "kernel", "rbf", "probability", "shrinking"]'
+365:             '["365", "break_ties", "C", "1.0", "kernel", "poly", "shrinking"]'
+366:             '["366", "break_ties", "C", "0.1", "kernel", "poly", "shrinking"]'
+367:             '["367", "break_ties", "C", "10.0", "kernel", "poly", "shrinking"]'
+368:             '["368", "break_ties", "C", "0.1", "kernel", "poly", "probability", "shrinking"]'
+369:             '["369", "break_ties", "C", "10.0", "kernel", "poly", "probability", "shrinking"]'
+37:              '["37", "C", "0.01", "kernel", "precomputed", "probability", "verbose"]'
+370:             '["370", "break_ties", "C", "1.0", "kernel", "linear", "verbose"]'
+371:             '["371", "break_ties", "C", "1.0", "kernel", "sigmoid", "verbose"]'
+372:             '["372", "break_ties", "C", "1.0", "kernel", "precomputed", "verbose"]'
+373:             '["373", "break_ties", "C", "0.1", "kernel", "linear", "verbose"]'
+374:             '["374", "break_ties", "C", "0.1", "kernel", "sigmoid", "verbose"]'
+375:             '["375", "break_ties", "C", "0.1", "kernel", "precomputed", "verbose"]'
+376:             '["376", "break_ties", "C", "0.01", "kernel", "linear", "verbose"]'
+377:             '["377", "break_ties", "C", "0.01", "kernel", "sigmoid", "verbose"]'
+378:             '["378", "break_ties", "C", "0.01", "kernel", "rbf", "verbose"]'
+379:             '["379", "break_ties", "C", "10.0", "kernel", "linear", "verbose"]'
+38:              '["38", "C", "0.01", "kernel", "precomputed", "shrinking", "verbose"]'
+380:             '["380", "break_ties", "C", "10.0", "kernel", "sigmoid", "verbose"]'
+381:             '["381", "break_ties", "C", "1.0", "kernel", "linear", "probability", "verbose"]'
+382:             '["382", "break_ties", "C", "1.0", "kernel", "sigmoid", "probability", "verbose"]'
+383:             '["383", "break_ties", "C", "0.1", "kernel", "sigmoid", "probability", "verbose"]'
+384:             '["384", "break_ties", "C", "0.1", "kernel", "linear", "probability", "verbose"]'
+385:             '["385", "break_ties", "C", "1.0", "kernel", "precomputed", "probability", "verbose"]'
+386:             '["386", "break_ties", "C", "0.1", "kernel", "precomputed", "probability", "verbose"]'
+387:             '["387", "break_ties", "C", "10.0", "kernel", "linear", "probability", "verbose"]'
+388:             '["388", "break_ties", "C", "10.0", "kernel", "sigmoid", "probability", "verbose"]'
+389:             '["389", "break_ties", "C", "0.01", "kernel", "rbf", "probability", "verbose"]'
+39:              '["39", "C", "1.0", "kernel", "precomputed", "verbose"]'
+390:             '["390", "break_ties", "C", "0.1", "kernel", "poly", "verbose"]'
+391:             '["391", "C", "100.0", "kernel", "poly", "verbose"]'
+392:             '["392", "C", "100.0", "kernel", "linear", "probability", "shrinking"]'
+393:             '["393", "break_ties", "C", "100.0", "kernel", "linear", "verbose"]'
+394:             '["394", "C", "100.0", "kernel", "sigmoid", "probability", "shrinking"]'
+395:             '["395", "break_ties", "C", "100.0", "kernel", "rbf", "verbose"]'
+396:             '["396", "C", "100.0", "kernel", "precomputed", "probability", "shrinking"]'
+397:             '["397", "break_ties", "C", "100.0", "kernel", "sigmoid", "verbose"]'
+398:             '["398", "C", "100.0", "kernel", "poly", "probability", "shrinking"]'
+399:             '["399", "break_ties", "C", "100.0", "kernel", "precomputed", "verbose"]'
+4:               '["4", "C", "0.01", "kernel", "precomputed"]'
+40:              '["40", "C", "1.0", "kernel", "precomputed", "shrinking"]'
+41:              '["41", "C", "1.0", "kernel", "precomputed", "shrinking", "verbose"]'
+42:              '["42", "C", "1.0", "kernel", "rbf", "shrinking", "verbose"]'
+43:              '["43", "break_ties", "C", "1.0", "kernel", "rbf", "verbose"]'
+44:              '["44", "break_ties", "C", "1.0", "kernel", "rbf", "shrinking"]'
+45:              '["45", "break_ties", "C", "1.0", "kernel", "rbf", "shrinking", "verbose"]'
+46:              '["46", "break_ties", "C", "10.0", "kernel", "rbf", "shrinking", "verbose"]'
+47:              '["47", "break_ties", "C", "10.0", "kernel", "rbf"]'
+48:              '["48", "break_ties", "C", "10.0", "kernel", "rbf", "verbose"]'
+49:              '["49", "C", "10.0", "kernel", "poly", "verbose"]'
+5:               '["5", "break_ties", "C", "0.01", "kernel", "precomputed"]'
+50:              '["50", "break_ties", "C", "10.0", "kernel", "poly", "verbose"]'
+51:              '["51", "break_ties", "C", "10.0", "kernel", "poly", "probability", "verbose"]'
+52:              '["52", "break_ties", "C", "0.01", "kernel", "poly", "probability", "verbose"]'
+53:              '["53", "break_ties", "C", "0.01", "kernel", "precomputed", "probability", "verbose"]'
+54:              '["54", "break_ties", "C", "0.01", "kernel", "sigmoid", "probability", "verbose"]'
+55:              '["55", "C", "0.01", "kernel", "linear", "probability", "verbose"]'
+56:              '["56", "break_ties", "C", "0.01", "kernel", "linear", "probability", "verbose"]'
+57:              '["57", "break_ties", "C", "0.01", "kernel", "linear", "shrinking", "verbose"]'
+58:              '["58", "C", "0.01", "kernel", "linear", "probability", "shrinking", "verbose"]'
+59:              '["59", "break_ties", "C", "0.01", "kernel", "linear", "probability", "shrinking", "verbose"]'
+6:               '["6", "break_ties", "C", "0.01", "kernel", "precomputed", "probability"]'
+60:              '["60", "break_ties", "C", "1.0", "kernel", "linear", "probability", "shrinking", "verbose"]'
+61:              '["61", "break_ties", "C", "1.0", "kernel", "linear", "probability"]'
+62:              '["62", "C", "1.0", "kernel", "linear", "probability", "shrinking"]'
+63:              '["63", "break_ties", "C", "1.0", "kernel", "linear", "probability", "shrinking"]'
+64:              '["64", "break_ties", "C", "1.0", "kernel", "poly", "probability", "shrinking"]'
+65:              '["65", "C", "1.0", "kernel", "poly", "probability"]'
+66:              '["66", "break_ties", "C", "1.0", "kernel", "poly", "probability"]'
+67:              '["67", "break_ties", "C", "100.0", "kernel", "poly"]'
+68:              '["68", "break_ties", "C", "10.0", "kernel", "poly"]'
+69:              '["69", "break_ties", "C", "10.0", "kernel", "poly", "probability"]'
+7:               '["7", "C", "0.01", "kernel", "precomputed", "probability", "shrinking"]'
+70:              '["70", "break_ties", "C", "0.1", "kernel", "poly", "probability"]'
+71:              '["71", "break_ties", "C", "1.0", "kernel", "poly", "probability", "verbose"]'
+72:              '["72", "break_ties", "C", "1.0", "kernel", "rbf", "probability"]'
+73:              '["73", "C", "1.0", "kernel", "rbf", "probability", "verbose"]'
+74:              '["74", "break_ties", "C", "1.0", "kernel", "rbf", "probability", "verbose"]'
+75:              '["75", "C", "1.0", "kernel", "rbf", "verbose"]'
+76:              '["76", "C", "0.01", "kernel", "rbf", "verbose"]'
+77:              '["77", "C", "0.01", "kernel", "rbf", "probability", "verbose"]'
+78:              '["78", "C", "0.01", "kernel", "sigmoid", "probability"]'
+79:              '["79", "C", "0.01", "kernel", "sigmoid", "probability", "verbose"]'
+8:               '["8", "break_ties", "C", "0.01", "kernel", "precomputed", "shrinking"]'
+80:              '["80", "C", "0.01", "kernel", "sigmoid", "shrinking", "verbose"]'
+81:              '["81", "C", "0.01", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+82:              '["82", "C", "1.0", "kernel", "sigmoid", "probability", "shrinking", "verbose"]'
+83:              '["83", "C", "1.0", "kernel", "sigmoid", "shrinking", "verbose"]'
+84:              '["84", "C", "1.0", "kernel", "linear", "shrinking", "verbose"]'
+85:              '["85", "C", "1.0", "kernel", "sigmoid", "shrinking"]'
+86:              '["86", "C", "1.0", "kernel", "sigmoid"]'
+87:              '["87", "break_ties", "C", "1.0", "kernel", "sigmoid"]'
+88:              '["88", "C", "100.0", "kernel", "sigmoid"]'
+89:              '["89", "break_ties", "C", "100.0", "kernel", "sigmoid"]'
+9:               '["9", "break_ties", "C", "0.01", "kernel", "precomputed", "probability", "shrinking"]'
+90:              '["90", "break_ties", "C", "100.0", "kernel", "sigmoid", "probability"]'
+91:              '["91", "break_ties", "C", "100.0", "kernel", "rbf", "probability"]'
+92:              '["92", "break_ties", "C", "100.0", "kernel", "rbf", "probability", "verbose"]'
+93:              '["93", "break_ties", "C", "100.0", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+94:              '["94", "C", "0.01", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+95:              '["95", "break_ties", "C", "0.01", "kernel", "rbf", "shrinking", "verbose"]'
+96:              '["96", "break_ties", "C", "0.01", "kernel", "rbf", "probability", "shrinking", "verbose"]'
+97:              '["97", "break_ties", "C", "0.01", "kernel", "precomputed", "probability", "shrinking", "verbose"]'
+98:              '["98", "break_ties", "C", "100.0", "kernel", "precomputed", "probability"]'
+99:              '["99", "C", "10.0", "kernel", "precomputed", "probability"]'
+...

@@ -1,0 +1,1808 @@
+---
+DocType: CaseStudy
+Version: 1
+...
+---
+project_name: sklearn_experiment_sgd
+stages:
+- revisions:
+  - commit_hash: 5ac9dd6f801060b7c43c7d6151cf4cc45a6c866b
+    commit_id: 0
+    config_ids:
+    - 0
+    - 1
+    - 10
+    - 100
+    - 101
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 108
+    - 109
+    - 11
+    - 110
+    - 111
+    - 112
+    - 113
+    - 114
+    - 115
+    - 116
+    - 117
+    - 118
+    - 119
+    - 12
+    - 120
+    - 121
+    - 122
+    - 123
+    - 124
+    - 125
+    - 126
+    - 127
+    - 128
+    - 129
+    - 13
+    - 130
+    - 131
+    - 132
+    - 133
+    - 134
+    - 135
+    - 136
+    - 137
+    - 138
+    - 139
+    - 14
+    - 140
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 149
+    - 15
+    - 150
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 16
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 17
+    - 170
+    - 171
+    - 172
+    - 173
+    - 174
+    - 175
+    - 176
+    - 177
+    - 178
+    - 179
+    - 18
+    - 180
+    - 181
+    - 182
+    - 183
+    - 184
+    - 185
+    - 186
+    - 187
+    - 188
+    - 189
+    - 19
+    - 190
+    - 191
+    - 192
+    - 193
+    - 194
+    - 195
+    - 196
+    - 197
+    - 198
+    - 199
+    - 2
+    - 20
+    - 200
+    - 201
+    - 202
+    - 203
+    - 204
+    - 205
+    - 206
+    - 207
+    - 208
+    - 209
+    - 21
+    - 210
+    - 211
+    - 212
+    - 213
+    - 214
+    - 215
+    - 216
+    - 217
+    - 218
+    - 219
+    - 22
+    - 220
+    - 221
+    - 222
+    - 223
+    - 224
+    - 225
+    - 226
+    - 227
+    - 228
+    - 229
+    - 23
+    - 230
+    - 231
+    - 232
+    - 233
+    - 234
+    - 235
+    - 236
+    - 237
+    - 238
+    - 239
+    - 24
+    - 240
+    - 241
+    - 242
+    - 243
+    - 244
+    - 245
+    - 246
+    - 247
+    - 248
+    - 249
+    - 25
+    - 250
+    - 251
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    - 257
+    - 258
+    - 259
+    - 26
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    - 265
+    - 266
+    - 267
+    - 268
+    - 269
+    - 27
+    - 270
+    - 271
+    - 272
+    - 273
+    - 274
+    - 275
+    - 276
+    - 277
+    - 278
+    - 279
+    - 28
+    - 280
+    - 281
+    - 282
+    - 283
+    - 284
+    - 285
+    - 286
+    - 287
+    - 288
+    - 289
+    - 29
+    - 290
+    - 291
+    - 292
+    - 293
+    - 294
+    - 295
+    - 296
+    - 297
+    - 298
+    - 299
+    - 3
+    - 30
+    - 300
+    - 301
+    - 302
+    - 303
+    - 304
+    - 305
+    - 306
+    - 307
+    - 308
+    - 309
+    - 31
+    - 310
+    - 311
+    - 312
+    - 313
+    - 314
+    - 315
+    - 316
+    - 317
+    - 318
+    - 319
+    - 32
+    - 320
+    - 321
+    - 322
+    - 323
+    - 324
+    - 325
+    - 326
+    - 327
+    - 328
+    - 329
+    - 33
+    - 330
+    - 331
+    - 332
+    - 333
+    - 334
+    - 335
+    - 336
+    - 337
+    - 338
+    - 339
+    - 34
+    - 340
+    - 341
+    - 342
+    - 343
+    - 344
+    - 345
+    - 346
+    - 347
+    - 348
+    - 349
+    - 35
+    - 350
+    - 351
+    - 352
+    - 353
+    - 354
+    - 355
+    - 356
+    - 357
+    - 358
+    - 359
+    - 36
+    - 360
+    - 361
+    - 362
+    - 363
+    - 364
+    - 365
+    - 366
+    - 367
+    - 368
+    - 369
+    - 37
+    - 370
+    - 371
+    - 372
+    - 373
+    - 374
+    - 375
+    - 376
+    - 377
+    - 378
+    - 379
+    - 38
+    - 380
+    - 381
+    - 382
+    - 383
+    - 384
+    - 385
+    - 386
+    - 387
+    - 388
+    - 389
+    - 39
+    - 390
+    - 391
+    - 392
+    - 393
+    - 394
+    - 395
+    - 396
+    - 397
+    - 398
+    - 399
+    - 4
+    - 40
+    - 400
+    - 401
+    - 402
+    - 403
+    - 404
+    - 405
+    - 406
+    - 407
+    - 408
+    - 409
+    - 41
+    - 410
+    - 411
+    - 412
+    - 413
+    - 414
+    - 415
+    - 416
+    - 417
+    - 418
+    - 419
+    - 42
+    - 420
+    - 421
+    - 422
+    - 423
+    - 424
+    - 425
+    - 426
+    - 427
+    - 428
+    - 429
+    - 43
+    - 430
+    - 431
+    - 432
+    - 433
+    - 434
+    - 435
+    - 436
+    - 437
+    - 438
+    - 439
+    - 44
+    - 440
+    - 441
+    - 442
+    - 443
+    - 444
+    - 445
+    - 446
+    - 447
+    - 448
+    - 449
+    - 45
+    - 450
+    - 451
+    - 452
+    - 453
+    - 454
+    - 455
+    - 456
+    - 457
+    - 458
+    - 459
+    - 46
+    - 460
+    - 461
+    - 462
+    - 463
+    - 464
+    - 465
+    - 466
+    - 467
+    - 468
+    - 469
+    - 47
+    - 470
+    - 471
+    - 472
+    - 473
+    - 474
+    - 475
+    - 476
+    - 477
+    - 478
+    - 479
+    - 48
+    - 480
+    - 481
+    - 482
+    - 483
+    - 484
+    - 485
+    - 486
+    - 487
+    - 488
+    - 489
+    - 49
+    - 490
+    - 491
+    - 492
+    - 493
+    - 494
+    - 495
+    - 496
+    - 497
+    - 498
+    - 499
+    - 5
+    - 50
+    - 500
+    - 501
+    - 502
+    - 503
+    - 504
+    - 505
+    - 506
+    - 507
+    - 508
+    - 509
+    - 51
+    - 510
+    - 511
+    - 512
+    - 513
+    - 514
+    - 515
+    - 516
+    - 517
+    - 518
+    - 519
+    - 52
+    - 520
+    - 521
+    - 522
+    - 523
+    - 524
+    - 525
+    - 526
+    - 527
+    - 528
+    - 529
+    - 53
+    - 530
+    - 531
+    - 532
+    - 533
+    - 534
+    - 535
+    - 536
+    - 537
+    - 538
+    - 539
+    - 54
+    - 540
+    - 541
+    - 542
+    - 543
+    - 544
+    - 545
+    - 546
+    - 547
+    - 548
+    - 549
+    - 55
+    - 550
+    - 551
+    - 552
+    - 553
+    - 554
+    - 555
+    - 556
+    - 557
+    - 558
+    - 559
+    - 56
+    - 560
+    - 561
+    - 562
+    - 563
+    - 564
+    - 565
+    - 566
+    - 567
+    - 568
+    - 569
+    - 57
+    - 570
+    - 571
+    - 572
+    - 573
+    - 574
+    - 575
+    - 576
+    - 577
+    - 578
+    - 579
+    - 58
+    - 580
+    - 581
+    - 582
+    - 583
+    - 584
+    - 585
+    - 586
+    - 587
+    - 588
+    - 589
+    - 59
+    - 590
+    - 591
+    - 592
+    - 593
+    - 594
+    - 595
+    - 596
+    - 597
+    - 598
+    - 599
+    - 6
+    - 60
+    - 600
+    - 601
+    - 602
+    - 603
+    - 604
+    - 605
+    - 606
+    - 607
+    - 608
+    - 609
+    - 61
+    - 610
+    - 611
+    - 612
+    - 613
+    - 614
+    - 615
+    - 616
+    - 617
+    - 618
+    - 619
+    - 62
+    - 620
+    - 621
+    - 622
+    - 623
+    - 624
+    - 625
+    - 626
+    - 627
+    - 628
+    - 629
+    - 63
+    - 630
+    - 631
+    - 632
+    - 633
+    - 634
+    - 635
+    - 636
+    - 637
+    - 638
+    - 639
+    - 64
+    - 640
+    - 641
+    - 642
+    - 643
+    - 644
+    - 645
+    - 646
+    - 647
+    - 648
+    - 649
+    - 65
+    - 650
+    - 651
+    - 652
+    - 653
+    - 654
+    - 655
+    - 656
+    - 657
+    - 658
+    - 659
+    - 66
+    - 660
+    - 661
+    - 662
+    - 663
+    - 664
+    - 665
+    - 666
+    - 667
+    - 668
+    - 669
+    - 67
+    - 670
+    - 671
+    - 672
+    - 673
+    - 674
+    - 675
+    - 676
+    - 677
+    - 678
+    - 679
+    - 68
+    - 680
+    - 681
+    - 682
+    - 683
+    - 684
+    - 685
+    - 686
+    - 687
+    - 688
+    - 689
+    - 69
+    - 690
+    - 691
+    - 692
+    - 693
+    - 694
+    - 695
+    - 696
+    - 697
+    - 698
+    - 699
+    - 7
+    - 70
+    - 700
+    - 701
+    - 702
+    - 703
+    - 704
+    - 705
+    - 706
+    - 707
+    - 708
+    - 709
+    - 71
+    - 710
+    - 711
+    - 712
+    - 713
+    - 714
+    - 715
+    - 716
+    - 717
+    - 718
+    - 719
+    - 72
+    - 720
+    - 721
+    - 722
+    - 723
+    - 724
+    - 725
+    - 726
+    - 727
+    - 728
+    - 729
+    - 73
+    - 730
+    - 731
+    - 732
+    - 733
+    - 734
+    - 735
+    - 736
+    - 737
+    - 738
+    - 739
+    - 74
+    - 740
+    - 741
+    - 742
+    - 743
+    - 744
+    - 745
+    - 746
+    - 747
+    - 748
+    - 749
+    - 75
+    - 750
+    - 751
+    - 752
+    - 753
+    - 754
+    - 755
+    - 756
+    - 757
+    - 758
+    - 759
+    - 76
+    - 760
+    - 761
+    - 762
+    - 763
+    - 764
+    - 765
+    - 766
+    - 767
+    - 768
+    - 769
+    - 77
+    - 770
+    - 771
+    - 772
+    - 773
+    - 774
+    - 775
+    - 776
+    - 777
+    - 778
+    - 779
+    - 78
+    - 780
+    - 781
+    - 782
+    - 783
+    - 784
+    - 785
+    - 786
+    - 787
+    - 788
+    - 789
+    - 79
+    - 790
+    - 791
+    - 792
+    - 793
+    - 794
+    - 795
+    - 796
+    - 797
+    - 798
+    - 799
+    - 8
+    - 80
+    - 800
+    - 801
+    - 802
+    - 803
+    - 804
+    - 805
+    - 806
+    - 807
+    - 808
+    - 809
+    - 81
+    - 810
+    - 811
+    - 812
+    - 813
+    - 814
+    - 815
+    - 816
+    - 817
+    - 818
+    - 819
+    - 82
+    - 820
+    - 821
+    - 822
+    - 823
+    - 824
+    - 825
+    - 826
+    - 827
+    - 828
+    - 829
+    - 83
+    - 830
+    - 831
+    - 832
+    - 833
+    - 834
+    - 835
+    - 836
+    - 837
+    - 838
+    - 839
+    - 84
+    - 840
+    - 841
+    - 842
+    - 843
+    - 844
+    - 845
+    - 846
+    - 847
+    - 848
+    - 849
+    - 85
+    - 850
+    - 851
+    - 852
+    - 853
+    - 854
+    - 855
+    - 856
+    - 857
+    - 858
+    - 859
+    - 86
+    - 860
+    - 861
+    - 862
+    - 863
+    - 864
+    - 865
+    - 866
+    - 867
+    - 868
+    - 869
+    - 87
+    - 870
+    - 871
+    - 872
+    - 873
+    - 874
+    - 875
+    - 876
+    - 877
+    - 878
+    - 879
+    - 88
+    - 880
+    - 881
+    - 882
+    - 883
+    - 884
+    - 885
+    - 886
+    - 887
+    - 888
+    - 889
+    - 89
+    - 890
+    - 891
+    - 892
+    - 893
+    - 894
+    - 895
+    - 9
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+version: 1
+...
+---
+config_type: PlainCommandlineConfiguration
+0:               '["0", "loss", "hinge", "penalty", "l1"]'
+1:               '["1", "loss", "hinge", "penalty", "elasticnet"]'
+10:              '["10", "early_stopping", "loss", "huber", "penalty", "l2"]'
+100:             '["100", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+101:             '["101", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+102:             '["102", "early_stopping", "loss", "squared_error", "penalty", "l1"]'
+103:             '["103", "early_stopping", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+104:             '["104", "early_stopping", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+105:             '["105", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+106:             '["106", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+107:             '["107", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+108:             '["108", "average", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+109:             '["109", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+11:              '["11", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2"]'
+110:             '["110", "average", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+111:             '["111", "average", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+112:             '["112", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+113:             '["113", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+114:             '["114", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+115:             '["115", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+116:             '["116", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+117:             '["117", "early_stopping", "loss", "squared_error", "penalty", "None", "warm_start"]'
+118:             '["118", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None"]'
+119:             '["119", "early_stopping", "loss", "squared_error", "penalty", "None", "shuffle"]'
+12:              '["12", "average", "loss", "huber", "penalty", "l2"]'
+120:             '["120", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle"]'
+121:             '["121", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+122:             '["122", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+123:             '["123", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+124:             '["124", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+125:             '["125", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+126:             '["126", "early_stopping", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+127:             '["127", "early_stopping", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+128:             '["128", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+129:             '["129", "early_stopping", "loss", "perceptron", "penalty", "elasticnet"]'
+13:              '["13", "average", "early_stopping", "loss", "huber", "penalty", "l2"]'
+130:             '["130", "early_stopping", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+131:             '["131", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+132:             '["132", "early_stopping", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+133:             '["133", "early_stopping", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+134:             '["134", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+135:             '["135", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+136:             '["136", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+137:             '["137", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle"]'
+138:             '["138", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+139:             '["139", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None", "warm_start"]'
+14:              '["14", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2"]'
+140:             '["140", "average", "loss", "hinge", "penalty", "None", "warm_start"]'
+141:             '["141", "average", "fit_intercept", "loss", "hinge", "penalty", "None", "warm_start"]'
+142:             '["142", "average", "loss", "hinge", "penalty", "l2", "warm_start"]'
+143:             '["143", "average", "fit_intercept", "loss", "hinge", "penalty", "l2", "warm_start"]'
+144:             '["144", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+145:             '["145", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2"]'
+146:             '["146", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+147:             '["147", "average", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+148:             '["148", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+149:             '["149", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+15:              '["15", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2", "warm_start"]'
+150:             '["150", "average", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+151:             '["151", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+152:             '["152", "average", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+153:             '["153", "average", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+154:             '["154", "average", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+155:             '["155", "average", "early_stopping", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+156:             '["156", "average", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+157:             '["157", "average", "early_stopping", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+158:             '["158", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet"]'
+159:             '["159", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+16:              '["16", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+160:             '["160", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet"]'
+161:             '["161", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+162:             '["162", "average", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+163:             '["163", "average", "fit_intercept", "loss", "hinge", "penalty", "l1", "warm_start"]'
+164:             '["164", "average", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+165:             '["165", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+166:             '["166", "fit_intercept", "loss", "modified_huber", "penalty", "l1"]'
+167:             '["167", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+168:             '["168", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1"]'
+169:             '["169", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet"]'
+17:              '["17", "fit_intercept", "loss", "modified_huber", "penalty", "l2"]'
+170:             '["170", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet"]'
+171:             '["171", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet"]'
+172:             '["172", "early_stopping", "loss", "squared_error", "penalty", "elasticnet"]'
+173:             '["173", "average", "early_stopping", "loss", "squared_error", "penalty", "elasticnet"]'
+174:             '["174", "average", "early_stopping", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+175:             '["175", "average", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+176:             '["176", "average", "early_stopping", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+177:             '["177", "average", "early_stopping", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+178:             '["178", "average", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+179:             '["179", "average", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+18:              '["18", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+180:             '["180", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+181:             '["181", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+182:             '["182", "fit_intercept", "loss", "modified_huber", "penalty", "None"]'
+183:             '["183", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+184:             '["184", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2"]'
+185:             '["185", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None"]'
+186:             '["186", "fit_intercept", "loss", "hinge", "penalty", "l1"]'
+187:             '["187", "fit_intercept", "loss", "hinge", "penalty", "None"]'
+188:             '["188", "early_stopping", "loss", "hinge", "penalty", "None"]'
+189:             '["189", "loss", "hinge", "penalty", "None", "warm_start"]'
+19:              '["19", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+190:             '["190", "early_stopping", "loss", "hinge", "penalty", "None", "warm_start"]'
+191:             '["191", "early_stopping", "loss", "hinge", "penalty", "elasticnet"]'
+192:             '["192", "early_stopping", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+193:             '["193", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet"]'
+194:             '["194", "average", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet"]'
+195:             '["195", "average", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet"]'
+196:             '["196", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet"]'
+197:             '["197", "average", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+198:             '["198", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l2"]'
+199:             '["199", "average", "fit_intercept", "loss", "squared_error", "penalty", "l2"]'
+2:               '["2", "loss", "hinge", "penalty", "None"]'
+20:              '["20", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+200:             '["200", "fit_intercept", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+201:             '["201", "average", "fit_intercept", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+202:             '["202", "average", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+203:             '["203", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+204:             '["204", "average", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+205:             '["205", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+206:             '["206", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+207:             '["207", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+208:             '["208", "early_stopping", "loss", "perceptron", "penalty", "l1"]'
+209:             '["209", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1"]'
+21:              '["21", "average", "early_stopping", "loss", "modified_huber", "penalty", "l2"]'
+210:             '["210", "early_stopping", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+211:             '["211", "average", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+212:             '["212", "average", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+213:             '["213", "average", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+214:             '["214", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+215:             '["215", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+216:             '["216", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+217:             '["217", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle"]'
+218:             '["218", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+219:             '["219", "early_stopping", "loss", "huber", "penalty", "l1"]'
+22:              '["22", "average", "early_stopping", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+220:             '["220", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1"]'
+221:             '["221", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle"]'
+222:             '["222", "early_stopping", "loss", "huber", "penalty", "l1", "shuffle"]'
+223:             '["223", "loss", "huber", "penalty", "None", "shuffle"]'
+224:             '["224", "early_stopping", "loss", "huber", "penalty", "None", "shuffle"]'
+225:             '["225", "early_stopping", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+226:             '["226", "early_stopping", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+227:             '["227", "average", "early_stopping", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+228:             '["228", "average", "early_stopping", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+229:             '["229", "average", "early_stopping", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+23:              '["23", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2"]'
+230:             '["230", "average", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+231:             '["231", "average", "loss", "huber", "penalty", "l1", "shuffle"]'
+232:             '["232", "average", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+233:             '["233", "loss", "huber", "penalty", "l1", "shuffle"]'
+234:             '["234", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle"]'
+235:             '["235", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+236:             '["236", "fit_intercept", "loss", "huber", "penalty", "elasticnet"]'
+237:             '["237", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+238:             '["238", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+239:             '["239", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+24:              '["24", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+240:             '["240", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+241:             '["241", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+242:             '["242", "average", "early_stopping", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+243:             '["243", "average", "early_stopping", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+244:             '["244", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+245:             '["245", "average", "early_stopping", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+246:             '["246", "average", "early_stopping", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+247:             '["247", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+248:             '["248", "average", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet"]'
+249:             '["249", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+25:              '["25", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+250:             '["250", "average", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+251:             '["251", "fit_intercept", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+252:             '["252", "average", "fit_intercept", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+253:             '["253", "average", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+254:             '["254", "average", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+255:             '["255", "average", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle"]'
+256:             '["256", "average", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+257:             '["257", "average", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle"]'
+258:             '["258", "average", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle"]'
+259:             '["259", "average", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+26:              '["26", "loss", "squared_error", "penalty", "None"]'
+260:             '["260", "fit_intercept", "loss", "huber", "penalty", "l1", "warm_start"]'
+261:             '["261", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+262:             '["262", "fit_intercept", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+263:             '["263", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+264:             '["264", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+265:             '["265", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+266:             '["266", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle"]'
+267:             '["267", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+268:             '["268", "average", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+269:             '["269", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+27:              '["27", "loss", "squared_error", "penalty", "None", "warm_start"]'
+270:             '["270", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+271:             '["271", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+272:             '["272", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+273:             '["273", "loss", "epsilon_insensitive", "penalty", "l1"]'
+274:             '["274", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+275:             '["275", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+276:             '["276", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1"]'
+277:             '["277", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+278:             '["278", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+279:             '["279", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None", "warm_start"]'
+28:              '["28", "fit_intercept", "loss", "squared_error", "penalty", "None", "warm_start"]'
+280:             '["280", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+281:             '["281", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+282:             '["282", "early_stopping", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+283:             '["283", "loss", "hinge", "penalty", "None", "shuffle"]'
+284:             '["284", "loss", "hinge", "penalty", "l2", "shuffle"]'
+285:             '["285", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+286:             '["286", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+287:             '["287", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+288:             '["288", "early_stopping", "loss", "squared_error", "penalty", "l2", "shuffle", "warm_start"]'
+289:             '["289", "early_stopping", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+29:              '["29", "average", "loss", "squared_error", "penalty", "None"]'
+290:             '["290", "early_stopping", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+291:             '["291", "early_stopping", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+292:             '["292", "early_stopping", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+293:             '["293", "early_stopping", "loss", "log_loss", "penalty", "l2"]'
+294:             '["294", "early_stopping", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+295:             '["295", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+296:             '["296", "early_stopping", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+297:             '["297", "early_stopping", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+298:             '["298", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+299:             '["299", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+3:               '["3", "average", "loss", "hinge", "penalty", "None"]'
+30:              '["30", "average", "early_stopping", "loss", "squared_error", "penalty", "None"]'
+300:             '["300", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+301:             '["301", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+302:             '["302", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+303:             '["303", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+304:             '["304", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+305:             '["305", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+306:             '["306", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+307:             '["307", "fit_intercept", "loss", "log_loss", "penalty", "l2"]'
+308:             '["308", "average", "fit_intercept", "loss", "log_loss", "penalty", "l2"]'
+309:             '["309", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2"]'
+31:              '["31", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None"]'
+310:             '["310", "loss", "log_loss", "penalty", "l2"]'
+311:             '["311", "loss", "huber", "penalty", "l2"]'
+312:             '["312", "loss", "huber", "penalty", "l1"]'
+313:             '["313", "fit_intercept", "loss", "huber", "penalty", "l1"]'
+314:             '["314", "average", "fit_intercept", "loss", "huber", "penalty", "l1"]'
+315:             '["315", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1"]'
+316:             '["316", "average", "fit_intercept", "loss", "hinge", "penalty", "l1"]'
+317:             '["317", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1"]'
+318:             '["318", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle"]'
+319:             '["319", "average", "early_stopping", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+32:              '["32", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None", "warm_start"]'
+320:             '["320", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+321:             '["321", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+322:             '["322", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+323:             '["323", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+324:             '["324", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+325:             '["325", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+326:             '["326", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+327:             '["327", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet"]'
+328:             '["328", "fit_intercept", "loss", "log_loss", "penalty", "None"]'
+329:             '["329", "fit_intercept", "loss", "log_loss", "penalty", "None", "warm_start"]'
+33:              '["33", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+330:             '["330", "fit_intercept", "loss", "log_loss", "penalty", "l1"]'
+331:             '["331", "loss", "log_loss", "penalty", "elasticnet"]'
+332:             '["332", "average", "loss", "log_loss", "penalty", "elasticnet"]'
+333:             '["333", "loss", "huber", "penalty", "elasticnet"]'
+334:             '["334", "average", "loss", "huber", "penalty", "elasticnet"]'
+335:             '["335", "average", "early_stopping", "loss", "huber", "penalty", "elasticnet"]'
+336:             '["336", "average", "early_stopping", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+337:             '["337", "average", "early_stopping", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+338:             '["338", "average", "early_stopping", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+339:             '["339", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+34:              '["34", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+340:             '["340", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+341:             '["341", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+342:             '["342", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+343:             '["343", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+344:             '["344", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+345:             '["345", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+346:             '["346", "average", "early_stopping", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+347:             '["347", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+348:             '["348", "average", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+349:             '["349", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2"]'
+35:              '["35", "loss", "modified_huber", "penalty", "l1"]'
+350:             '["350", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+351:             '["351", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle"]'
+352:             '["352", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle"]'
+353:             '["353", "early_stopping", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+354:             '["354", "average", "early_stopping", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+355:             '["355", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+356:             '["356", "average", "fit_intercept", "loss", "log_loss", "penalty", "None", "warm_start"]'
+357:             '["357", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None", "warm_start"]'
+358:             '["358", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+359:             '["359", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+36:              '["36", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+360:             '["360", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+361:             '["361", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+362:             '["362", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+363:             '["363", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+364:             '["364", "average", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+365:             '["365", "average", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+366:             '["366", "average", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+367:             '["367", "average", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+368:             '["368", "average", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+369:             '["369", "average", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+37:              '["37", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+370:             '["370", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+371:             '["371", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+372:             '["372", "early_stopping", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+373:             '["373", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+374:             '["374", "early_stopping", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+375:             '["375", "early_stopping", "loss", "hinge", "penalty", "l1", "warm_start"]'
+376:             '["376", "early_stopping", "loss", "hinge", "penalty", "l1"]'
+377:             '["377", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1"]'
+378:             '["378", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1", "warm_start"]'
+379:             '["379", "fit_intercept", "loss", "hinge", "penalty", "l1", "warm_start"]'
+38:              '["38", "average", "loss", "modified_huber", "penalty", "l1"]'
+380:             '["380", "fit_intercept", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+381:             '["381", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+382:             '["382", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+383:             '["383", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+384:             '["384", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+385:             '["385", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+386:             '["386", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+387:             '["387", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1"]'
+388:             '["388", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+389:             '["389", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet"]'
+39:              '["39", "average", "early_stopping", "loss", "modified_huber", "penalty", "l1"]'
+390:             '["390", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet"]'
+391:             '["391", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet"]'
+392:             '["392", "fit_intercept", "loss", "hinge", "penalty", "elasticnet"]'
+393:             '["393", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+394:             '["394", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+395:             '["395", "average", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+396:             '["396", "average", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+397:             '["397", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+398:             '["398", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+399:             '["399", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+4:               '["4", "average", "early_stopping", "loss", "hinge", "penalty", "None"]'
+40:              '["40", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1"]'
+400:             '["400", "loss", "modified_huber", "penalty", "elasticnet"]'
+401:             '["401", "average", "loss", "modified_huber", "penalty", "elasticnet"]'
+402:             '["402", "average", "loss", "modified_huber", "penalty", "l2"]'
+403:             '["403", "average", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+404:             '["404", "average", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+405:             '["405", "average", "loss", "perceptron", "penalty", "l2"]'
+406:             '["406", "average", "loss", "perceptron", "penalty", "elasticnet"]'
+407:             '["407", "average", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+408:             '["408", "average", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+409:             '["409", "average", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+41:              '["41", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "warm_start"]'
+410:             '["410", "average", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+411:             '["411", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+412:             '["412", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+413:             '["413", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+414:             '["414", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+415:             '["415", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+416:             '["416", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+417:             '["417", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle", "warm_start"]'
+418:             '["418", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+419:             '["419", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+42:              '["42", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+420:             '["420", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+421:             '["421", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2"]'
+422:             '["422", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None"]'
+423:             '["423", "fit_intercept", "loss", "perceptron", "penalty", "None"]'
+424:             '["424", "fit_intercept", "loss", "perceptron", "penalty", "None", "warm_start"]'
+425:             '["425", "fit_intercept", "loss", "squared_error", "penalty", "None"]'
+426:             '["426", "fit_intercept", "loss", "perceptron", "penalty", "l2"]'
+427:             '["427", "fit_intercept", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+428:             '["428", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+429:             '["429", "early_stopping", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+43:              '["43", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+430:             '["430", "early_stopping", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+431:             '["431", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2"]'
+432:             '["432", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+433:             '["433", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+434:             '["434", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+435:             '["435", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+436:             '["436", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+437:             '["437", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+438:             '["438", "loss", "epsilon_insensitive", "penalty", "None"]'
+439:             '["439", "loss", "epsilon_insensitive", "penalty", "l2"]'
+44:              '["44", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+440:             '["440", "loss", "squared_error", "penalty", "l2"]'
+441:             '["441", "loss", "perceptron", "penalty", "l2"]'
+442:             '["442", "loss", "hinge", "penalty", "l2"]'
+443:             '["443", "fit_intercept", "loss", "hinge", "penalty", "l2"]'
+444:             '["444", "average", "fit_intercept", "loss", "hinge", "penalty", "l2"]'
+445:             '["445", "average", "loss", "hinge", "penalty", "l2"]'
+446:             '["446", "average", "loss", "hinge", "penalty", "elasticnet"]'
+447:             '["447", "average", "loss", "hinge", "penalty", "l1"]'
+448:             '["448", "average", "early_stopping", "loss", "hinge", "penalty", "l1"]'
+449:             '["449", "average", "early_stopping", "loss", "hinge", "penalty", "elasticnet"]'
+45:              '["45", "loss", "squared_error", "penalty", "elasticnet"]'
+450:             '["450", "early_stopping", "loss", "hinge", "penalty", "elasticnet", "warm_start"]'
+451:             '["451", "loss", "hinge", "penalty", "l1", "warm_start"]'
+452:             '["452", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+453:             '["453", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+454:             '["454", "loss", "hinge", "penalty", "l1", "shuffle"]'
+455:             '["455", "loss", "perceptron", "penalty", "None"]'
+456:             '["456", "loss", "log_loss", "penalty", "None"]'
+457:             '["457", "loss", "modified_huber", "penalty", "None"]'
+458:             '["458", "loss", "huber", "penalty", "None"]'
+459:             '["459", "loss", "squared_error", "penalty", "l1"]'
+46:              '["46", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+460:             '["460", "loss", "perceptron", "penalty", "l1"]'
+461:             '["461", "loss", "log_loss", "penalty", "l1"]'
+462:             '["462", "loss", "perceptron", "penalty", "elasticnet"]'
+463:             '["463", "fit_intercept", "loss", "huber", "penalty", "None"]'
+464:             '["464", "fit_intercept", "loss", "squared_error", "penalty", "l1"]'
+465:             '["465", "fit_intercept", "loss", "perceptron", "penalty", "l1"]'
+466:             '["466", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None"]'
+467:             '["467", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None"]'
+468:             '["468", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None"]'
+469:             '["469", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None"]'
+47:              '["47", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+470:             '["470", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet"]'
+471:             '["471", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+472:             '["472", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet"]'
+473:             '["473", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1"]'
+474:             '["474", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1"]'
+475:             '["475", "early_stopping", "loss", "squared_error", "penalty", "None"]'
+476:             '["476", "early_stopping", "loss", "perceptron", "penalty", "None"]'
+477:             '["477", "early_stopping", "loss", "modified_huber", "penalty", "None"]'
+478:             '["478", "early_stopping", "loss", "huber", "penalty", "None"]'
+479:             '["479", "early_stopping", "loss", "log_loss", "penalty", "None"]'
+48:              '["48", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+480:             '["480", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None"]'
+481:             '["481", "early_stopping", "loss", "huber", "penalty", "elasticnet"]'
+482:             '["482", "early_stopping", "loss", "log_loss", "penalty", "elasticnet"]'
+483:             '["483", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+484:             '["484", "early_stopping", "loss", "modified_huber", "penalty", "l1"]'
+485:             '["485", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1"]'
+486:             '["486", "early_stopping", "loss", "log_loss", "penalty", "l1"]'
+487:             '["487", "early_stopping", "loss", "perceptron", "penalty", "None", "shuffle"]'
+488:             '["488", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+489:             '["489", "early_stopping", "loss", "log_loss", "penalty", "None", "shuffle"]'
+49:              '["49", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+490:             '["490", "early_stopping", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+491:             '["491", "early_stopping", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+492:             '["492", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+493:             '["493", "early_stopping", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+494:             '["494", "early_stopping", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+495:             '["495", "early_stopping", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+496:             '["496", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+497:             '["497", "early_stopping", "loss", "squared_error", "penalty", "l2"]'
+498:             '["498", "early_stopping", "loss", "perceptron", "penalty", "l2"]'
+499:             '["499", "early_stopping", "loss", "modified_huber", "penalty", "l2"]'
+5:               '["5", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None"]'
+50:              '["50", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle", "warm_start"]'
+500:             '["500", "loss", "modified_huber", "penalty", "l2"]'
+501:             '["501", "loss", "perceptron", "penalty", "None", "warm_start"]'
+502:             '["502", "loss", "huber", "penalty", "None", "warm_start"]'
+503:             '["503", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+504:             '["504", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+505:             '["505", "loss", "huber", "penalty", "l1", "warm_start"]'
+506:             '["506", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+507:             '["507", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+508:             '["508", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+509:             '["509", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+51:              '["51", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+510:             '["510", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+511:             '["511", "fit_intercept", "loss", "huber", "penalty", "None", "warm_start"]'
+512:             '["512", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+513:             '["513", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+514:             '["514", "fit_intercept", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+515:             '["515", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+516:             '["516", "fit_intercept", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+517:             '["517", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+518:             '["518", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+519:             '["519", "fit_intercept", "loss", "squared_error", "penalty", "l2"]'
+52:              '["52", "loss", "hinge", "penalty", "l2", "warm_start"]'
+520:             '["520", "average", "loss", "squared_error", "penalty", "l2"]'
+521:             '["521", "average", "loss", "log_loss", "penalty", "l2"]'
+522:             '["522", "average", "loss", "epsilon_insensitive", "penalty", "l2"]'
+523:             '["523", "average", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+524:             '["524", "average", "loss", "huber", "penalty", "l2", "shuffle"]'
+525:             '["525", "average", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+526:             '["526", "average", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+527:             '["527", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+528:             '["528", "loss", "huber", "penalty", "l2", "shuffle"]'
+529:             '["529", "loss", "perceptron", "penalty", "None", "shuffle"]'
+53:              '["53", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+530:             '["530", "early_stopping", "loss", "perceptron", "penalty", "None", "warm_start"]'
+531:             '["531", "average", "loss", "squared_error", "penalty", "elasticnet"]'
+532:             '["532", "loss", "squared_error", "penalty", "None", "shuffle"]'
+533:             '["533", "early_stopping", "loss", "huber", "penalty", "None", "warm_start"]'
+534:             '["534", "average", "loss", "perceptron", "penalty", "l1"]'
+535:             '["535", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+536:             '["536", "early_stopping", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+537:             '["537", "average", "loss", "huber", "penalty", "l1"]'
+538:             '["538", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+539:             '["539", "early_stopping", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+54:              '["54", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle"]'
+540:             '["540", "average", "loss", "squared_error", "penalty", "l1"]'
+541:             '["541", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+542:             '["542", "early_stopping", "loss", "huber", "penalty", "l1", "warm_start"]'
+543:             '["543", "average", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+544:             '["544", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+545:             '["545", "early_stopping", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+546:             '["546", "average", "loss", "epsilon_insensitive", "penalty", "l1"]'
+547:             '["547", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+548:             '["548", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+549:             '["549", "average", "loss", "log_loss", "penalty", "l1"]'
+55:              '["55", "fit_intercept", "loss", "hinge", "penalty", "l2", "warm_start"]'
+550:             '["550", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+551:             '["551", "early_stopping", "loss", "log_loss", "penalty", "None", "warm_start"]'
+552:             '["552", "average", "fit_intercept", "loss", "perceptron", "penalty", "None"]'
+553:             '["553", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+554:             '["554", "early_stopping", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+555:             '["555", "average", "fit_intercept", "loss", "huber", "penalty", "None"]'
+556:             '["556", "loss", "log_loss", "penalty", "None", "shuffle"]'
+557:             '["557", "average", "loss", "perceptron", "penalty", "None", "warm_start"]'
+558:             '["558", "average", "fit_intercept", "loss", "squared_error", "penalty", "None"]'
+559:             '["559", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+56:              '["56", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+560:             '["560", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None", "warm_start"]'
+561:             '["561", "average", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet"]'
+562:             '["562", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+563:             '["563", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None", "warm_start"]'
+564:             '["564", "average", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet"]'
+565:             '["565", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+566:             '["566", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "None", "warm_start"]'
+567:             '["567", "average", "fit_intercept", "loss", "perceptron", "penalty", "l1"]'
+568:             '["568", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle"]'
+569:             '["569", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+57:              '["57", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle"]'
+570:             '["570", "average", "fit_intercept", "loss", "squared_error", "penalty", "l1"]'
+571:             '["571", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle"]'
+572:             '["572", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+573:             '["573", "average", "fit_intercept", "loss", "modified_huber", "penalty", "None"]'
+574:             '["574", "average", "loss", "perceptron", "penalty", "None", "shuffle"]'
+575:             '["575", "average", "early_stopping", "loss", "perceptron", "penalty", "None"]'
+576:             '["576", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l1"]'
+577:             '["577", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+578:             '["578", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+579:             '["579", "average", "loss", "huber", "penalty", "None", "shuffle"]'
+58:              '["58", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+580:             '["580", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+581:             '["581", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1", "warm_start"]'
+582:             '["582", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None"]'
+583:             '["583", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+584:             '["584", "average", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+585:             '["585", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+586:             '["586", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+587:             '["587", "average", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+588:             '["588", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+589:             '["589", "fit_intercept", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+59:              '["59", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+590:             '["590", "average", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+591:             '["591", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+592:             '["592", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+593:             '["593", "average", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+594:             '["594", "loss", "huber", "penalty", "l2", "warm_start"]'
+595:             '["595", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle"]'
+596:             '["596", "average", "loss", "squared_error", "penalty", "None", "shuffle"]'
+597:             '["597", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+598:             '["598", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+599:             '["599", "average", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+6:               '["6", "average", "fit_intercept", "loss", "hinge", "penalty", "None"]'
+60:              '["60", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+600:             '["600", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+601:             '["601", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle"]'
+602:             '["602", "average", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+603:             '["603", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+604:             '["604", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+605:             '["605", "average", "loss", "log_loss", "penalty", "None", "shuffle"]'
+606:             '["606", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+607:             '["607", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+608:             '["608", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+609:             '["609", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+61:              '["61", "average", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+610:             '["610", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+611:             '["611", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+612:             '["612", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+613:             '["613", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+614:             '["614", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+615:             '["615", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+616:             '["616", "fit_intercept", "loss", "huber", "penalty", "l2", "warm_start"]'
+617:             '["617", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+618:             '["618", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+619:             '["619", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+62:              '["62", "average", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+620:             '["620", "fit_intercept", "loss", "hinge", "penalty", "None", "warm_start"]'
+621:             '["621", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+622:             '["622", "early_stopping", "loss", "huber", "penalty", "l2", "warm_start"]'
+623:             '["623", "early_stopping", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+624:             '["624", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+625:             '["625", "early_stopping", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+626:             '["626", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+627:             '["627", "early_stopping", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+628:             '["628", "early_stopping", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+629:             '["629", "early_stopping", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+63:              '["63", "average", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+630:             '["630", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+631:             '["631", "early_stopping", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+632:             '["632", "early_stopping", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+633:             '["633", "early_stopping", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+634:             '["634", "early_stopping", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+635:             '["635", "early_stopping", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+636:             '["636", "early_stopping", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+637:             '["637", "early_stopping", "loss", "hinge", "penalty", "l2", "warm_start"]'
+638:             '["638", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+639:             '["639", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+64:              '["64", "average", "fit_intercept", "loss", "huber", "penalty", "elasticnet"]'
+640:             '["640", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+641:             '["641", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+642:             '["642", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+643:             '["643", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+644:             '["644", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2", "warm_start"]'
+645:             '["645", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2", "warm_start"]'
+646:             '["646", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None", "warm_start"]'
+647:             '["647", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+648:             '["648", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+649:             '["649", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+65:              '["65", "average", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+650:             '["650", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+651:             '["651", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+652:             '["652", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+653:             '["653", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+654:             '["654", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+655:             '["655", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+656:             '["656", "average", "early_stopping", "loss", "squared_error", "penalty", "None", "warm_start"]'
+657:             '["657", "average", "early_stopping", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+658:             '["658", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+659:             '["659", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+66:              '["66", "average", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+660:             '["660", "average", "early_stopping", "loss", "huber", "penalty", "None", "warm_start"]'
+661:             '["661", "average", "early_stopping", "loss", "huber", "penalty", "l1", "warm_start"]'
+662:             '["662", "average", "early_stopping", "loss", "perceptron", "penalty", "None", "warm_start"]'
+663:             '["663", "average", "early_stopping", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+664:             '["664", "average", "early_stopping", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+665:             '["665", "average", "early_stopping", "loss", "huber", "penalty", "l2", "warm_start"]'
+666:             '["666", "average", "early_stopping", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+667:             '["667", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None", "warm_start"]'
+668:             '["668", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None", "warm_start"]'
+669:             '["669", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+67:              '["67", "average", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle", "warm_start"]'
+670:             '["670", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+671:             '["671", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+672:             '["672", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+673:             '["673", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l1", "warm_start"]'
+674:             '["674", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+675:             '["675", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+676:             '["676", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+677:             '["677", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+678:             '["678", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1", "warm_start"]'
+679:             '["679", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+68:              '["68", "average", "fit_intercept", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+680:             '["680", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+681:             '["681", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+682:             '["682", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+683:             '["683", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "warm_start"]'
+684:             '["684", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+685:             '["685", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+686:             '["686", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+687:             '["687", "average", "early_stopping", "loss", "log_loss", "penalty", "None", "warm_start"]'
+688:             '["688", "average", "early_stopping", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+689:             '["689", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None", "shuffle", "warm_start"]'
+69:              '["69", "average", "loss", "hinge", "penalty", "None", "shuffle"]'
+690:             '["690", "average", "early_stopping", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+691:             '["691", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+692:             '["692", "average", "early_stopping", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+693:             '["693", "average", "early_stopping", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+694:             '["694", "average", "early_stopping", "loss", "hinge", "penalty", "None", "warm_start"]'
+695:             '["695", "average", "early_stopping", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+696:             '["696", "average", "early_stopping", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+697:             '["697", "average", "early_stopping", "loss", "huber", "penalty", "l1", "shuffle", "warm_start"]'
+698:             '["698", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+699:             '["699", "average", "early_stopping", "loss", "perceptron", "penalty", "l1", "shuffle", "warm_start"]'
+7:               '["7", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None"]'
+70:              '["70", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle"]'
+700:             '["700", "average", "early_stopping", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+701:             '["701", "average", "early_stopping", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+702:             '["702", "average", "early_stopping", "loss", "hinge", "penalty", "l1", "warm_start"]'
+703:             '["703", "average", "early_stopping", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+704:             '["704", "average", "early_stopping", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+705:             '["705", "average", "early_stopping", "loss", "huber", "penalty", "l2", "shuffle", "warm_start"]'
+706:             '["706", "average", "early_stopping", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+707:             '["707", "average", "early_stopping", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+708:             '["708", "average", "early_stopping", "loss", "log_loss", "penalty", "l2", "shuffle", "warm_start"]'
+709:             '["709", "average", "early_stopping", "loss", "hinge", "penalty", "l2", "warm_start"]'
+71:              '["71", "average", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle"]'
+710:             '["710", "average", "loss", "squared_error", "penalty", "None", "warm_start"]'
+711:             '["711", "average", "loss", "squared_error", "penalty", "None", "shuffle", "warm_start"]'
+712:             '["712", "average", "loss", "modified_huber", "penalty", "elasticnet", "warm_start"]'
+713:             '["713", "average", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+714:             '["714", "average", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+715:             '["715", "average", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+716:             '["716", "average", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+717:             '["717", "average", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+718:             '["718", "average", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+719:             '["719", "average", "loss", "squared_error", "penalty", "l1", "shuffle", "warm_start"]'
+72:              '["72", "average", "loss", "perceptron", "penalty", "None"]'
+720:             '["720", "average", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+721:             '["721", "average", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+722:             '["722", "average", "loss", "modified_huber", "penalty", "l2", "warm_start"]'
+723:             '["723", "average", "loss", "squared_error", "penalty", "l2", "warm_start"]'
+724:             '["724", "average", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+725:             '["725", "average", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+726:             '["726", "average", "loss", "log_loss", "penalty", "l2", "warm_start"]'
+727:             '["727", "average", "loss", "huber", "penalty", "None", "warm_start"]'
+728:             '["728", "average", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+729:             '["729", "average", "loss", "huber", "penalty", "l1", "warm_start"]'
+73:              '["73", "average", "loss", "epsilon_insensitive", "penalty", "None"]'
+730:             '["730", "average", "loss", "huber", "penalty", "l2", "warm_start"]'
+731:             '["731", "average", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+732:             '["732", "average", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+733:             '["733", "average", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle", "warm_start"]'
+734:             '["734", "average", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+735:             '["735", "average", "loss", "hinge", "penalty", "l1", "warm_start"]'
+736:             '["736", "average", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+737:             '["737", "average", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+738:             '["738", "average", "fit_intercept", "loss", "modified_huber", "penalty", "None", "warm_start"]'
+739:             '["739", "average", "fit_intercept", "loss", "squared_error", "penalty", "None", "warm_start"]'
+74:              '["74", "average", "loss", "huber", "penalty", "None"]'
+740:             '["740", "average", "fit_intercept", "loss", "perceptron", "penalty", "None", "warm_start"]'
+741:             '["741", "average", "fit_intercept", "loss", "squared_error", "penalty", "l1", "warm_start"]'
+742:             '["742", "average", "fit_intercept", "loss", "perceptron", "penalty", "l1", "warm_start"]'
+743:             '["743", "average", "fit_intercept", "loss", "log_loss", "penalty", "l1", "warm_start"]'
+744:             '["744", "average", "fit_intercept", "loss", "perceptron", "penalty", "l2", "warm_start"]'
+745:             '["745", "average", "fit_intercept", "loss", "huber", "penalty", "None", "warm_start"]'
+746:             '["746", "average", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle", "warm_start"]'
+747:             '["747", "average", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle", "warm_start"]'
+748:             '["748", "average", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle", "warm_start"]'
+749:             '["749", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle", "warm_start"]'
+75:              '["75", "average", "loss", "modified_huber", "penalty", "None"]'
+750:             '["750", "average", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle", "warm_start"]'
+751:             '["751", "average", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle", "warm_start"]'
+752:             '["752", "average", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle", "warm_start"]'
+753:             '["753", "average", "fit_intercept", "loss", "huber", "penalty", "l1", "warm_start"]'
+754:             '["754", "average", "fit_intercept", "loss", "huber", "penalty", "l2", "warm_start"]'
+755:             '["755", "average", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "warm_start"]'
+756:             '["756", "average", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "warm_start"]'
+757:             '["757", "average", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "warm_start"]'
+758:             '["758", "average", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle", "warm_start"]'
+759:             '["759", "average", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+76:              '["76", "average", "loss", "log_loss", "penalty", "None"]'
+760:             '["760", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "warm_start"]'
+761:             '["761", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "warm_start"]'
+762:             '["762", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "warm_start"]'
+763:             '["763", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle", "warm_start"]'
+764:             '["764", "average", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle", "warm_start"]'
+765:             '["765", "average", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+766:             '["766", "average", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+767:             '["767", "early_stopping", "loss", "squared_error", "penalty", "l2", "shuffle"]'
+768:             '["768", "early_stopping", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+769:             '["769", "early_stopping", "loss", "huber", "penalty", "l2", "shuffle"]'
+77:              '["77", "average", "fit_intercept", "loss", "log_loss", "penalty", "None"]'
+770:             '["770", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+771:             '["771", "early_stopping", "loss", "hinge", "penalty", "l2"]'
+772:             '["772", "early_stopping", "loss", "hinge", "penalty", "None", "shuffle"]'
+773:             '["773", "early_stopping", "loss", "hinge", "penalty", "l1", "shuffle"]'
+774:             '["774", "early_stopping", "loss", "hinge", "penalty", "l2", "shuffle"]'
+775:             '["775", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l2"]'
+776:             '["776", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2"]'
+777:             '["777", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2"]'
+778:             '["778", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle"]'
+779:             '["779", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle"]'
+78:              '["78", "loss", "log_loss", "penalty", "None", "warm_start"]'
+780:             '["780", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+781:             '["781", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle"]'
+782:             '["782", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+783:             '["783", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+784:             '["784", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+785:             '["785", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle"]'
+786:             '["786", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+787:             '["787", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+788:             '["788", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2"]'
+789:             '["789", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "None", "shuffle"]'
+79:              '["79", "average", "loss", "log_loss", "penalty", "None", "warm_start"]'
+790:             '["790", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle"]'
+791:             '["791", "average", "early_stopping", "loss", "log_loss", "penalty", "None"]'
+792:             '["792", "average", "early_stopping", "loss", "modified_huber", "penalty", "None"]'
+793:             '["793", "average", "early_stopping", "loss", "huber", "penalty", "None"]'
+794:             '["794", "average", "early_stopping", "loss", "squared_error", "penalty", "l1"]'
+795:             '["795", "average", "early_stopping", "loss", "log_loss", "penalty", "l1"]'
+796:             '["796", "average", "early_stopping", "loss", "perceptron", "penalty", "l1"]'
+797:             '["797", "average", "early_stopping", "loss", "huber", "penalty", "l1"]'
+798:             '["798", "average", "early_stopping", "loss", "squared_error", "penalty", "l2"]'
+799:             '["799", "average", "early_stopping", "loss", "log_loss", "penalty", "l2"]'
+8:               '["8", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2"]'
+80:              '["80", "average", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+800:             '["800", "average", "early_stopping", "loss", "perceptron", "penalty", "l2"]'
+801:             '["801", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None"]'
+802:             '["802", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1"]'
+803:             '["803", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l2"]'
+804:             '["804", "average", "early_stopping", "loss", "squared_error", "penalty", "None", "shuffle"]'
+805:             '["805", "average", "early_stopping", "loss", "perceptron", "penalty", "None", "shuffle"]'
+806:             '["806", "average", "early_stopping", "loss", "log_loss", "penalty", "None", "shuffle"]'
+807:             '["807", "average", "early_stopping", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+808:             '["808", "average", "early_stopping", "loss", "huber", "penalty", "None", "shuffle"]'
+809:             '["809", "average", "early_stopping", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+81:              '["81", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+810:             '["810", "average", "early_stopping", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+811:             '["811", "average", "early_stopping", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+812:             '["812", "average", "early_stopping", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+813:             '["813", "average", "early_stopping", "loss", "huber", "penalty", "l1", "shuffle"]'
+814:             '["814", "average", "early_stopping", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+815:             '["815", "average", "early_stopping", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+816:             '["816", "average", "early_stopping", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+817:             '["817", "average", "early_stopping", "loss", "huber", "penalty", "l2", "shuffle"]'
+818:             '["818", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+819:             '["819", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+82:              '["82", "early_stopping", "loss", "log_loss", "penalty", "elasticnet", "warm_start"]'
+820:             '["820", "average", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+821:             '["821", "average", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+822:             '["822", "average", "early_stopping", "loss", "perceptron", "penalty", "elasticnet"]'
+823:             '["823", "average", "early_stopping", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+824:             '["824", "average", "early_stopping", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+825:             '["825", "average", "early_stopping", "loss", "log_loss", "penalty", "elasticnet"]'
+826:             '["826", "average", "early_stopping", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+827:             '["827", "average", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+828:             '["828", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+829:             '["829", "average", "early_stopping", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+83:              '["83", "early_stopping", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+830:             '["830", "average", "loss", "hinge", "penalty", "elasticnet", "shuffle"]'
+831:             '["831", "average", "loss", "hinge", "penalty", "l1", "shuffle"]'
+832:             '["832", "average", "early_stopping", "loss", "hinge", "penalty", "None", "shuffle"]'
+833:             '["833", "average", "early_stopping", "loss", "hinge", "penalty", "l1", "shuffle"]'
+834:             '["834", "average", "loss", "hinge", "penalty", "l2", "shuffle"]'
+835:             '["835", "average", "early_stopping", "loss", "hinge", "penalty", "l2"]'
+836:             '["836", "average", "early_stopping", "loss", "hinge", "penalty", "l2", "shuffle"]'
+837:             '["837", "average", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle"]'
+838:             '["838", "average", "fit_intercept", "loss", "squared_error", "penalty", "None", "shuffle"]'
+839:             '["839", "average", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+84:              '["84", "early_stopping", "loss", "log_loss", "penalty", "elasticnet", "shuffle", "warm_start"]'
+840:             '["840", "average", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+841:             '["841", "average", "fit_intercept", "loss", "log_loss", "penalty", "None", "shuffle"]'
+842:             '["842", "average", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+843:             '["843", "average", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+844:             '["844", "average", "fit_intercept", "loss", "perceptron", "penalty", "l1", "shuffle"]'
+845:             '["845", "average", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+846:             '["846", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+847:             '["847", "average", "fit_intercept", "loss", "log_loss", "penalty", "l1"]'
+848:             '["848", "average", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+849:             '["849", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None"]'
+85:              '["85", "early_stopping", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+850:             '["850", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None"]'
+851:             '["851", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "None", "shuffle"]'
+852:             '["852", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "None", "shuffle"]'
+853:             '["853", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet"]'
+854:             '["854", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet"]'
+855:             '["855", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "elasticnet", "shuffle"]'
+856:             '["856", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "elasticnet", "shuffle"]'
+857:             '["857", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "None"]'
+858:             '["858", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet"]'
+859:             '["859", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "elasticnet", "shuffle"]'
+86:              '["86", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+860:             '["860", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None"]'
+861:             '["861", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "None", "shuffle"]'
+862:             '["862", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet"]'
+863:             '["863", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "elasticnet", "shuffle"]'
+864:             '["864", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l1"]'
+865:             '["865", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1"]'
+866:             '["866", "average", "early_stopping", "fit_intercept", "loss", "squared_error", "penalty", "l1", "shuffle"]'
+867:             '["867", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l1", "shuffle"]'
+868:             '["868", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1"]'
+869:             '["869", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l1", "shuffle"]'
+87:              '["87", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle"]'
+870:             '["870", "average", "fit_intercept", "loss", "perceptron", "penalty", "l2"]'
+871:             '["871", "average", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+872:             '["872", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+873:             '["873", "average", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+874:             '["874", "average", "fit_intercept", "loss", "huber", "penalty", "l2"]'
+875:             '["875", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2"]'
+876:             '["876", "average", "early_stopping", "fit_intercept", "loss", "perceptron", "penalty", "l2", "shuffle"]'
+877:             '["877", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle"]'
+878:             '["878", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2"]'
+879:             '["879", "average", "early_stopping", "fit_intercept", "loss", "log_loss", "penalty", "l2", "shuffle"]'
+88:              '["88", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+880:             '["880", "average", "early_stopping", "fit_intercept", "loss", "huber", "penalty", "l2", "shuffle"]'
+881:             '["881", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None", "shuffle"]'
+882:             '["882", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+883:             '["883", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+884:             '["884", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1"]'
+885:             '["885", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+886:             '["886", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "None"]'
+887:             '["887", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet"]'
+888:             '["888", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "elasticnet", "shuffle"]'
+889:             '["889", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1"]'
+89:              '["89", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "elasticnet", "shuffle", "warm_start"]'
+890:             '["890", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l1", "shuffle"]'
+891:             '["891", "average", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2", "shuffle"]'
+892:             '["892", "average", "early_stopping", "fit_intercept", "loss", "epsilon_insensitive", "penalty", "l2"]'
+893:             '["893", "average", "fit_intercept", "loss", "hinge", "penalty", "elasticnet"]'
+894:             '["894", "average", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle"]'
+895:             '["895", "average", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle"]'
+9:               '["9", "fit_intercept", "loss", "huber", "penalty", "l2"]'
+90:              '["90", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+91:              '["91", "average", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+92:              '["92", "average", "early_stopping", "fit_intercept", "loss", "modified_huber", "penalty", "l2", "shuffle", "warm_start"]'
+93:              '["93", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2", "warm_start"]'
+94:              '["94", "average", "early_stopping", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+95:              '["95", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle"]'
+96:              '["96", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle"]'
+97:              '["97", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+98:              '["98", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l2", "shuffle", "warm_start"]'
+99:              '["99", "average", "early_stopping", "fit_intercept", "loss", "hinge", "penalty", "l1", "shuffle", "warm_start"]'
+...

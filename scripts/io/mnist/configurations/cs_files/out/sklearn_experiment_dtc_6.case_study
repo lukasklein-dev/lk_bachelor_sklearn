@@ -6,7 +6,7 @@ Version: 1
 project_name: sklearn_experiment_dtc
 stages:
 - revisions:
-  - commit_hash: 2ec0c4b97cd19d8da5ffc462a9ec37885ec23bd3
+  - commit_hash: 5ac9dd6f801060b7c43c7d6151cf4cc45a6c866b
     commit_id: 0
     config_ids:
     - 0
