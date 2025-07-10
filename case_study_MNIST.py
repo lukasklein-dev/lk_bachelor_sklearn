@@ -208,8 +208,8 @@ def main(ctx):
 
         # Save the performance measurements of the estimator to the output file
         result = {
-            #"estimator": estimator,
-            #"params": performance[0].get_params(),
+            "estimator": estimator,
+            "hyperparameters": performance[0].get_params(),
             "performance": performance[1]
         }
     
