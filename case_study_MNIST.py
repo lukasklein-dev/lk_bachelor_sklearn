@@ -28,7 +28,7 @@ case_study_MNIST.py --estimator-dtc 1 criterion entropy min_samples_split 2 spli
 # CONFIGURATION
 output = "scripts/io/mnist/cs_output/perf_measurements.json" # Output file path for the performance measurements
 repetitions = 5 # Set to 1-5. Define how often each configuration should be evaluated.
-n_jobs_value = -1 # Default value for n_jobs, -1 means using all available cores. None means using a single core. If the estimator does not support n_jobs, it will be ignored.
+n_jobs_value = None # Default value for n_jobs, -1 means using all available cores. None means using a single core. If the estimator does not support n_jobs, it will be ignored.
 
 # Define the estimator modules + whether they provide the hyperparameter 'n_jobs' and 'random_state':
 estimator_modules = {
