@@ -1,0 +1,482 @@
+{
+  "mnb/diversified-distance/1": {
+    "best_predicted": [
+      0.8341,
+      0.8341,
+      0.8341
+    ],
+    "true_performance": [
+      0.8364,
+      0.8364,
+      0.8363
+    ],
+    "best_true_accuracy": 0.8364,
+    "hyperopt_best_accuracy": 0.8357,
+    "accuracy_difference": 0.0007
+  },
+  "mnb/diversified-distance/2": {
+    "best_predicted": [
+      0.8341,
+      0.8341,
+      0.8341
+    ],
+    "true_performance": [
+      0.8364,
+      0.8364,
+      0.8363
+    ],
+    "best_true_accuracy": 0.8364,
+    "hyperopt_best_accuracy": 0.8357,
+    "accuracy_difference": 0.0007
+  },
+  "mnb/random/1": {
+    "best_predicted": [
+      0.8341,
+      0.8341,
+      0.8341
+    ],
+    "true_performance": [
+      0.8364,
+      0.8364,
+      0.8363
+    ],
+    "best_true_accuracy": 0.8364,
+    "hyperopt_best_accuracy": 0.8357,
+    "accuracy_difference": 0.0007
+  },
+  "mnb/random/2": {
+    "best_predicted": [
+      0.8357,
+      0.8357,
+      0.8357
+    ],
+    "true_performance": [
+      0.8364,
+      0.8364,
+      0.8363
+    ],
+    "best_true_accuracy": 0.8364,
+    "hyperopt_best_accuracy": 0.8357,
+    "accuracy_difference": 0.0007
+  },
+  "dtc/diversified-distance/1": {
+    "best_predicted": [
+      0.8658,
+      0.8658,
+      0.8658
+    ],
+    "true_performance": [
+      0.8871,
+      0.8871,
+      0.8865
+    ],
+    "best_true_accuracy": 0.8871,
+    "hyperopt_best_accuracy": 0.8827,
+    "accuracy_difference": 0.0044
+  },
+  "dtc/diversified-distance/2": {
+    "best_predicted": [
+      0.8865,
+      0.8865,
+      0.8865
+    ],
+    "true_performance": [
+      0.8871,
+      0.8871,
+      0.8865
+    ],
+    "best_true_accuracy": 0.8871,
+    "hyperopt_best_accuracy": 0.8827,
+    "accuracy_difference": 0.0044
+  },
+  "dtc/random/1": {
+    "best_predicted": [
+      0.8805,
+      0.8805,
+      0.8805
+    ],
+    "true_performance": [
+      0.8871,
+      0.8871,
+      0.8865
+    ],
+    "best_true_accuracy": 0.8871,
+    "hyperopt_best_accuracy": 0.8827,
+    "accuracy_difference": 0.0044
+  },
+  "dtc/random/2": {
+    "best_predicted": [
+      0.8871,
+      0.8871,
+      0.8871
+    ],
+    "true_performance": [
+      0.8871,
+      0.8871,
+      0.8865
+    ],
+    "best_true_accuracy": 0.8871,
+    "hyperopt_best_accuracy": 0.8827,
+    "accuracy_difference": 0.0044
+  },
+  "gbc/diversified-distance/3": {
+    "best_predicted": [
+      0.9652,
+      0.9652,
+      0.9652
+    ],
+    "true_performance": [
+      0.9726,
+      0.9726,
+      0.9726
+    ],
+    "best_true_accuracy": 0.9726,
+    "hyperopt_best_accuracy": 0.9606,
+    "accuracy_difference": 0.012
+  },
+  "gbc/diversified-distance/14": {
+    "best_predicted": [
+      0.9812,
+      0.9812,
+      0.9812
+    ],
+    "true_performance": [
+      0.9719,
+      0.967,
+      0.9551
+    ],
+    "best_true_accuracy": 0.9719,
+    "hyperopt_best_accuracy": 0.9606,
+    "accuracy_difference": 0.0113
+  },
+  "gbc/diversified-distance/29": {
+    "best_predicted": [
+      1.0157,
+      1.0157,
+      0.9978
+    ],
+    "true_performance": [
+      0.9467,
+      0.9459,
+      0.9665
+    ],
+    "best_true_accuracy": 0.9665,
+    "hyperopt_best_accuracy": 0.9606,
+    "accuracy_difference": 0.0059
+  },
+  "gbc/random/3": {
+    "best_predicted": [
+      0.9433,
+      0.9433,
+      0.9433
+    ],
+    "true_performance": [
+      0.9726,
+      0.9726,
+      0.9726
+    ],
+    "best_true_accuracy": 0.9726,
+    "hyperopt_best_accuracy": 0.9606,
+    "accuracy_difference": 0.012
+  },
+  "gbc/random/14": {
+    "best_predicted": [
+      0.963,
+      0.963,
+      0.963
+    ],
+    "true_performance": [
+      0.9704,
+      0.9653,
+      0.9652
+    ],
+    "best_true_accuracy": 0.9704,
+    "hyperopt_best_accuracy": 0.9606,
+    "accuracy_difference": 0.0098
+  },
+  "gbc/random/29": {
+    "best_predicted": [
+      1.0162,
+      1.0162,
+      1.0062
+    ],
+    "true_performance": [
+      0.9581,
+      0.8969,
+      0.9633
+    ],
+    "best_true_accuracy": 0.9633,
+    "hyperopt_best_accuracy": 0.9606,
+    "accuracy_difference": 0.0027
+  },
+  "sgd/diversified-distance/9": {
+    "best_predicted": [
+      0.9281,
+      0.9281,
+      0.9281
+    ],
+    "true_performance": [
+      0.9099,
+      0.8868,
+      0.885
+    ],
+    "best_true_accuracy": 0.9099,
+    "hyperopt_best_accuracy": 0.9195,
+    "accuracy_difference": -0.0096
+  },
+  "sgd/diversified-distance/45": {
+    "best_predicted": [
+      4.0484,
+      4.0484,
+      3.707
+    ],
+    "true_performance": [
+      0.734,
+      0.6685,
+      0.6834
+    ],
+    "best_true_accuracy": 0.734,
+    "hyperopt_best_accuracy": 0.9195,
+    "accuracy_difference": -0.1855
+  },
+  "sgd/diversified-distance/90": {
+    "best_predicted": [
+      2.4127,
+      2.2295,
+      2.1809
+    ],
+    "true_performance": [
+      0.8637,
+      0.0799,
+      0.9025
+    ],
+    "best_true_accuracy": 0.9025,
+    "hyperopt_best_accuracy": 0.9195,
+    "accuracy_difference": -0.017
+  },
+  "sgd/random/9": {
+    "best_predicted": [
+      0.9008,
+      0.9008,
+      0.9008
+    ],
+    "true_performance": [
+      0.9047,
+      0.9008,
+      0.8863
+    ],
+    "best_true_accuracy": 0.9047,
+    "hyperopt_best_accuracy": 0.9195,
+    "accuracy_difference": -0.0148
+  },
+  "sgd/random/45": {
+    "best_predicted": [
+      1.4716,
+      1.4046,
+      1.3597
+    ],
+    "true_performance": [
+      0.0067,
+      0.7331,
+      0.9078
+    ],
+    "best_true_accuracy": 0.9078,
+    "hyperopt_best_accuracy": 0.9195,
+    "accuracy_difference": -0.0117
+  },
+  "sgd/random/90": {
+    "best_predicted": [
+      2.6564,
+      2.6564,
+      2.565
+    ],
+    "true_performance": [
+      0.7951,
+      0.6514,
+      0.9143
+    ],
+    "best_true_accuracy": 0.9143,
+    "hyperopt_best_accuracy": 0.9195,
+    "accuracy_difference": -0.0052
+  },
+  "knn/diversified-distance/10": {
+    "best_predicted": [
+      0.9722,
+      0.9722,
+      0.9722
+    ],
+    "true_performance": [
+      0.9714,
+      0.9706,
+      0.9705
+    ],
+    "best_true_accuracy": 0.9714,
+    "hyperopt_best_accuracy": 0.9714,
+    "accuracy_difference": 0.0
+  },
+  "knn/diversified-distance/48": {
+    "best_predicted": [
+      0.9717,
+      0.9717,
+      0.9717
+    ],
+    "true_performance": [
+      0.9717,
+      0.9717,
+      0.9714
+    ],
+    "best_true_accuracy": 0.9717,
+    "hyperopt_best_accuracy": 0.9714,
+    "accuracy_difference": 0.0003
+  },
+  "knn/diversified-distance/96": {
+    "best_predicted": [
+      0.9688,
+      0.9688,
+      0.9688
+    ],
+    "true_performance": [
+      0.9717,
+      0.9717,
+      0.9717
+    ],
+    "best_true_accuracy": 0.9717,
+    "hyperopt_best_accuracy": 0.9714,
+    "accuracy_difference": 0.0003
+  },
+  "knn/random/10": {
+    "best_predicted": [
+      0.9817,
+      0.9817,
+      0.9817
+    ],
+    "true_performance": [
+      0.9709,
+      0.9709,
+      0.97
+    ],
+    "best_true_accuracy": 0.9709,
+    "hyperopt_best_accuracy": 0.9714,
+    "accuracy_difference": -0.0005
+  },
+  "knn/random/48": {
+    "best_predicted": [
+      0.9687,
+      0.9687,
+      0.9687
+    ],
+    "true_performance": [
+      0.9717,
+      0.9717,
+      0.9717
+    ],
+    "best_true_accuracy": 0.9717,
+    "hyperopt_best_accuracy": 0.9714,
+    "accuracy_difference": 0.0003
+  },
+  "knn/random/96": {
+    "best_predicted": [
+      0.9691,
+      0.9691,
+      0.9691
+    ],
+    "true_performance": [
+      0.9717,
+      0.9717,
+      0.9717
+    ],
+    "best_true_accuracy": 0.9717,
+    "hyperopt_best_accuracy": 0.9714,
+    "accuracy_difference": 0.0003
+  },
+  "rfc/diversified-distance/13": {
+    "best_predicted": [
+      0.9685,
+      0.9685,
+      0.9685
+    ],
+    "true_performance": [
+      0.9703,
+      0.9703,
+      0.9703
+    ],
+    "best_true_accuracy": 0.9703,
+    "hyperopt_best_accuracy": 0.9701,
+    "accuracy_difference": 0.0002
+  },
+  "rfc/diversified-distance/65": {
+    "best_predicted": [
+      0.9691,
+      0.9691,
+      0.9691
+    ],
+    "true_performance": [
+      0.9707,
+      0.9707,
+      0.9707
+    ],
+    "best_true_accuracy": 0.9707,
+    "hyperopt_best_accuracy": 0.9701,
+    "accuracy_difference": 0.0006
+  },
+  "rfc/diversified-distance/130": {
+    "best_predicted": [
+      0.9694,
+      0.9694,
+      0.9694
+    ],
+    "true_performance": [
+      0.9707,
+      0.9707,
+      0.9707
+    ],
+    "best_true_accuracy": 0.9707,
+    "hyperopt_best_accuracy": 0.9701,
+    "accuracy_difference": 0.0006
+  },
+  "rfc/random/13": {
+    "best_predicted": [
+      0.9692,
+      0.9692,
+      0.9692
+    ],
+    "true_performance": [
+      0.9707,
+      0.9707,
+      0.9707
+    ],
+    "best_true_accuracy": 0.9707,
+    "hyperopt_best_accuracy": 0.9701,
+    "accuracy_difference": 0.0006
+  },
+  "rfc/random/65": {
+    "best_predicted": [
+      0.9695,
+      0.9695,
+      0.9695
+    ],
+    "true_performance": [
+      0.9707,
+      0.9707,
+      0.9707
+    ],
+    "best_true_accuracy": 0.9707,
+    "hyperopt_best_accuracy": 0.9701,
+    "accuracy_difference": 0.0006
+  },
+  "rfc/random/130": {
+    "best_predicted": [
+      0.9697,
+      0.9697,
+      0.9697
+    ],
+    "true_performance": [
+      0.9707,
+      0.9707,
+      0.9707
+    ],
+    "best_true_accuracy": 0.9707,
+    "hyperopt_best_accuracy": 0.9701,
+    "accuracy_difference": 0.0006
+  }
+}

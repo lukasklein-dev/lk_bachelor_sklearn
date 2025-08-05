@@ -1,0 +1,159 @@
+{
+  "634": {
+    "0": {
+      "estimator": "--estimator-bgm",
+      "hyperparameters": {
+        "covariance_prior": null,
+        "covariance_type": "tied",
+        "degrees_of_freedom_prior": null,
+        "init_params": "random_from_data",
+        "max_iter": 1000,
+        "mean_precision_prior": null,
+        "mean_prior": null,
+        "n_components": 10,
+        "n_init": 1,
+        "random_state": 0,
+        "reg_covar": 0.001,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weight_concentration_prior": null,
+        "weight_concentration_prior_type": "dirichlet_process"
+      },
+      "performance": {
+        "accuracy": 0.0902,
+        "precision": 0.1136,
+        "recall": 0.0902,
+        "f1_score": 0.0417,
+        "fbeta_score": 0.0569,
+        "hamming_loss": 0.9098,
+        "zero_one_loss": 0.9098
+      }
+    },
+    "1": {
+      "estimator": "--estimator-bgm",
+      "hyperparameters": {
+        "covariance_prior": null,
+        "covariance_type": "tied",
+        "degrees_of_freedom_prior": null,
+        "init_params": "random_from_data",
+        "max_iter": 1000,
+        "mean_precision_prior": null,
+        "mean_prior": null,
+        "n_components": 10,
+        "n_init": 1,
+        "random_state": 1,
+        "reg_covar": 0.001,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weight_concentration_prior": null,
+        "weight_concentration_prior_type": "dirichlet_process"
+      },
+      "performance": {
+        "accuracy": 0.0885,
+        "precision": 0.0633,
+        "recall": 0.0885,
+        "f1_score": 0.0351,
+        "fbeta_score": 0.0398,
+        "hamming_loss": 0.9115,
+        "zero_one_loss": 0.9115
+      }
+    },
+    "2": {
+      "estimator": "--estimator-bgm",
+      "hyperparameters": {
+        "covariance_prior": null,
+        "covariance_type": "tied",
+        "degrees_of_freedom_prior": null,
+        "init_params": "random_from_data",
+        "max_iter": 1000,
+        "mean_precision_prior": null,
+        "mean_prior": null,
+        "n_components": 10,
+        "n_init": 1,
+        "random_state": 2,
+        "reg_covar": 0.001,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weight_concentration_prior": null,
+        "weight_concentration_prior_type": "dirichlet_process"
+      },
+      "performance": {
+        "accuracy": 0.1393,
+        "precision": 0.1179,
+        "recall": 0.1393,
+        "f1_score": 0.0691,
+        "fbeta_score": 0.0823,
+        "hamming_loss": 0.8607,
+        "zero_one_loss": 0.8607
+      }
+    },
+    "3": {
+      "estimator": "--estimator-bgm",
+      "hyperparameters": {
+        "covariance_prior": null,
+        "covariance_type": "tied",
+        "degrees_of_freedom_prior": null,
+        "init_params": "random_from_data",
+        "max_iter": 1000,
+        "mean_precision_prior": null,
+        "mean_prior": null,
+        "n_components": 10,
+        "n_init": 1,
+        "random_state": 3,
+        "reg_covar": 0.001,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weight_concentration_prior": null,
+        "weight_concentration_prior_type": "dirichlet_process"
+      },
+      "performance": {
+        "accuracy": 0.1069,
+        "precision": 0.102,
+        "recall": 0.1069,
+        "f1_score": 0.0732,
+        "fbeta_score": 0.0839,
+        "hamming_loss": 0.8931,
+        "zero_one_loss": 0.8931
+      }
+    },
+    "4": {
+      "estimator": "--estimator-bgm",
+      "hyperparameters": {
+        "covariance_prior": null,
+        "covariance_type": "tied",
+        "degrees_of_freedom_prior": null,
+        "init_params": "random_from_data",
+        "max_iter": 1000,
+        "mean_precision_prior": null,
+        "mean_prior": null,
+        "n_components": 10,
+        "n_init": 1,
+        "random_state": 4,
+        "reg_covar": 0.001,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weight_concentration_prior": null,
+        "weight_concentration_prior_type": "dirichlet_process"
+      },
+      "performance": {
+        "accuracy": 0.0688,
+        "precision": 0.1277,
+        "recall": 0.0688,
+        "f1_score": 0.0371,
+        "fbeta_score": 0.047,
+        "hamming_loss": 0.9312,
+        "zero_one_loss": 0.9312
+      }
+    }
+  }
+}

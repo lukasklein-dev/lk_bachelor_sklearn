@@ -1,0 +1,179 @@
+{
+  "714": {
+    "0": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": false,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": false,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "perceptron",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": null,
+        "power_t": 0.5,
+        "random_state": 0,
+        "shuffle": true,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": true
+      },
+      "performance": {
+        "accuracy": 0.9026,
+        "precision": 0.9059,
+        "recall": 0.9026,
+        "f1_score": 0.9034,
+        "fbeta_score": 0.9047,
+        "hamming_loss": 0.0974,
+        "zero_one_loss": 0.0974
+      }
+    },
+    "1": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": false,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": false,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "perceptron",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": null,
+        "power_t": 0.5,
+        "random_state": 1,
+        "shuffle": true,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": true
+      },
+      "performance": {
+        "accuracy": 0.906,
+        "precision": 0.9084,
+        "recall": 0.906,
+        "f1_score": 0.9065,
+        "fbeta_score": 0.9075,
+        "hamming_loss": 0.094,
+        "zero_one_loss": 0.094
+      }
+    },
+    "2": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": false,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": false,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "perceptron",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": null,
+        "power_t": 0.5,
+        "random_state": 2,
+        "shuffle": true,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": true
+      },
+      "performance": {
+        "accuracy": 0.9026,
+        "precision": 0.9058,
+        "recall": 0.9026,
+        "f1_score": 0.9033,
+        "fbeta_score": 0.9046,
+        "hamming_loss": 0.0974,
+        "zero_one_loss": 0.0974
+      }
+    },
+    "3": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": false,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": false,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "perceptron",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": null,
+        "power_t": 0.5,
+        "random_state": 3,
+        "shuffle": true,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": true
+      },
+      "performance": {
+        "accuracy": 0.9045,
+        "precision": 0.9067,
+        "recall": 0.9045,
+        "f1_score": 0.9049,
+        "fbeta_score": 0.9058,
+        "hamming_loss": 0.0955,
+        "zero_one_loss": 0.0955
+      }
+    },
+    "4": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": false,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": false,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "perceptron",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": null,
+        "power_t": 0.5,
+        "random_state": 4,
+        "shuffle": true,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": true
+      },
+      "performance": {
+        "accuracy": 0.9013,
+        "precision": 0.9035,
+        "recall": 0.9013,
+        "f1_score": 0.9017,
+        "fbeta_score": 0.9027,
+        "hamming_loss": 0.0987,
+        "zero_one_loss": 0.0987
+      }
+    }
+  }
+}

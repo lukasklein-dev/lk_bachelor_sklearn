@@ -1,0 +1,179 @@
+{
+  "317": {
+    "0": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": true,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": true,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "hinge",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": "l1",
+        "power_t": 0.5,
+        "random_state": 0,
+        "shuffle": false,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.8995,
+        "precision": 0.9014,
+        "recall": 0.8995,
+        "f1_score": 0.8997,
+        "fbeta_score": 0.9005,
+        "hamming_loss": 0.1005,
+        "zero_one_loss": 0.1005
+      }
+    },
+    "1": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": true,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": true,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "hinge",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": "l1",
+        "power_t": 0.5,
+        "random_state": 1,
+        "shuffle": false,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.8931,
+        "precision": 0.9018,
+        "recall": 0.8931,
+        "f1_score": 0.8946,
+        "fbeta_score": 0.8983,
+        "hamming_loss": 0.1069,
+        "zero_one_loss": 0.1069
+      }
+    },
+    "2": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": true,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": true,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "hinge",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": "l1",
+        "power_t": 0.5,
+        "random_state": 2,
+        "shuffle": false,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.899,
+        "precision": 0.9013,
+        "recall": 0.899,
+        "f1_score": 0.8989,
+        "fbeta_score": 0.9,
+        "hamming_loss": 0.101,
+        "zero_one_loss": 0.101
+      }
+    },
+    "3": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": true,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": true,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "hinge",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": "l1",
+        "power_t": 0.5,
+        "random_state": 3,
+        "shuffle": false,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.8972,
+        "precision": 0.9016,
+        "recall": 0.8972,
+        "f1_score": 0.8979,
+        "fbeta_score": 0.8998,
+        "hamming_loss": 0.1028,
+        "zero_one_loss": 0.1028
+      }
+    },
+    "4": {
+      "estimator": "--estimator-sgd",
+      "hyperparameters": {
+        "alpha": 0.0001,
+        "average": true,
+        "class_weight": null,
+        "early_stopping": true,
+        "epsilon": 0.1,
+        "eta0": 0.0,
+        "fit_intercept": true,
+        "l1_ratio": 0.15,
+        "learning_rate": "optimal",
+        "loss": "hinge",
+        "max_iter": 1000,
+        "n_iter_no_change": 5,
+        "n_jobs": null,
+        "penalty": "l1",
+        "power_t": 0.5,
+        "random_state": 4,
+        "shuffle": false,
+        "tol": 0.001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.8965,
+        "precision": 0.9007,
+        "recall": 0.8965,
+        "f1_score": 0.8973,
+        "fbeta_score": 0.899,
+        "hamming_loss": 0.1035,
+        "zero_one_loss": 0.1035
+      }
+    }
+  }
+}

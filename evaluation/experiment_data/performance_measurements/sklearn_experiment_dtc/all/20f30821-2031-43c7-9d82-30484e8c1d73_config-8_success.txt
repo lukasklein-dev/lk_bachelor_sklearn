@@ -1,0 +1,59 @@
+{
+  "8": {
+    "0": {
+      "performance": {
+        "accuracy": 0.8866,
+        "precision": 0.8866,
+        "recall": 0.8866,
+        "f1_score": 0.8866,
+        "fbeta_score": 0.8866,
+        "hamming_loss": 0.1134,
+        "zero_one_loss": 0.1134
+      }
+    },
+    "1": {
+      "performance": {
+        "accuracy": 0.889,
+        "precision": 0.8891,
+        "recall": 0.889,
+        "f1_score": 0.889,
+        "fbeta_score": 0.8891,
+        "hamming_loss": 0.111,
+        "zero_one_loss": 0.111
+      }
+    },
+    "2": {
+      "performance": {
+        "accuracy": 0.8871,
+        "precision": 0.8871,
+        "recall": 0.8871,
+        "f1_score": 0.8871,
+        "fbeta_score": 0.8871,
+        "hamming_loss": 0.1129,
+        "zero_one_loss": 0.1129
+      }
+    },
+    "3": {
+      "performance": {
+        "accuracy": 0.8846,
+        "precision": 0.8845,
+        "recall": 0.8846,
+        "f1_score": 0.8845,
+        "fbeta_score": 0.8845,
+        "hamming_loss": 0.1154,
+        "zero_one_loss": 0.1154
+      }
+    },
+    "4": {
+      "performance": {
+        "accuracy": 0.888,
+        "precision": 0.8881,
+        "recall": 0.888,
+        "f1_score": 0.8879,
+        "fbeta_score": 0.888,
+        "hamming_loss": 0.112,
+        "zero_one_loss": 0.112
+      }
+    }
+  }
+}

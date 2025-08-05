@@ -1,0 +1,104 @@
+2025-07-18 01:46:24,249 - INFO - Starting the experimental pipeline.
+2025-07-18 01:46:24,249 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=130, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130
+2025-07-18 01:46:24,249 - INFO - Loading feature model and extracting feature names.
+2025-07-18 01:46:24,250 - INFO - Number of features extracted: 26
+2025-07-18 01:46:24,250 - INFO - Generating sampled configurations using variant generator.
+2025-07-18 01:46:24,257 - INFO - Number of configurations sampled: 130
+2025-07-18 01:46:24,258 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/sampled_configurations.csv
+2025-07-18 01:46:24,258 - INFO - Matching sampled configurations with their performance values.
+2025-07-18 01:46:24,380 - INFO - Number of matched configurations: 130
+2025-07-18 01:46:24,380 - INFO - Training the regression model using stepwise selection.
+2025-07-18 01:46:25,303 - INFO - Selected features: ['100', '2*', 'None', 'None$$None*', 'None$$gini', 'log2']
+2025-07-18 01:46:25,303 - INFO - Final model:
+2025-07-18 01:46:25,304 - INFO - const          0.969714
+100           -0.000473
+2*            -0.001255
+None          -0.014316
+None$$None*    0.006482
+None$$gini    -0.004123
+log2          -0.003438
+dtype: float64
+2025-07-18 01:46:25,305 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/trained_model.pkl
+2025-07-18 01:46:25,305 - INFO - Loading all configurations for performance prediction.
+2025-07-18 01:46:25,307 - INFO - Total number of configurations: 1296
+2025-07-18 01:46:25,307 - INFO - Predicting performance for all configurations.
+2025-07-18 01:46:25,433 - INFO - Validation Error: 0.038044221902845725
+2025-07-18 01:46:25,434 - INFO - Experimental pipeline completed successfully.
+2025-07-24 14:00:47,554 - INFO - Starting the experimental pipeline.
+2025-07-24 14:00:47,554 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=130, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130
+2025-07-24 14:00:47,555 - INFO - Loading feature model and extracting feature names.
+2025-07-24 14:00:47,556 - INFO - Number of features extracted: 26
+2025-07-24 14:00:47,556 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 14:00:47,563 - INFO - Number of configurations sampled: 130
+2025-07-24 14:00:47,564 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/sampled_configurations.csv
+2025-07-24 14:00:47,564 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 14:00:47,671 - INFO - Number of matched configurations: 130
+2025-07-24 14:00:47,672 - INFO - Training the regression model using stepwise selection.
+2025-07-24 14:00:48,623 - INFO - Selected features: ['100', '2*', 'None', 'None$$None*', 'None$$gini', 'log2']
+2025-07-24 14:00:48,624 - INFO - Final model:
+2025-07-24 14:00:48,624 - INFO - const          0.969714
+100           -0.000473
+2*            -0.001255
+None          -0.014316
+None$$None*    0.006482
+None$$gini    -0.004123
+log2          -0.003438
+dtype: float64
+2025-07-24 14:00:48,625 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/trained_model.pkl
+2025-07-24 14:00:48,625 - INFO - Loading all configurations for performance prediction.
+2025-07-24 14:00:48,627 - INFO - Total number of configurations: 1296
+2025-07-24 14:00:48,627 - INFO - Predicting performance for all configurations.
+2025-07-24 14:00:48,757 - INFO - Validation Error: 0.038044221902845725
+2025-07-24 14:00:48,758 - INFO - Experimental pipeline completed successfully.
+2025-07-24 14:19:07,070 - INFO - Starting the experimental pipeline.
+2025-07-24 14:19:07,070 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=130, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130
+2025-07-24 14:19:07,070 - INFO - Loading feature model and extracting feature names.
+2025-07-24 14:19:07,070 - INFO - Number of features extracted: 26
+2025-07-24 14:19:07,071 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 14:19:07,078 - INFO - Number of configurations sampled: 130
+2025-07-24 14:19:07,079 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/sampled_configurations.csv
+2025-07-24 14:19:07,079 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 14:19:07,195 - INFO - Number of matched configurations: 130
+2025-07-24 14:19:07,195 - INFO - Training the regression model using stepwise selection.
+2025-07-24 14:19:08,215 - INFO - Selected features: ['100', '2*', 'None', 'None$$None*', 'None$$gini', 'log2']
+2025-07-24 14:19:08,215 - INFO - Final model:
+2025-07-24 14:19:08,215 - INFO - const          0.969714
+100           -0.000473
+2*            -0.001255
+None          -0.014316
+None$$None*    0.006482
+None$$gini    -0.004123
+log2          -0.003438
+dtype: float64
+2025-07-24 14:19:08,216 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/trained_model.pkl
+2025-07-24 14:19:08,216 - INFO - Loading all configurations for performance prediction.
+2025-07-24 14:19:08,219 - INFO - Total number of configurations: 1296
+2025-07-24 14:19:08,219 - INFO - Predicting performance for all configurations.
+2025-07-24 14:19:08,350 - INFO - Validation Error: 0.038044221902845725
+2025-07-24 14:19:08,350 - INFO - Experimental pipeline completed successfully.
+2025-07-24 19:10:05,893 - INFO - Starting the experimental pipeline.
+2025-07-24 19:10:05,893 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=130, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130
+2025-07-24 19:10:05,893 - INFO - Loading feature model and extracting feature names.
+2025-07-24 19:10:05,894 - INFO - Number of features extracted: 26
+2025-07-24 19:10:05,894 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 19:10:05,902 - INFO - Number of configurations sampled: 130
+2025-07-24 19:10:05,902 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/sampled_configurations.csv
+2025-07-24 19:10:05,903 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 19:10:06,006 - INFO - Number of matched configurations: 130
+2025-07-24 19:10:06,006 - INFO - Training the regression model using stepwise selection.
+2025-07-24 19:10:06,937 - INFO - Selected features: ['100', '2*', 'None', 'None$$None*', 'None$$gini', 'log2']
+2025-07-24 19:10:06,937 - INFO - Final model:
+2025-07-24 19:10:06,937 - INFO - const          0.969714
+100           -0.000473
+2*            -0.001255
+None          -0.014316
+None$$None*    0.006482
+None$$gini    -0.004123
+log2          -0.003438
+dtype: float64
+2025-07-24 19:10:06,938 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/rfc/sample_size_130/trained_model.pkl
+2025-07-24 19:10:06,938 - INFO - Loading all configurations for performance prediction.
+2025-07-24 19:10:06,940 - INFO - Total number of configurations: 1296
+2025-07-24 19:10:06,940 - INFO - Predicting performance for all configurations.
+2025-07-24 19:10:07,070 - INFO - Validation Error: 0.038044221902845725
+2025-07-24 19:10:07,070 - INFO - Experimental pipeline completed successfully.

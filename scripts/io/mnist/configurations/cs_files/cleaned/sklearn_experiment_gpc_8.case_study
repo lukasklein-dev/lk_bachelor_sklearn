@@ -6,7 +6,7 @@ Version: 1
 project_name: sklearn_experiment_gpc
 stages:
 - revisions:
-  - commit_hash: 5ac9dd6f801060b7c43c7d6151cf4cc45a6c866b
+  - commit_hash: b68cb87f21e7c75c6cc4d413ecc2b8e32d53ff29
     commit_id: 0
     config_ids:
     - 0

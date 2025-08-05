@@ -1,0 +1,2 @@
+Approach,Mean True Accuracy,Median True Accuracy,Mean Predicted Accuracy,Median Predicted Accuracy,Variance True Accuracy,Variance Predicted Accuracy,95%-Bootstrap-CI Lower (for mean pred accuracy),95%-Bootstrap-CI Upper (for mean pred accuracy),Validation Error (MAPE) (%)
+knn/diversified-distance/48,0.9683,0.9688,0.9687,0.9691,4.591955555555569e-06,2.2428403212418254e-06,0.9686,0.9688,0.1999

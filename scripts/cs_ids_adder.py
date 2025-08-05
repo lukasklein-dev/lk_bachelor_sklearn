@@ -67,6 +67,6 @@ if __name__ == "__main__":
     # 2: Copy-paste all configs into each case study file.
     # 3: Change in and out paths to your case study file:
 
-    input="scripts/io/mnist/configurations/cs_files/in/sklearn_experiment_svc_3.case_study"
-    output="scripts/io/mnist/configurations/cs_files/out/sklearn_experiment_svc_3.case_study"
+    input="scripts/io/mnist/configurations/cs_files/in/sklearn_experiment_rfc_4.case_study"
+    output="scripts/io/mnist/configurations/cs_files/out/sklearn_experiment_rfc_4.case_study"
     insert_config_ids(input, output)

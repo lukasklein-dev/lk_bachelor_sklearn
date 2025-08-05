@@ -1,0 +1,26 @@
+{
+  "322": {
+    "0": {
+      "estimator": "--estimator-knn",
+      "hyperparameters": {
+        "algorithm": "kd_tree",
+        "leaf_size": 32,
+        "metric": "minkowski",
+        "metric_params": null,
+        "n_jobs": null,
+        "n_neighbors": 2,
+        "p": 2,
+        "weights": "distance"
+      },
+      "performance": {
+        "accuracy": 0.9691,
+        "precision": 0.9692,
+        "recall": 0.9691,
+        "f1_score": 0.9691,
+        "fbeta_score": 0.9691,
+        "hamming_loss": 0.0309,
+        "zero_one_loss": 0.0309
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "mnb": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=1, trial_timeout=60",
+    "best_model_parameters": {
+      "alpha": 0.5,
+      "class_prior": null,
+      "fit_prior": false,
+      "force_alpha": "warn"
+    },
+    "training_time_sec": 0.37,
+    "accuracy": 0.836
+  },
+  "dtc": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=1, trial_timeout=60",
+    "best_model_parameters": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 10,
+      "min_weight_fraction_leaf": 0.0,
+      "random_state": 1,
+      "splitter": "best"
+    },
+    "training_time_sec": 26.4,
+    "accuracy": 0.8771
+  },
+  "sgd": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=45, trial_timeout=60",
+    "best_model_parameters": {
+      "alpha": 0.0001,
+      "average": true,
+      "class_weight": null,
+      "early_stopping": false,
+      "epsilon": 0.1,
+      "eta0": 0.0,
+      "fit_intercept": false,
+      "l1_ratio": 0.15,
+      "learning_rate": "optimal",
+      "loss": "modified_huber",
+      "max_iter": 1000,
+      "n_iter_no_change": 5,
+      "n_jobs": 1,
+      "penalty": "l2",
+      "power_t": 0.5,
+      "random_state": 4,
+      "shuffle": true,
+      "tol": 0.001,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": true
+    },
+    "training_time_sec": 1542.76,
+    "accuracy": 0.9174
+  },
+  "knn": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=48, trial_timeout=60",
+    "best_model_parameters": {
+      "algorithm": "brute",
+      "leaf_size": 30,
+      "metric": "minkowski",
+      "metric_params": null,
+      "n_jobs": 1,
+      "n_neighbors": 4,
+      "p": 2,
+      "weights": "distance"
+    },
+    "training_time_sec": 1090.0,
+    "accuracy": 0.9714
+  },
+  "rfc": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=65, trial_timeout=60",
+    "best_model_parameters": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 3,
+      "min_weight_fraction_leaf": 0.0,
+      "n_estimators": 120,
+      "n_jobs": 1,
+      "oob_score": true,
+      "random_state": 1,
+      "verbose": 0,
+      "warm_start": true
+    },
+    "training_time_sec": 2353.03,
+    "accuracy": 0.9703
+  }
+}

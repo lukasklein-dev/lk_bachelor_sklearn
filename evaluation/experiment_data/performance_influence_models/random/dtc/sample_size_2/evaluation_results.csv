@@ -1,0 +1,2 @@
+Approach,Mean True Accuracy,Median True Accuracy,Mean Predicted Accuracy,Median Predicted Accuracy,Variance True Accuracy,Variance Predicted Accuracy,95%-Bootstrap-CI Lower (for mean pred accuracy),95%-Bootstrap-CI Upper (for mean pred accuracy),Validation Error (MAPE) (%)
+dtc/random/2,0.8778,0.8788,0.8838,0.8838,6.33799999999998e-05,1.0889999999999435e-05,0.8824,0.8852,0.7928

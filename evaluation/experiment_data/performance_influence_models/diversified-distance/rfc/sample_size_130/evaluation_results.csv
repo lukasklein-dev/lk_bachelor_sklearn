@@ -1,0 +1,2 @@
+Approach,Mean True Accuracy,Median True Accuracy,Mean Predicted Accuracy,Median Predicted Accuracy,Variance True Accuracy,Variance Predicted Accuracy,95%-Bootstrap-CI Lower (for mean pred accuracy),95%-Bootstrap-CI Upper (for mean pred accuracy),Validation Error (MAPE) (%)
+rfc/diversified-distance/130,0.9632,0.9654,0.963,0.9652,3.894481481481479e-05,3.605444273814619e-05,0.9626,0.9633,0.1276

@@ -1,0 +1,22 @@
+{
+  "10": {
+    "0": {
+      "estimator": "--estimator-mnb",
+      "hyperparameters": {
+        "alpha": 0.1,
+        "class_prior": null,
+        "fit_prior": false,
+        "force_alpha": "warn"
+      },
+      "performance": {
+        "accuracy": 0.8364,
+        "precision": 0.8444,
+        "recall": 0.8364,
+        "f1_score": 0.8372,
+        "fbeta_score": 0.8407,
+        "hamming_loss": 0.1636,
+        "zero_one_loss": 0.1636
+      }
+    }
+  }
+}

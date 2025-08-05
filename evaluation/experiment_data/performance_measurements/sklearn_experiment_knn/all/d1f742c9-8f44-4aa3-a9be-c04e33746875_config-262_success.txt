@@ -1,0 +1,26 @@
+{
+  "262": {
+    "0": {
+      "estimator": "--estimator-knn",
+      "hyperparameters": {
+        "algorithm": "ball_tree",
+        "leaf_size": 1,
+        "metric": "minkowski",
+        "metric_params": null,
+        "n_jobs": null,
+        "n_neighbors": 7,
+        "p": 2,
+        "weights": "distance"
+      },
+      "performance": {
+        "accuracy": 0.97,
+        "precision": 0.9702,
+        "recall": 0.97,
+        "f1_score": 0.97,
+        "fbeta_score": 0.9701,
+        "hamming_loss": 0.03,
+        "zero_one_loss": 0.03
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "401": {
+    "0": {
+      "estimator": "--estimator-knn",
+      "hyperparameters": {
+        "algorithm": "brute",
+        "leaf_size": 1,
+        "metric": "minkowski",
+        "metric_params": null,
+        "n_jobs": null,
+        "n_neighbors": 5,
+        "p": 2,
+        "weights": "uniform"
+      },
+      "performance": {
+        "accuracy": 0.9688,
+        "precision": 0.969,
+        "recall": 0.9688,
+        "f1_score": 0.9687,
+        "fbeta_score": 0.9689,
+        "hamming_loss": 0.0312,
+        "zero_one_loss": 0.0312
+      }
+    }
+  }
+}

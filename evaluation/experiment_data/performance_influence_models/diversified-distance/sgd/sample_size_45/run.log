@@ -1,0 +1,595 @@
+2025-07-18 01:13:46,306 - INFO - Starting the experimental pipeline.
+2025-07-18 01:13:46,306 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-18 01:13:46,306 - INFO - Loading feature model and extracting feature names.
+2025-07-18 01:13:46,317 - INFO - Number of features extracted: 19
+2025-07-18 01:13:46,317 - INFO - Generating sampled configurations using variant generator.
+2025-07-18 01:13:46,404 - INFO - Number of configurations sampled: 45
+2025-07-18 01:13:46,405 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-18 01:13:46,405 - INFO - Matching sampled configurations with their performance values.
+2025-07-18 01:13:46,444 - INFO - Number of matched configurations: 45
+2025-07-18 01:13:46,444 - INFO - Training the regression model using stepwise selection.
+2025-07-18 01:13:56,049 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-18 01:13:56,049 - INFO - Final model:
+2025-07-18 01:13:56,049 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-18 01:13:56,052 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-18 01:13:56,052 - INFO - Loading all configurations for performance prediction.
+2025-07-18 01:13:56,054 - INFO - Total number of configurations: 896
+2025-07-18 01:13:56,054 - INFO - Predicting performance for all configurations.
+2025-07-18 01:13:56,178 - INFO - Validation Error: 1506.7533935298795
+2025-07-18 01:13:56,179 - INFO - Experimental pipeline completed successfully.
+2025-07-18 01:56:15,406 - INFO - Starting the experimental pipeline.
+2025-07-18 01:56:15,407 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-18 01:56:15,407 - INFO - Loading feature model and extracting feature names.
+2025-07-18 01:56:15,407 - INFO - Number of features extracted: 19
+2025-07-18 01:56:15,407 - INFO - Generating sampled configurations using variant generator.
+2025-07-18 01:56:15,493 - INFO - Number of configurations sampled: 45
+2025-07-18 01:56:15,494 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-18 01:56:15,494 - INFO - Matching sampled configurations with their performance values.
+2025-07-18 01:56:15,534 - INFO - Number of matched configurations: 45
+2025-07-18 01:56:15,534 - INFO - Training the regression model using stepwise selection.
+2025-07-18 01:56:24,837 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-18 01:56:24,837 - INFO - Final model:
+2025-07-18 01:56:24,837 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-18 01:56:24,840 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-18 01:56:24,840 - INFO - Loading all configurations for performance prediction.
+2025-07-18 01:56:24,842 - INFO - Total number of configurations: 896
+2025-07-18 01:56:24,842 - INFO - Predicting performance for all configurations.
+2025-07-18 01:56:24,953 - INFO - Validation Error: 1506.7533935298795
+2025-07-18 01:56:24,953 - INFO - Experimental pipeline completed successfully.
+2025-07-18 01:58:43,764 - INFO - Starting the experimental pipeline.
+2025-07-18 01:58:43,764 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=43, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-18 01:58:43,765 - INFO - Loading feature model and extracting feature names.
+2025-07-18 01:58:43,765 - INFO - Number of features extracted: 19
+2025-07-18 01:58:43,765 - INFO - Generating sampled configurations using variant generator.
+2025-07-18 01:58:43,848 - INFO - Number of configurations sampled: 45
+2025-07-18 01:58:43,848 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-18 01:58:43,849 - INFO - Matching sampled configurations with their performance values.
+2025-07-18 01:58:43,887 - INFO - Number of matched configurations: 45
+2025-07-18 01:58:43,887 - INFO - Training the regression model using stepwise selection.
+2025-07-18 01:58:53,946 - INFO - Selected features: ['None$$early_stopping', 'None$$squared_error', 'average$$early_stopping', 'average$$l1', 'average$$log_loss', 'average$$shuffle', 'average$$squared_error', 'early_stopping', 'early_stopping$$hinge', 'early_stopping$$l1', 'early_stopping$$l2', 'early_stopping$$log_loss', 'early_stopping$$perceptron', 'elasticnet$$warm_start', 'fit_intercept$$shuffle', 'fit_intercept$$squared_error', 'fit_intercept$$warm_start', 'hinge$$shuffle', 'hinge$$warm_start', 'huber', 'huber$$shuffle', 'l1', 'l1$$squared_error', 'l1$$warm_start', 'l2$$warm_start', 'log_loss', 'log_loss$$warm_start', 'perceptron$$shuffle', 'perceptron$$warm_start', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'squared_error$$warm_start', 'warm_start']
+2025-07-18 01:58:53,946 - INFO - Final model:
+2025-07-18 01:58:53,946 - INFO - const                           0.905900
+None$$early_stopping            0.566100
+None$$squared_error            -0.125000
+average$$early_stopping         0.815900
+average$$l1                    -0.314100
+average$$log_loss               0.002000
+average$$shuffle               -0.008900
+average$$squared_error          0.323000
+early_stopping                  0.398283
+early_stopping$$hinge          -0.554150
+early_stopping$$l1             -0.392083
+early_stopping$$l2             -1.210283
+early_stopping$$log_loss       -1.067283
+early_stopping$$perceptron     -1.633600
+elasticnet$$warm_start         -0.780383
+fit_intercept$$shuffle          0.008900
+fit_intercept$$squared_error   -0.790517
+fit_intercept$$warm_start       0.010217
+hinge$$shuffle                 -0.259900
+hinge$$warm_start               0.823600
+huber                          -0.009400
+huber$$shuffle                 -0.238883
+l1                              0.237583
+l1$$squared_error              -0.395983
+l1$$warm_start                  0.224200
+l2$$warm_start                  0.967583
+log_loss                       -0.003800
+log_loss$$warm_start           -0.023900
+perceptron$$shuffle            -0.821800
+perceptron$$warm_start          1.382700
+shuffle                         0.004700
+shuffle$$squared_error         -0.112000
+shuffle$$warm_start            -1.515183
+squared_error                  -0.006100
+squared_error$$warm_start       0.729300
+warm_start                      0.796083
+dtype: float64
+2025-07-18 01:58:53,948 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-18 01:58:53,948 - INFO - Loading all configurations for performance prediction.
+2025-07-18 01:58:53,949 - INFO - Total number of configurations: 896
+2025-07-18 01:58:53,949 - INFO - Predicting performance for all configurations.
+2025-07-18 01:58:54,041 - INFO - Validation Error: 1850.9521785754625
+2025-07-18 01:58:54,041 - INFO - Experimental pipeline completed successfully.
+2025-07-18 02:01:30,944 - INFO - Starting the experimental pipeline.
+2025-07-18 02:01:30,944 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-18 02:01:30,944 - INFO - Loading feature model and extracting feature names.
+2025-07-18 02:01:30,945 - INFO - Number of features extracted: 19
+2025-07-18 02:01:30,945 - INFO - Generating sampled configurations using variant generator.
+2025-07-18 02:01:31,024 - INFO - Number of configurations sampled: 45
+2025-07-18 02:01:31,025 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-18 02:01:31,025 - INFO - Matching sampled configurations with their performance values.
+2025-07-18 02:01:31,062 - INFO - Number of matched configurations: 45
+2025-07-18 02:01:31,062 - INFO - Training the regression model using stepwise selection.
+2025-07-18 02:01:40,245 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-18 02:01:40,245 - INFO - Final model:
+2025-07-18 02:01:40,245 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-18 02:01:40,248 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-18 02:01:40,248 - INFO - Loading all configurations for performance prediction.
+2025-07-18 02:01:40,250 - INFO - Total number of configurations: 896
+2025-07-18 02:01:40,250 - INFO - Predicting performance for all configurations.
+2025-07-18 02:01:40,363 - INFO - Validation Error: 1506.7533935298795
+2025-07-18 02:01:40,363 - INFO - Experimental pipeline completed successfully.
+2025-07-24 11:25:19,245 - INFO - Starting the experimental pipeline.
+2025-07-24 11:25:19,255 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-24 11:25:19,255 - INFO - Loading feature model and extracting feature names.
+2025-07-24 11:25:19,255 - INFO - Number of features extracted: 19
+2025-07-24 11:25:19,256 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 11:25:19,344 - INFO - Number of configurations sampled: 45
+2025-07-24 11:25:19,344 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-24 11:25:19,344 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 11:25:19,382 - INFO - Number of matched configurations: 45
+2025-07-24 11:25:19,383 - INFO - Training the regression model using stepwise selection.
+2025-07-24 11:25:28,737 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-24 11:25:28,737 - INFO - Final model:
+2025-07-24 11:25:28,738 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-24 11:25:28,740 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-24 11:25:28,740 - INFO - Loading all configurations for performance prediction.
+2025-07-24 11:25:28,742 - INFO - Total number of configurations: 896
+2025-07-24 11:25:28,742 - INFO - Predicting performance for all configurations.
+2025-07-24 11:25:28,855 - INFO - Validation Error: 1506.7533935298795
+2025-07-24 11:25:28,856 - INFO - Experimental pipeline completed successfully.
+2025-07-24 13:01:45,803 - INFO - Starting the experimental pipeline.
+2025-07-24 13:01:45,803 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-24 13:01:45,803 - INFO - Loading feature model and extracting feature names.
+2025-07-24 13:01:45,804 - INFO - Number of features extracted: 19
+2025-07-24 13:01:45,804 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 13:01:45,884 - INFO - Number of configurations sampled: 45
+2025-07-24 13:01:45,885 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-24 13:01:45,885 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 13:01:45,923 - INFO - Number of matched configurations: 45
+2025-07-24 13:01:45,923 - INFO - Training the regression model using stepwise selection.
+2025-07-24 13:01:56,130 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-24 13:01:56,130 - INFO - Final model:
+2025-07-24 13:01:56,130 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-24 13:01:56,133 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-24 13:01:56,133 - INFO - Loading all configurations for performance prediction.
+2025-07-24 13:01:56,135 - INFO - Total number of configurations: 896
+2025-07-24 13:01:56,135 - INFO - Predicting performance for all configurations.
+2025-07-24 13:01:56,248 - INFO - Validation Error: 1506.7533935298795
+2025-07-24 13:01:56,248 - INFO - Experimental pipeline completed successfully.
+2025-07-24 14:19:49,351 - INFO - Starting the experimental pipeline.
+2025-07-24 14:19:49,351 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-24 14:19:49,352 - INFO - Loading feature model and extracting feature names.
+2025-07-24 14:19:49,352 - INFO - Number of features extracted: 19
+2025-07-24 14:19:49,352 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 14:19:49,434 - INFO - Number of configurations sampled: 45
+2025-07-24 14:19:49,435 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-24 14:19:49,435 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 14:19:49,469 - INFO - Number of matched configurations: 45
+2025-07-24 14:19:49,469 - INFO - Training the regression model using stepwise selection.
+2025-07-24 14:19:58,996 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-24 14:19:58,996 - INFO - Final model:
+2025-07-24 14:19:58,996 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-24 14:19:58,999 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-24 14:19:58,999 - INFO - Loading all configurations for performance prediction.
+2025-07-24 14:19:59,001 - INFO - Total number of configurations: 896
+2025-07-24 14:19:59,001 - INFO - Predicting performance for all configurations.
+2025-07-24 14:19:59,116 - INFO - Validation Error: 1506.7533935298795
+2025-07-24 14:19:59,116 - INFO - Experimental pipeline completed successfully.
+2025-07-24 19:07:26,145 - INFO - Starting the experimental pipeline.
+2025-07-24 19:07:26,145 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-24 19:07:26,145 - INFO - Loading feature model and extracting feature names.
+2025-07-24 19:07:26,146 - INFO - Number of features extracted: 19
+2025-07-24 19:07:26,146 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 19:07:26,232 - INFO - Number of configurations sampled: 45
+2025-07-24 19:07:26,232 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-24 19:07:26,232 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 19:07:26,273 - INFO - Number of matched configurations: 45
+2025-07-24 19:07:26,273 - INFO - Training the regression model using stepwise selection.
+2025-07-24 19:07:35,879 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-24 19:07:35,879 - INFO - Final model:
+2025-07-24 19:07:35,879 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-24 19:07:35,882 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-24 19:07:35,882 - INFO - Loading all configurations for performance prediction.
+2025-07-24 19:07:35,883 - INFO - Total number of configurations: 896
+2025-07-24 19:07:35,884 - INFO - Predicting performance for all configurations.
+2025-07-24 19:07:35,998 - INFO - Validation Error: 1506.7533935298795
+2025-07-24 19:07:35,998 - INFO - Experimental pipeline completed successfully.
+2025-07-24 20:37:59,429 - INFO - Starting the experimental pipeline.
+2025-07-24 20:37:59,429 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-24 20:37:59,429 - INFO - Loading feature model and extracting feature names.
+2025-07-24 20:37:59,429 - INFO - Number of features extracted: 19
+2025-07-24 20:37:59,429 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 20:37:59,519 - INFO - Number of configurations sampled: 45
+2025-07-24 20:37:59,520 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-24 20:37:59,520 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 20:37:59,563 - INFO - Number of matched configurations: 45
+2025-07-24 20:37:59,563 - INFO - Training the regression model using stepwise selection.
+2025-07-24 20:38:09,620 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-24 20:38:09,620 - INFO - Final model:
+2025-07-24 20:38:09,620 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-24 20:38:09,622 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-24 20:38:09,622 - INFO - Loading all configurations for performance prediction.
+2025-07-24 20:38:09,624 - INFO - Total number of configurations: 896
+2025-07-24 20:38:09,624 - INFO - Predicting performance for all configurations.
+2025-07-24 20:38:09,741 - INFO - Validation Error: 1506.7533935298795
+2025-07-24 20:38:09,741 - INFO - Experimental pipeline completed successfully.
+2025-07-24 21:10:30,957 - INFO - Starting the experimental pipeline.
+2025-07-24 21:10:30,957 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=45, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45
+2025-07-24 21:10:30,957 - INFO - Loading feature model and extracting feature names.
+2025-07-24 21:10:30,958 - INFO - Number of features extracted: 19
+2025-07-24 21:10:30,958 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 21:10:31,041 - INFO - Number of configurations sampled: 45
+2025-07-24 21:10:31,042 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/sampled_configurations.csv
+2025-07-24 21:10:31,042 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 21:10:31,081 - INFO - Number of matched configurations: 45
+2025-07-24 21:10:31,081 - INFO - Training the regression model using stepwise selection.
+2025-07-24 21:10:40,680 - INFO - Selected features: ['None', 'None$$average', 'None$$fit_intercept', 'None$$huber', 'None$$modified_huber', 'None$$perceptron', 'None$$shuffle', 'None$$squared_error', 'average', 'average$$early_stopping', 'average$$elasticnet', 'average$$fit_intercept', 'average$$log_loss', 'average$$modified_huber', 'average$$perceptron', 'average$$squared_error', 'early_stopping$$l1', 'early_stopping$$shuffle', 'elasticnet$$shuffle', 'epsilon_insensitive$$l1', 'epsilon_insensitive$$shuffle', 'fit_intercept$$shuffle', 'hinge$$l1', 'huber$$shuffle', 'l1', 'l1$$log_loss', 'l1$$perceptron', 'l1$$shuffle', 'l1$$squared_error', 'l1$$warm_start', 'log_loss', 'log_loss$$shuffle', 'modified_huber$$shuffle', 'modified_huber$$warm_start', 'perceptron$$shuffle', 'shuffle', 'shuffle$$squared_error', 'shuffle$$warm_start', 'squared_error', 'warm_start']
+2025-07-24 21:10:40,680 - INFO - Final model:
+2025-07-24 21:10:40,680 - INFO - const                           0.9059
+None                            0.3662
+None$$average                   0.1604
+None$$fit_intercept             0.5001
+None$$huber                    -0.3748
+None$$modified_huber            0.3145
+None$$perceptron                0.7571
+None$$shuffle                  -0.9750
+None$$squared_error            -0.4912
+average                         0.2718
+average$$early_stopping        -0.4460
+average$$elasticnet             0.1922
+average$$fit_intercept         -0.8651
+average$$log_loss               0.3673
+average$$modified_huber        -0.5509
+average$$perceptron            -0.6132
+average$$squared_error         -1.1071
+early_stopping$$l1             -0.5347
+early_stopping$$shuffle         0.1692
+elasticnet$$shuffle            -0.1925
+epsilon_insensitive$$l1        -0.1989
+epsilon_insensitive$$shuffle   -0.1204
+fit_intercept$$shuffle          0.8471
+hinge$$l1                       0.2444
+huber$$shuffle                 -0.0099
+l1                              2.1037
+l1$$log_loss                   -0.3227
+l1$$perceptron                  1.0388
+l1$$shuffle                    -1.8446
+l1$$squared_error              -2.2621
+l1$$warm_start                 -0.7649
+log_loss                       -0.0035
+log_loss$$shuffle              -0.3861
+modified_huber$$shuffle         0.2607
+modified_huber$$warm_start     -0.5035
+perceptron$$shuffle            -0.1840
+shuffle                        -0.2552
+shuffle$$squared_error          1.1033
+shuffle$$warm_start             0.2571
+squared_error                  -0.0061
+warm_start                      0.0129
+dtype: float64
+2025-07-24 21:10:40,683 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/sgd/sample_size_45/trained_model.pkl
+2025-07-24 21:10:40,683 - INFO - Loading all configurations for performance prediction.
+2025-07-24 21:10:40,685 - INFO - Total number of configurations: 896
+2025-07-24 21:10:40,685 - INFO - Predicting performance for all configurations.
+2025-07-24 21:10:40,808 - INFO - Validation Error: 1506.7533935298795
+2025-07-24 21:10:40,808 - INFO - Experimental pipeline completed successfully.

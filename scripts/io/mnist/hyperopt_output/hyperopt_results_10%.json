@@ -1,0 +1,127 @@
+{
+  "mnb": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=2, trial_timeout=60",
+    "best_model_parameters": {
+      "alpha": 1.0,
+      "class_prior": null,
+      "fit_prior": true,
+      "force_alpha": "warn"
+    },
+    "training_time_sec": 0.61,
+    "accuracy": 0.8357
+  },
+  "dtc": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=2, trial_timeout=60",
+    "best_model_parameters": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "entropy",
+      "max_depth": null,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 5,
+      "min_weight_fraction_leaf": 0.0,
+      "random_state": 1,
+      "splitter": "random"
+    },
+    "training_time_sec": 11.05,
+    "accuracy": 0.8827
+  },
+  "gbc": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=29, trial_timeout=1800",
+    "best_model_parameters": {
+      "ccp_alpha": 0.0,
+      "criterion": "squared_error",
+      "init": null,
+      "learning_rate": 0.3,
+      "loss": "log_loss",
+      "max_depth": 3,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "n_estimators": 100,
+      "n_iter_no_change": null,
+      "random_state": 1,
+      "subsample": 1.0,
+      "tol": 0.0001,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "training_time_sec": 47190.41,
+    "accuracy": 0.9606
+  },
+  "sgd": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=90, trial_timeout=60",
+    "best_model_parameters": {
+      "alpha": 0.0001,
+      "average": true,
+      "class_weight": null,
+      "early_stopping": false,
+      "epsilon": 0.1,
+      "eta0": 0.0,
+      "fit_intercept": false,
+      "l1_ratio": 0.15,
+      "learning_rate": "optimal",
+      "loss": "hinge",
+      "max_iter": 1000,
+      "n_iter_no_change": 5,
+      "n_jobs": 1,
+      "penalty": "l2",
+      "power_t": 0.5,
+      "random_state": 1,
+      "shuffle": true,
+      "tol": 0.001,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": true
+    },
+    "training_time_sec": 2737.43,
+    "accuracy": 0.9195
+  },
+  "knn": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=96, trial_timeout=60",
+    "best_model_parameters": {
+      "algorithm": "brute",
+      "leaf_size": 1,
+      "metric": "minkowski",
+      "metric_params": null,
+      "n_jobs": 1,
+      "n_neighbors": 4,
+      "p": 2,
+      "weights": "distance"
+    },
+    "training_time_sec": 1795.04,
+    "accuracy": 0.9714
+  },
+  "rfc": {
+    "hyperopt_sklearn_estim": "algo=tpe.suggest, max_evals=130, trial_timeout=60",
+    "best_model_parameters": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": "balanced",
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 3,
+      "min_weight_fraction_leaf": 0.0,
+      "n_estimators": 120,
+      "n_jobs": 1,
+      "oob_score": true,
+      "random_state": 2,
+      "verbose": 0,
+      "warm_start": true
+    },
+    "training_time_sec": 4387.37,
+    "accuracy": 0.9701
+  }
+}

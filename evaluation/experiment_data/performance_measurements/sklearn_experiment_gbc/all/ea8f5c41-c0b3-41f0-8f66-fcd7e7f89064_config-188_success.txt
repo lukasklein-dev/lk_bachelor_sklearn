@@ -1,0 +1,174 @@
+{
+  "188": {
+    "0": {
+      "estimator": "--estimator-gbc",
+      "hyperparameters": {
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "init": null,
+        "learning_rate": 0.1,
+        "loss": "log_loss",
+        "max_depth": 3,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "min_weight_fraction_leaf": 0.0,
+        "n_estimators": 500,
+        "n_iter_no_change": null,
+        "random_state": 0,
+        "subsample": 0.7,
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.9624,
+        "precision": 0.9624,
+        "recall": 0.9624,
+        "f1_score": 0.9624,
+        "fbeta_score": 0.9624,
+        "hamming_loss": 0.0376,
+        "zero_one_loss": 0.0376
+      }
+    },
+    "1": {
+      "estimator": "--estimator-gbc",
+      "hyperparameters": {
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "init": null,
+        "learning_rate": 0.1,
+        "loss": "log_loss",
+        "max_depth": 3,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "min_weight_fraction_leaf": 0.0,
+        "n_estimators": 500,
+        "n_iter_no_change": null,
+        "random_state": 1,
+        "subsample": 0.7,
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.9637,
+        "precision": 0.9637,
+        "recall": 0.9637,
+        "f1_score": 0.9637,
+        "fbeta_score": 0.9637,
+        "hamming_loss": 0.0363,
+        "zero_one_loss": 0.0363
+      }
+    },
+    "2": {
+      "estimator": "--estimator-gbc",
+      "hyperparameters": {
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "init": null,
+        "learning_rate": 0.1,
+        "loss": "log_loss",
+        "max_depth": 3,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "min_weight_fraction_leaf": 0.0,
+        "n_estimators": 500,
+        "n_iter_no_change": null,
+        "random_state": 2,
+        "subsample": 0.7,
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.9557,
+        "precision": 0.9557,
+        "recall": 0.9557,
+        "f1_score": 0.9557,
+        "fbeta_score": 0.9557,
+        "hamming_loss": 0.0443,
+        "zero_one_loss": 0.0443
+      }
+    },
+    "3": {
+      "estimator": "--estimator-gbc",
+      "hyperparameters": {
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "init": null,
+        "learning_rate": 0.1,
+        "loss": "log_loss",
+        "max_depth": 3,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "min_weight_fraction_leaf": 0.0,
+        "n_estimators": 500,
+        "n_iter_no_change": null,
+        "random_state": 3,
+        "subsample": 0.7,
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.9621,
+        "precision": 0.9621,
+        "recall": 0.9621,
+        "f1_score": 0.9621,
+        "fbeta_score": 0.9621,
+        "hamming_loss": 0.0379,
+        "zero_one_loss": 0.0379
+      }
+    },
+    "4": {
+      "estimator": "--estimator-gbc",
+      "hyperparameters": {
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "init": null,
+        "learning_rate": 0.1,
+        "loss": "log_loss",
+        "max_depth": 3,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "min_weight_fraction_leaf": 0.0,
+        "n_estimators": 500,
+        "n_iter_no_change": null,
+        "random_state": 4,
+        "subsample": 0.7,
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "performance": {
+        "accuracy": 0.9599,
+        "precision": 0.9599,
+        "recall": 0.9599,
+        "f1_score": 0.9599,
+        "fbeta_score": 0.9599,
+        "hamming_loss": 0.0401,
+        "zero_one_loss": 0.0401
+      }
+    }
+  }
+}

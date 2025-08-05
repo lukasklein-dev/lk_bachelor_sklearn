@@ -1,0 +1,88 @@
+2025-07-18 01:37:52,693 - INFO - Starting the experimental pipeline.
+2025-07-18 01:37:52,693 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_knn/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/k_neighbors_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=48, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48
+2025-07-18 01:37:52,693 - INFO - Loading feature model and extracting feature names.
+2025-07-18 01:37:52,694 - INFO - Number of features extracted: 30
+2025-07-18 01:37:52,694 - INFO - Generating sampled configurations using variant generator.
+2025-07-18 01:37:52,699 - INFO - Number of configurations sampled: 48
+2025-07-18 01:37:52,700 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/sampled_configurations.csv
+2025-07-18 01:37:52,700 - INFO - Matching sampled configurations with their performance values.
+2025-07-18 01:37:52,742 - INFO - Number of matched configurations: 48
+2025-07-18 01:37:52,742 - INFO - Training the regression model using stepwise selection.
+2025-07-18 01:37:52,968 - INFO - Selected features: ['16', '64']
+2025-07-18 01:37:52,968 - INFO - Final model:
+2025-07-18 01:37:52,969 - INFO - const    0.968682
+16      -0.003832
+64      -0.002232
+dtype: float64
+2025-07-18 01:37:52,970 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/trained_model.pkl
+2025-07-18 01:37:52,970 - INFO - Loading all configurations for performance prediction.
+2025-07-18 01:37:52,972 - INFO - Total number of configurations: 960
+2025-07-18 01:37:52,972 - INFO - Predicting performance for all configurations.
+2025-07-18 01:37:53,045 - INFO - Validation Error: 0.2044052383113753
+2025-07-18 01:37:53,045 - INFO - Experimental pipeline completed successfully.
+2025-07-24 13:55:34,012 - INFO - Starting the experimental pipeline.
+2025-07-24 13:55:34,021 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_knn/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/k_neighbors_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=48, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48
+2025-07-24 13:55:34,021 - INFO - Loading feature model and extracting feature names.
+2025-07-24 13:55:34,023 - INFO - Number of features extracted: 30
+2025-07-24 13:55:34,023 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 13:55:34,029 - INFO - Number of configurations sampled: 48
+2025-07-24 13:55:34,030 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/sampled_configurations.csv
+2025-07-24 13:55:34,030 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 13:55:34,077 - INFO - Number of matched configurations: 48
+2025-07-24 13:55:34,077 - INFO - Training the regression model using stepwise selection.
+2025-07-24 13:55:34,278 - INFO - Selected features: ['16', '64']
+2025-07-24 13:55:34,278 - INFO - Final model:
+2025-07-24 13:55:34,278 - INFO - const    0.968682
+16      -0.003832
+64      -0.002232
+dtype: float64
+2025-07-24 13:55:34,279 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/trained_model.pkl
+2025-07-24 13:55:34,279 - INFO - Loading all configurations for performance prediction.
+2025-07-24 13:55:34,281 - INFO - Total number of configurations: 960
+2025-07-24 13:55:34,281 - INFO - Predicting performance for all configurations.
+2025-07-24 13:55:34,358 - INFO - Validation Error: 0.2044052383113753
+2025-07-24 13:55:34,358 - INFO - Experimental pipeline completed successfully.
+2025-07-24 14:17:33,871 - INFO - Starting the experimental pipeline.
+2025-07-24 14:17:33,871 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_knn/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/k_neighbors_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=48, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48
+2025-07-24 14:17:33,871 - INFO - Loading feature model and extracting feature names.
+2025-07-24 14:17:33,872 - INFO - Number of features extracted: 30
+2025-07-24 14:17:33,872 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 14:17:33,877 - INFO - Number of configurations sampled: 48
+2025-07-24 14:17:33,878 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/sampled_configurations.csv
+2025-07-24 14:17:33,878 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 14:17:33,921 - INFO - Number of matched configurations: 48
+2025-07-24 14:17:33,921 - INFO - Training the regression model using stepwise selection.
+2025-07-24 14:17:34,128 - INFO - Selected features: ['16', '64']
+2025-07-24 14:17:34,128 - INFO - Final model:
+2025-07-24 14:17:34,128 - INFO - const    0.968682
+16      -0.003832
+64      -0.002232
+dtype: float64
+2025-07-24 14:17:34,130 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/trained_model.pkl
+2025-07-24 14:17:34,130 - INFO - Loading all configurations for performance prediction.
+2025-07-24 14:17:34,132 - INFO - Total number of configurations: 960
+2025-07-24 14:17:34,132 - INFO - Predicting performance for all configurations.
+2025-07-24 14:17:34,206 - INFO - Validation Error: 0.2044052383113753
+2025-07-24 14:17:34,206 - INFO - Experimental pipeline completed successfully.
+2025-07-24 19:09:25,479 - INFO - Starting the experimental pipeline.
+2025-07-24 19:09:25,480 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_knn/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/k_neighbors_classifier.xml, sample_seed=42, sample_strategy=random, sample_size=48, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48
+2025-07-24 19:09:25,480 - INFO - Loading feature model and extracting feature names.
+2025-07-24 19:09:25,481 - INFO - Number of features extracted: 30
+2025-07-24 19:09:25,481 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 19:09:25,486 - INFO - Number of configurations sampled: 48
+2025-07-24 19:09:25,487 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/sampled_configurations.csv
+2025-07-24 19:09:25,487 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 19:09:25,532 - INFO - Number of matched configurations: 48
+2025-07-24 19:09:25,532 - INFO - Training the regression model using stepwise selection.
+2025-07-24 19:09:25,734 - INFO - Selected features: ['16', '64']
+2025-07-24 19:09:25,734 - INFO - Final model:
+2025-07-24 19:09:25,734 - INFO - const    0.968682
+16      -0.003832
+64      -0.002232
+dtype: float64
+2025-07-24 19:09:25,735 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/knn/sample_size_48/trained_model.pkl
+2025-07-24 19:09:25,735 - INFO - Loading all configurations for performance prediction.
+2025-07-24 19:09:25,737 - INFO - Total number of configurations: 960
+2025-07-24 19:09:25,737 - INFO - Predicting performance for all configurations.
+2025-07-24 19:09:25,815 - INFO - Validation Error: 0.2044052383113753
+2025-07-24 19:09:25,815 - INFO - Experimental pipeline completed successfully.

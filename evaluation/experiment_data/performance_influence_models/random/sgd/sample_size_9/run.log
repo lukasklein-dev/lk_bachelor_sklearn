@@ -1,0 +1,140 @@
+2025-07-22 13:33:27,845 - INFO - Starting the experimental pipeline.
+2025-07-22 13:33:27,845 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=random, sample_size=9, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9
+2025-07-22 13:33:27,845 - INFO - Loading feature model and extracting feature names.
+2025-07-22 13:33:27,846 - INFO - Number of features extracted: 19
+2025-07-22 13:33:27,846 - INFO - Generating sampled configurations using variant generator.
+2025-07-22 13:33:27,849 - INFO - Number of configurations sampled: 9
+2025-07-22 13:33:27,849 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/sampled_configurations.csv
+2025-07-22 13:33:27,849 - INFO - Matching sampled configurations with their performance values.
+2025-07-22 13:33:27,859 - INFO - Number of matched configurations: 9
+2025-07-22 13:33:27,859 - INFO - Training the regression model using stepwise selection.
+2025-07-22 13:33:28,691 - INFO - Selected features: ['average$$modified_huber', 'early_stopping', 'fit_intercept$$warm_start', 'huber', 'huber$$shuffle', 'l1', 'modified_huber', 'warm_start']
+2025-07-22 13:33:28,691 - INFO - Final model:
+2025-07-22 13:33:28,691 - INFO - const                        0.5635
+average$$modified_huber      0.0256
+early_stopping               0.0076
+fit_intercept$$warm_start    0.0015
+huber                       -0.4659
+huber$$shuffle               0.3507
+l1                          -0.5636
+modified_huber               0.0746
+warm_start                   0.2280
+dtype: float64
+2025-07-22 13:33:28,692 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/trained_model.pkl
+2025-07-22 13:33:28,693 - INFO - Loading all configurations for performance prediction.
+2025-07-22 13:33:28,694 - INFO - Total number of configurations: 896
+2025-07-22 13:33:28,694 - INFO - Predicting performance for all configurations.
+2025-07-22 13:33:28,771 - INFO - Validation Error: 835.664437603019
+2025-07-22 13:33:28,771 - INFO - Experimental pipeline completed successfully.
+2025-07-24 14:20:39,109 - INFO - Starting the experimental pipeline.
+2025-07-24 14:20:39,109 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=random, sample_size=9, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9
+2025-07-24 14:20:39,109 - INFO - Loading feature model and extracting feature names.
+2025-07-24 14:20:39,110 - INFO - Number of features extracted: 19
+2025-07-24 14:20:39,110 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 14:20:39,114 - INFO - Number of configurations sampled: 9
+2025-07-24 14:20:39,114 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/sampled_configurations.csv
+2025-07-24 14:20:39,114 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 14:20:39,128 - INFO - Number of matched configurations: 9
+2025-07-24 14:20:39,128 - INFO - Training the regression model using stepwise selection.
+2025-07-24 14:20:39,992 - INFO - Selected features: ['average$$modified_huber', 'early_stopping', 'fit_intercept$$warm_start', 'huber', 'huber$$shuffle', 'l1', 'modified_huber', 'warm_start']
+2025-07-24 14:20:39,992 - INFO - Final model:
+2025-07-24 14:20:39,992 - INFO - const                        0.5635
+average$$modified_huber      0.0256
+early_stopping               0.0076
+fit_intercept$$warm_start    0.0015
+huber                       -0.4659
+huber$$shuffle               0.3507
+l1                          -0.5636
+modified_huber               0.0746
+warm_start                   0.2280
+dtype: float64
+2025-07-24 14:20:39,993 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/trained_model.pkl
+2025-07-24 14:20:39,993 - INFO - Loading all configurations for performance prediction.
+2025-07-24 14:20:39,995 - INFO - Total number of configurations: 896
+2025-07-24 14:20:39,995 - INFO - Predicting performance for all configurations.
+2025-07-24 14:20:40,073 - INFO - Validation Error: 835.664437603019
+2025-07-24 14:20:40,073 - INFO - Experimental pipeline completed successfully.
+2025-07-24 19:08:16,165 - INFO - Starting the experimental pipeline.
+2025-07-24 19:08:16,165 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=random, sample_size=9, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9
+2025-07-24 19:08:16,165 - INFO - Loading feature model and extracting feature names.
+2025-07-24 19:08:16,166 - INFO - Number of features extracted: 19
+2025-07-24 19:08:16,166 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 19:08:16,169 - INFO - Number of configurations sampled: 9
+2025-07-24 19:08:16,170 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/sampled_configurations.csv
+2025-07-24 19:08:16,170 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 19:08:16,180 - INFO - Number of matched configurations: 9
+2025-07-24 19:08:16,180 - INFO - Training the regression model using stepwise selection.
+2025-07-24 19:08:17,084 - INFO - Selected features: ['average$$modified_huber', 'early_stopping', 'fit_intercept$$warm_start', 'huber', 'huber$$shuffle', 'l1', 'modified_huber', 'warm_start']
+2025-07-24 19:08:17,084 - INFO - Final model:
+2025-07-24 19:08:17,084 - INFO - const                        0.5635
+average$$modified_huber      0.0256
+early_stopping               0.0076
+fit_intercept$$warm_start    0.0015
+huber                       -0.4659
+huber$$shuffle               0.3507
+l1                          -0.5636
+modified_huber               0.0746
+warm_start                   0.2280
+dtype: float64
+2025-07-24 19:08:17,086 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/trained_model.pkl
+2025-07-24 19:08:17,086 - INFO - Loading all configurations for performance prediction.
+2025-07-24 19:08:17,087 - INFO - Total number of configurations: 896
+2025-07-24 19:08:17,087 - INFO - Predicting performance for all configurations.
+2025-07-24 19:08:17,166 - INFO - Validation Error: 835.664437603019
+2025-07-24 19:08:17,166 - INFO - Experimental pipeline completed successfully.
+2025-07-24 20:38:50,725 - INFO - Starting the experimental pipeline.
+2025-07-24 20:38:50,725 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=random, sample_size=9, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9
+2025-07-24 20:38:50,725 - INFO - Loading feature model and extracting feature names.
+2025-07-24 20:38:50,726 - INFO - Number of features extracted: 19
+2025-07-24 20:38:50,726 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 20:38:50,729 - INFO - Number of configurations sampled: 9
+2025-07-24 20:38:50,729 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/sampled_configurations.csv
+2025-07-24 20:38:50,729 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 20:38:50,740 - INFO - Number of matched configurations: 9
+2025-07-24 20:38:50,741 - INFO - Training the regression model using stepwise selection.
+2025-07-24 20:38:51,597 - INFO - Selected features: ['average$$modified_huber', 'early_stopping', 'fit_intercept$$warm_start', 'huber', 'huber$$shuffle', 'l1', 'modified_huber', 'warm_start']
+2025-07-24 20:38:51,597 - INFO - Final model:
+2025-07-24 20:38:51,597 - INFO - const                        0.5635
+average$$modified_huber      0.0256
+early_stopping               0.0076
+fit_intercept$$warm_start    0.0015
+huber                       -0.4659
+huber$$shuffle               0.3507
+l1                          -0.5636
+modified_huber               0.0746
+warm_start                   0.2280
+dtype: float64
+2025-07-24 20:38:51,598 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/trained_model.pkl
+2025-07-24 20:38:51,598 - INFO - Loading all configurations for performance prediction.
+2025-07-24 20:38:51,600 - INFO - Total number of configurations: 896
+2025-07-24 20:38:51,600 - INFO - Predicting performance for all configurations.
+2025-07-24 20:38:51,681 - INFO - Validation Error: 835.664437603019
+2025-07-24 20:38:51,681 - INFO - Experimental pipeline completed successfully.
+2025-07-24 21:11:22,355 - INFO - Starting the experimental pipeline.
+2025-07-24 21:11:22,355 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_sgd/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/sgd.xml, sample_seed=42, sample_strategy=random, sample_size=9, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9
+2025-07-24 21:11:22,355 - INFO - Loading feature model and extracting feature names.
+2025-07-24 21:11:22,355 - INFO - Number of features extracted: 19
+2025-07-24 21:11:22,356 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 21:11:22,359 - INFO - Number of configurations sampled: 9
+2025-07-24 21:11:22,359 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/sampled_configurations.csv
+2025-07-24 21:11:22,359 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 21:11:22,370 - INFO - Number of matched configurations: 9
+2025-07-24 21:11:22,370 - INFO - Training the regression model using stepwise selection.
+2025-07-24 21:11:23,238 - INFO - Selected features: ['average$$modified_huber', 'early_stopping', 'fit_intercept$$warm_start', 'huber', 'huber$$shuffle', 'l1', 'modified_huber', 'warm_start']
+2025-07-24 21:11:23,238 - INFO - Final model:
+2025-07-24 21:11:23,238 - INFO - const                        0.5635
+average$$modified_huber      0.0256
+early_stopping               0.0076
+fit_intercept$$warm_start    0.0015
+huber                       -0.4659
+huber$$shuffle               0.3507
+l1                          -0.5636
+modified_huber               0.0746
+warm_start                   0.2280
+dtype: float64
+2025-07-24 21:11:23,239 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/random/sgd/sample_size_9/trained_model.pkl
+2025-07-24 21:11:23,239 - INFO - Loading all configurations for performance prediction.
+2025-07-24 21:11:23,241 - INFO - Total number of configurations: 896
+2025-07-24 21:11:23,241 - INFO - Predicting performance for all configurations.
+2025-07-24 21:11:23,320 - INFO - Validation Error: 835.664437603019
+2025-07-24 21:11:23,320 - INFO - Experimental pipeline completed successfully.

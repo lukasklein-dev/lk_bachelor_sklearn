@@ -1,0 +1,149 @@
+{
+  "82": {
+    "0": {
+      "estimator": "--estimator-svc",
+      "hyperparameters": {
+        "C": 1.0,
+        "break_ties": false,
+        "cache_size": 200,
+        "class_weight": null,
+        "coef0": 0.0,
+        "decision_function_shape": "ovr",
+        "degree": 3,
+        "gamma": "scale",
+        "kernel": "sigmoid",
+        "max_iter": -1,
+        "probability": true,
+        "random_state": 0,
+        "shrinking": true,
+        "tol": 0.001,
+        "verbose": true
+      },
+      "performance": {
+        "accuracy": 0.7759,
+        "precision": 0.7779,
+        "recall": 0.7759,
+        "f1_score": 0.7758,
+        "fbeta_score": 0.7768,
+        "hamming_loss": 0.2241,
+        "zero_one_loss": 0.2241
+      }
+    },
+    "1": {
+      "estimator": "--estimator-svc",
+      "hyperparameters": {
+        "C": 1.0,
+        "break_ties": false,
+        "cache_size": 200,
+        "class_weight": null,
+        "coef0": 0.0,
+        "decision_function_shape": "ovr",
+        "degree": 3,
+        "gamma": "scale",
+        "kernel": "sigmoid",
+        "max_iter": -1,
+        "probability": true,
+        "random_state": 1,
+        "shrinking": true,
+        "tol": 0.001,
+        "verbose": true
+      },
+      "performance": {
+        "accuracy": 0.7759,
+        "precision": 0.7779,
+        "recall": 0.7759,
+        "f1_score": 0.7758,
+        "fbeta_score": 0.7768,
+        "hamming_loss": 0.2241,
+        "zero_one_loss": 0.2241
+      }
+    },
+    "2": {
+      "estimator": "--estimator-svc",
+      "hyperparameters": {
+        "C": 1.0,
+        "break_ties": false,
+        "cache_size": 200,
+        "class_weight": null,
+        "coef0": 0.0,
+        "decision_function_shape": "ovr",
+        "degree": 3,
+        "gamma": "scale",
+        "kernel": "sigmoid",
+        "max_iter": -1,
+        "probability": true,
+        "random_state": 2,
+        "shrinking": true,
+        "tol": 0.001,
+        "verbose": true
+      },
+      "performance": {
+        "accuracy": 0.7759,
+        "precision": 0.7779,
+        "recall": 0.7759,
+        "f1_score": 0.7758,
+        "fbeta_score": 0.7768,
+        "hamming_loss": 0.2241,
+        "zero_one_loss": 0.2241
+      }
+    },
+    "3": {
+      "estimator": "--estimator-svc",
+      "hyperparameters": {
+        "C": 1.0,
+        "break_ties": false,
+        "cache_size": 200,
+        "class_weight": null,
+        "coef0": 0.0,
+        "decision_function_shape": "ovr",
+        "degree": 3,
+        "gamma": "scale",
+        "kernel": "sigmoid",
+        "max_iter": -1,
+        "probability": true,
+        "random_state": 3,
+        "shrinking": true,
+        "tol": 0.001,
+        "verbose": true
+      },
+      "performance": {
+        "accuracy": 0.7759,
+        "precision": 0.7779,
+        "recall": 0.7759,
+        "f1_score": 0.7758,
+        "fbeta_score": 0.7768,
+        "hamming_loss": 0.2241,
+        "zero_one_loss": 0.2241
+      }
+    },
+    "4": {
+      "estimator": "--estimator-svc",
+      "hyperparameters": {
+        "C": 1.0,
+        "break_ties": false,
+        "cache_size": 200,
+        "class_weight": null,
+        "coef0": 0.0,
+        "decision_function_shape": "ovr",
+        "degree": 3,
+        "gamma": "scale",
+        "kernel": "sigmoid",
+        "max_iter": -1,
+        "probability": true,
+        "random_state": 4,
+        "shrinking": true,
+        "tol": 0.001,
+        "verbose": true
+      },
+      "performance": {
+        "accuracy": 0.7759,
+        "precision": 0.7779,
+        "recall": 0.7759,
+        "f1_score": 0.7758,
+        "fbeta_score": 0.7768,
+        "hamming_loss": 0.2241,
+        "zero_one_loss": 0.2241
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+---
+DocType: CaseStudy
+Version: 1
+...
+---
+project_name: sklearn_experiment_dtc_test
+stages:
+- revisions:
+  - commit_hash: b68cb87f21e7c75c6cc4d413ecc2b8e32d53ff29
+    commit_id: 0
+    config_ids:
+    - 0
+    - 1
+version: 6
+...
+---
+config_type: PlainCommandlineConfiguration
+0:               '["0", "criterion", "entropy", "min_samples_split", "2", "splitter", "best"]'
+1:               '["1", "criterion", "entropy", "min_samples_split", "2", "splitter", "random"]'
+...

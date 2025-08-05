@@ -1,0 +1,115 @@
+2025-07-18 01:42:40,189 - INFO - Starting the experimental pipeline.
+2025-07-18 01:42:40,189 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=65, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65
+2025-07-18 01:42:40,189 - INFO - Loading feature model and extracting feature names.
+2025-07-18 01:42:40,190 - INFO - Number of features extracted: 26
+2025-07-18 01:42:40,190 - INFO - Generating sampled configurations using variant generator.
+2025-07-18 01:42:40,480 - INFO - Number of configurations sampled: 65
+2025-07-18 01:42:40,480 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/sampled_configurations.csv
+2025-07-18 01:42:40,480 - INFO - Matching sampled configurations with their performance values.
+2025-07-18 01:42:40,533 - INFO - Number of matched configurations: 65
+2025-07-18 01:42:40,533 - INFO - Training the regression model using stepwise selection.
+2025-07-18 01:42:40,847 - INFO - Selected features: ['1$$sqrt', 'None', 'sqrt']
+2025-07-18 01:42:40,847 - INFO - Final model:
+2025-07-18 01:42:40,847 - INFO - const      0.964778
+1$$sqrt    0.000640
+None      -0.010538
+sqrt       0.003660
+dtype: float64
+2025-07-18 01:42:40,848 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/trained_model.pkl
+2025-07-18 01:42:40,848 - INFO - Loading all configurations for performance prediction.
+2025-07-18 01:42:40,850 - INFO - Total number of configurations: 1296
+2025-07-18 01:42:40,850 - INFO - Predicting performance for all configurations.
+2025-07-18 01:42:40,976 - INFO - Validation Error: 0.15226196074179082
+2025-07-18 01:42:40,976 - INFO - Experimental pipeline completed successfully.
+2025-07-24 13:13:48,763 - INFO - Starting the experimental pipeline.
+2025-07-24 13:13:48,772 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=65, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65
+2025-07-24 13:13:48,772 - INFO - Loading feature model and extracting feature names.
+2025-07-24 13:13:48,773 - INFO - Number of features extracted: 26
+2025-07-24 13:13:48,773 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 13:13:49,053 - INFO - Number of configurations sampled: 65
+2025-07-24 13:13:49,053 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/sampled_configurations.csv
+2025-07-24 13:13:49,053 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 13:13:49,108 - INFO - Number of matched configurations: 65
+2025-07-24 13:13:49,108 - INFO - Training the regression model using stepwise selection.
+2025-07-24 13:13:49,420 - INFO - Selected features: ['1$$sqrt', 'None', 'sqrt']
+2025-07-24 13:13:49,420 - INFO - Final model:
+2025-07-24 13:13:49,420 - INFO - const      0.964778
+1$$sqrt    0.000640
+None      -0.010538
+sqrt       0.003660
+dtype: float64
+2025-07-24 13:13:49,421 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/trained_model.pkl
+2025-07-24 13:13:49,421 - INFO - Loading all configurations for performance prediction.
+2025-07-24 13:13:49,423 - INFO - Total number of configurations: 1296
+2025-07-24 13:13:49,423 - INFO - Predicting performance for all configurations.
+2025-07-24 13:13:49,549 - INFO - Validation Error: 0.15226196074179082
+2025-07-24 13:13:49,549 - INFO - Experimental pipeline completed successfully.
+2025-07-24 13:59:45,948 - INFO - Starting the experimental pipeline.
+2025-07-24 13:59:45,948 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=65, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65
+2025-07-24 13:59:45,948 - INFO - Loading feature model and extracting feature names.
+2025-07-24 13:59:45,949 - INFO - Number of features extracted: 26
+2025-07-24 13:59:45,949 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 13:59:46,221 - INFO - Number of configurations sampled: 65
+2025-07-24 13:59:46,222 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/sampled_configurations.csv
+2025-07-24 13:59:46,222 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 13:59:46,277 - INFO - Number of matched configurations: 65
+2025-07-24 13:59:46,277 - INFO - Training the regression model using stepwise selection.
+2025-07-24 13:59:46,596 - INFO - Selected features: ['1$$sqrt', 'None', 'sqrt']
+2025-07-24 13:59:46,596 - INFO - Final model:
+2025-07-24 13:59:46,596 - INFO - const      0.964778
+1$$sqrt    0.000640
+None      -0.010538
+sqrt       0.003660
+dtype: float64
+2025-07-24 13:59:46,598 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/trained_model.pkl
+2025-07-24 13:59:46,598 - INFO - Loading all configurations for performance prediction.
+2025-07-24 13:59:46,599 - INFO - Total number of configurations: 1296
+2025-07-24 13:59:46,600 - INFO - Predicting performance for all configurations.
+2025-07-24 13:59:46,728 - INFO - Validation Error: 0.15226196074179082
+2025-07-24 13:59:46,728 - INFO - Experimental pipeline completed successfully.
+2025-07-24 14:18:59,086 - INFO - Starting the experimental pipeline.
+2025-07-24 14:18:59,086 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=65, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65
+2025-07-24 14:18:59,087 - INFO - Loading feature model and extracting feature names.
+2025-07-24 14:18:59,087 - INFO - Number of features extracted: 26
+2025-07-24 14:18:59,087 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 14:18:59,367 - INFO - Number of configurations sampled: 65
+2025-07-24 14:18:59,367 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/sampled_configurations.csv
+2025-07-24 14:18:59,367 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 14:18:59,424 - INFO - Number of matched configurations: 65
+2025-07-24 14:18:59,424 - INFO - Training the regression model using stepwise selection.
+2025-07-24 14:18:59,742 - INFO - Selected features: ['1$$sqrt', 'None', 'sqrt']
+2025-07-24 14:18:59,743 - INFO - Final model:
+2025-07-24 14:18:59,743 - INFO - const      0.964778
+1$$sqrt    0.000640
+None      -0.010538
+sqrt       0.003660
+dtype: float64
+2025-07-24 14:18:59,744 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/trained_model.pkl
+2025-07-24 14:18:59,744 - INFO - Loading all configurations for performance prediction.
+2025-07-24 14:18:59,746 - INFO - Total number of configurations: 1296
+2025-07-24 14:18:59,746 - INFO - Predicting performance for all configurations.
+2025-07-24 14:18:59,873 - INFO - Validation Error: 0.15226196074179082
+2025-07-24 14:18:59,873 - INFO - Experimental pipeline completed successfully.
+2025-07-24 19:09:57,888 - INFO - Starting the experimental pipeline.
+2025-07-24 19:09:57,888 - INFO - Parameters: measurements_csv=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_measurements/sklearn_experiment_rfc/sampled_configurations_performance.csv, feature_model_xml=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/feature_models/random_forest_classifier.xml, sample_seed=42, sample_strategy=diversified-distance, sample_size=65, max_interaction_order=3, margin=0.01, threshold=0.01, learning_seed=42, output_dir=/home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65
+2025-07-24 19:09:57,888 - INFO - Loading feature model and extracting feature names.
+2025-07-24 19:09:57,889 - INFO - Number of features extracted: 26
+2025-07-24 19:09:57,889 - INFO - Generating sampled configurations using variant generator.
+2025-07-24 19:09:58,165 - INFO - Number of configurations sampled: 65
+2025-07-24 19:09:58,165 - INFO - Sampled configurations exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/sampled_configurations.csv
+2025-07-24 19:09:58,166 - INFO - Matching sampled configurations with their performance values.
+2025-07-24 19:09:58,225 - INFO - Number of matched configurations: 65
+2025-07-24 19:09:58,225 - INFO - Training the regression model using stepwise selection.
+2025-07-24 19:09:58,546 - INFO - Selected features: ['1$$sqrt', 'None', 'sqrt']
+2025-07-24 19:09:58,546 - INFO - Final model:
+2025-07-24 19:09:58,546 - INFO - const      0.964778
+1$$sqrt    0.000640
+None      -0.010538
+sqrt       0.003660
+dtype: float64
+2025-07-24 19:09:58,547 - INFO - Trained model exported to /home/lukas/Schreibtisch/repos/lk_bachelor_sklearn/evaluation/experiment_data/performance_influence_models/diversified-distance/rfc/sample_size_65/trained_model.pkl
+2025-07-24 19:09:58,547 - INFO - Loading all configurations for performance prediction.
+2025-07-24 19:09:58,549 - INFO - Total number of configurations: 1296
+2025-07-24 19:09:58,549 - INFO - Predicting performance for all configurations.
+2025-07-24 19:09:58,678 - INFO - Validation Error: 0.15226196074179082
+2025-07-24 19:09:58,678 - INFO - Experimental pipeline completed successfully.

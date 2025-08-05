@@ -1,0 +1,2 @@
+decision_tree_classifier,criterion,entropy,gini,log_loss,min_samples_split,10,2,5,50,splitter,best,random
+1,1,1,0,0,1,0,1,0,0,1,0,1
